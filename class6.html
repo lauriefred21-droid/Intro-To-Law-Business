@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classes 6-7: Contracts - UVA Law</title>
+    <title>Class 6: Commercial Contracts - UVA Law</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
         <div class="container">
-            <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">⚖️ UVA Law</a></div>
+            <div class="logo">⚖️ UVA Law - Intro to Law & Business</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="class1.html">Class 1</a></li>
@@ -17,303 +17,450 @@
                 <li><a href="class3.html">Class 3</a></li>
                 <li><a href="class4.html">Class 4</a></li>
                 <li><a href="class5.html">Class 5</a></li>
-                <li><a href="class6.html">Class 6-7</a></li>
-                <li><a href="class7.html">Class 8-9</a></li>
+                <li><a href="class6.html">Class 6</a></li>
+                <li><a href="class7.html">Class 7</a></li>
             </ul>
         </div>
     </nav>
 
     <div class="container">
-        <a href="index.html" class="btn btn-secondary">← Back to Home</a>
-        
-        <h1>Classes 6-7: Commercial Contracts</h1>
-        
-        <div style="margin: 1rem 0;">
-            <span class="badge important">IMPORTANT</span>
-            <span class="badge explain">MUST EXPLAIN</span>
+        <h1>Class 6: Commercial Contracts</h1>
+        <p style="font-size: 1.1rem; color: var(--cool-gray); margin-bottom: 2rem;">
+            Relational contracts, the BSC/Medinol case, and key contract provisions
+        </p>
+
+        <div class="podcast-container">
+            <div class="podcast-header">
+                <span class="podcast-icon">🎧</span>
+                <div>
+                    <h3 class="podcast-title">Class 6 Podcast</h3>
+                    <p class="podcast-duration">Listen first for overview (~12 minutes)</p>
+                </div>
+            </div>
+            <audio controls>
+                <source src="PASTE_CLASS_6_PODCAST_LINK_HERE" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="speed-controls">
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=0.75">0.75x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=1.0">1x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=1.25">1.25x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=1.5">1.5x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=2.0">2x</button>
+            </div>
         </div>
 
-        <div class="toc">
-            <strong>Quick Jump:</strong>
-            <a href="#relational">Relational Contracts</a>
-            <a href="#bsc">BSC/Medinol Case</a>
-            <a href="#provisions">Key Provisions</a>
+        <div class="alert alert-warning">
+            <strong>🎯 EXAM FOCUS:</strong> Understand the difference between relational and ordinary contracts. Know the BSC/Medinol case in detail—what went wrong and the legal tensions it illustrates. Understand key contract provisions like force majeure, MAC clauses, and effort standards.
         </div>
 
-        <div class="alert alert-exam">
-            <strong>🎯 Focus:</strong> Understand relational contracts vs ordinary contracts. Know the BSC/Medinol case details.
-        </div>
-
-        <h2 id="relational">Relational Contracts vs Ordinary Contracts</h2>
+        <!-- SECTION 1: CONTRACT TYPES -->
+        <h2>Relational Contracts vs Ordinary Contracts</h2>
 
         <div class="concept-box">
-            <h3>Ordinary Contracts (One-Shot)</h3>
+            <h3>Ordinary Contracts (One-Shot Transactions)</h3>
+            
             <p><strong>Characteristics:</strong></p>
             <ul>
-                <li>Single transaction</li>
-                <li>Clear price and deliverables</li>
-                <li>Happens once and done</li>
-                <li>Easy to specify everything upfront</li>
-                <li>If breach, walk away and sue</li>
+                <li><strong>Single transaction:</strong> One-time deal, then done</li>
+                <li><strong>Clear terms upfront:</strong> Easy to specify price, deliverables, timeline</li>
+                <li><strong>Complete specification possible:</strong> Can detail everything in advance</li>
+                <li><strong>Limited relationship value:</strong> No ongoing relationship to preserve</li>
+                <li><strong>Dispute approach:</strong> If breach occurs, sue and walk away</li>
             </ul>
 
             <p><strong>Examples:</strong></p>
             <ul>
-                <li>Buying a car</li>
-                <li>One-time consulting project</li>
-                <li>Construction contract for a house</li>
+                <li>Buying a car from a dealer</li>
+                <li>One-time consulting engagement</li>
+                <li>Construction contract for a specific building</li>
+                <li>Purchasing equipment</li>
             </ul>
         </div>
 
         <div class="concept-box">
-            <h3>Relational Contracts (Long-Term)</h3>
+            <h3>Relational Contracts (Long-Term Relationships)</h3>
+            
             <p><strong>Characteristics:</strong></p>
             <ul>
-                <li>Ongoing relationship over years</li>
-                <li>Future uncertain (can't specify everything)</li>
-                <li>Requires flexibility and adaptation</li>
-                <li>Both parties invest in relationship</li>
-                <li>If problems arise, work it out (relationship has value)</li>
+                <li><strong>Ongoing relationship:</strong> Multi-year commitment with repeated interactions</li>
+                <li><strong>Uncertain future:</strong> Can't predict all circumstances that will arise</li>
+                <li><strong>Flexibility required:</strong> Need ability to adapt as conditions change</li>
+                <li><strong>Relationship-specific investments:</strong> Both parties invest resources that only have value in this relationship</li>
+                <li><strong>Dispute approach:</strong> If problems arise, work them out (relationship itself has value)</li>
+                <li><strong>Trust essential:</strong> Can't contract for everything, must rely on good faith</li>
             </ul>
 
             <p><strong>Examples:</strong></p>
             <ul>
-                <li>Supplier relationships (like BSC/Medinol)</li>
+                <li>Long-term supplier relationships (like BSC/Medinol)</li>
                 <li>Employment agreements</li>
                 <li>Franchise agreements</li>
-                <li>Joint ventures</li>
+                <li>Joint ventures and strategic partnerships</li>
             </ul>
         </div>
 
         <div class="example-box">
             <h3>Key Differences</h3>
-            <table style="width: 100%;">
-                <tr>
-                    <th>Aspect</th>
-                    <th>Ordinary</th>
-                    <th>Relational</th>
-                </tr>
-                <tr>
-                    <td><strong>Duration</strong></td>
-                    <td>One-time</td>
-                    <td>Long-term</td>
-                </tr>
-                <tr>
-                    <td><strong>Specificity</strong></td>
-                    <td>Detailed terms</td>
-                    <td>Flexible frameworks</td>
-                </tr>
-                <tr>
-                    <td><strong>Dispute Response</strong></td>
-                    <td>Sue and leave</td>
-                    <td>Negotiate and adapt</td>
-                </tr>
-                <tr>
-                    <td><strong>Trust</strong></td>
-                    <td>Don't need much</td>
-                    <td>Essential</td>
-                </tr>
-                <tr>
-                    <td><strong>Adaptation</strong></td>
-                    <td>Unnecessary</td>
-                    <td>Expected</td>
-                </tr>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aspect</th>
+                        <th>Ordinary Contract</th>
+                        <th>Relational Contract</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Duration</strong></td>
+                        <td>One-time or short-term</td>
+                        <td>Long-term, ongoing</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Specificity</strong></td>
+                        <td>Detailed, complete terms</td>
+                        <td>Flexible framework, gaps inevitable</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Adaptation</strong></td>
+                        <td>Unnecessary</td>
+                        <td>Expected and required</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Trust Level</strong></td>
+                        <td>Not critical</td>
+                        <td>Essential for success</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dispute Response</strong></td>
+                        <td>Litigate and terminate</td>
+                        <td>Negotiate and preserve relationship</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Investments</strong></td>
+                        <td>Generic, reusable elsewhere</td>
+                        <td>Relationship-specific, lost if deal ends</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
 
-        <h2 id="bsc">The BSC/Medinol Case Study</h2>
+        <!-- SECTION 2: BSC/MEDINOL CASE -->
+        <h2>Case Study: Boston Scientific & Medinol</h2>
 
         <div class="concept-box">
-            <h3>Background</h3>
-            <p><strong>The Parties:</strong></p>
-            <ul>
-                <li><strong>Boston Scientific (BSC):</strong> Large medical device company</li>
-                <li><strong>Medinol:</strong> Small Israeli company that invented a new stent technology</li>
-            </ul>
+            <h3>The Parties and the Deal</h3>
+            
+            <p><strong>Boston Scientific (BSC):</strong> Large US medical device company with global sales force</p>
+            <p><strong>Medinol:</strong> Small Israeli company that invented innovative coronary stent technology</p>
 
-            <p><strong>The Deal:</strong></p>
+            <p><strong>The Partnership:</strong></p>
             <ul>
-                <li>Medinol develops and manufactures stents</li>
-                <li>BSC markets and sells them worldwide</li>
+                <li>Medinol develops and manufactures the stents</li>
+                <li>BSC markets and sells them worldwide through its distribution network</li>
                 <li>Long-term exclusive relationship</li>
-                <li>Both parties make huge investments in the relationship</li>
+                <li>Both parties make substantial relationship-specific investments</li>
             </ul>
         </div>
 
         <div class="concept-box">
-            <h3>Why This Is a Relational Contract</h3>
+            <h3>Why This Is a Classic Relational Contract</h3>
+            
             <ol>
-                <li><strong>Long-term relationship</strong> (multi-year commitment)</li>
-                <li><strong>Mutual dependence</strong> (neither can succeed without the other)</li>
-                <li><strong>Relationship-specific investments:</strong>
+                <li><strong>Long-term commitment:</strong> Multi-year exclusive relationship, not one-time transaction</li>
+                
+                <li><strong>Mutual dependence:</strong>
                     <ul>
-                        <li>Medinol invests in production capacity for BSC</li>
-                        <li>BSC invests in training sales force on Medinol's stent</li>
-                        <li>Both invest in regulatory approvals</li>
+                        <li>Medinol needed BSC's global sales force and regulatory expertise</li>
+                        <li>BSC needed Medinol's innovative technology to compete</li>
                     </ul>
                 </li>
-                <li><strong>Uncertain future</strong> (can't predict all market changes, tech developments)</li>
-                <li><strong>Requires ongoing cooperation</strong> (product improvements, quality issues, volume forecasts)</li>
+                
+                <li><strong>Relationship-specific investments:</strong>
+                    <ul>
+                        <li>Medinol built production capacity specifically for BSC's forecasted volumes</li>
+                        <li>BSC trained its sales force on Medinol's specific technology</li>
+                        <li>Both invested in joint regulatory approvals</li>
+                        <li>These investments would lose most of their value if the relationship ended</li>
+                    </ul>
+                </li>
+                
+                <li><strong>Uncertain future:</strong> Impossible to predict market conditions, competitive landscape, or technology developments years in advance</li>
+                
+                <li><strong>Requires ongoing cooperation:</strong> Product improvements, quality issues, volume adjustments, market changes all require working together</li>
             </ol>
         </div>
 
         <div class="concept-box">
-            <h3>The Contract Provisions</h3>
+            <h3>Key Contract Provisions</h3>
 
-            <h4>1. Forecasting Requirements</h4>
-            <p><strong>What it says:</strong> BSC provides volume forecasts to Medinol</p>
-            <p><strong>Why it matters:</strong> Medinol needs to know how much capacity to build</p>
-            <p><strong>The problem:</strong> Forecasts are just estimates, not binding commitments</p>
+            <h4>1. Volume Forecasts</h4>
+            <p><strong>What the contract said:</strong> BSC would provide Medinol with periodic volume forecasts</p>
+            <p><strong>Why this mattered:</strong> Medinol needed to know how much production capacity to build</p>
+            <p><strong>The critical ambiguity:</strong> Were these forecasts binding commitments or merely non-binding estimates?</p>
 
-            <h4>2. Alternative Product Lines</h4>
-            <p><strong>What it says:</strong> BSC can develop and sell competing stent products</p>
-            <p><strong>Why BSC wants this:</strong> Don't want to be locked in if Medinol fails or better tech comes along</p>
-            <p><strong>Medinol's concern:</strong> BSC might push their own product instead of Medinol's</p>
+            <h4>2. Alternative Products Clause</h4>
+            <p><strong>What the contract said:</strong> BSC retained the right to develop and sell competing stent products</p>
+            <p><strong>Why BSC wanted this:</strong> Didn't want to be locked in if Medinol failed to deliver or if better technology emerged</p>
+            <p><strong>Medinol's concern:</strong> BSC might prioritize its own products over Medinol's</p>
 
             <h4>3. Integration Clause</h4>
-            <p><strong>What it says:</strong> "This written contract is the entire agreement; no side promises count"</p>
-            <p><strong>Why it matters:</strong> Prevents parties from claiming there were other verbal agreements</p>
-            <p><strong>In court:</strong> Judge can only look at written contract, not "he told me" claims</p>
+            <p><strong>What it said:</strong> "This written contract is the entire agreement between the parties"</p>
+            <p><strong>Legal effect:</strong> No side agreements, verbal promises, or informal understandings are enforceable</p>
+            <p><strong>In court:</strong> Judge can only consider what's written in the contract, not "he promised me" claims</p>
         </div>
 
         <div class="example-box">
             <h3>What Went Wrong</h3>
             
-            <p><strong>The Conflict:</strong></p>
+            <p><strong>The Sequence of Events:</strong></p>
             <ol>
-                <li>BSC gave Medinol forecasts showing huge growth</li>
-                <li>Medinol invested millions to build production capacity</li>
-                <li>BSC's actual orders were MUCH lower than forecasts</li>
-                <li>Medinol left with excess capacity and huge costs</li>
-                <li>Medinol claimed BSC acted in bad faith</li>
+                <li>BSC provided Medinol with volume forecasts showing substantial growth</li>
+                <li>Relying on these forecasts, Medinol invested millions in expanding production capacity</li>
+                <li>BSC's actual purchase orders came in far below the forecasted amounts</li>
+                <li>Medinol was left with expensive excess capacity and mounting losses</li>
+                <li>Medinol sued BSC for bad faith</li>
             </ol>
 
             <p><strong>BSC's Defense:</strong></p>
             <ul>
-                <li>Forecasts are just estimates, not commitments</li>
-                <li>Contract explicitly says BSC has no obligation to buy forecasted amounts</li>
-                <li>Market conditions changed unexpectedly</li>
-                <li>BSC was also selling competing products (which contract allowed)</li>
+                <li>Forecasts are explicitly non-binding estimates, not purchase commitments</li>
+                <li>Contract clearly stated BSC had no obligation to buy forecasted amounts</li>
+                <li>Market conditions changed unexpectedly (economic downturn, regulatory issues)</li>
+                <li>BSC was contractually permitted to sell competing products</li>
+                <li>We acted within our contractual rights</li>
             </ul>
 
-            <p><strong>Medinol's Argument:</strong></p>
+            <p><strong>Medinol's Counterargument:</strong></p>
             <ul>
-                <li>BSC gave unrealistic forecasts knowing Medinol would rely on them</li>
-                <li>BSC pushed their own competing products instead of Medinol's</li>
-                <li>This violated the spirit of the partnership even if not the letter</li>
-                <li>BSC acted in bad faith</li>
-            </ul>
-        </div>
-
-        <div class="concept-box">
-            <h3>The Legal Issues</h3>
-
-            <h4>1. Are Forecasts Binding?</h4>
-            <p><strong>Generally NO</strong> - forecasts are predictions, not promises</p>
-            <p><strong>BUT:</strong> If given in bad faith (deliberately misleading), might be actionable</p>
-
-            <h4>2. Duty of Good Faith</h4>
-            <p><strong>All contracts have implied duty of good faith and fair dealing</strong></p>
-            <p><strong>Question:</strong> Did BSC violate this by:</p>
-            <ul>
-                <li>Giving inflated forecasts?</li>
-                <li>Pushing competing products?</li>
-                <li>Not trying to meet forecasts?</li>
-            </ul>
-
-            <h4>3. Relational Contract Flexibility vs Certainty</h4>
-            <p><strong>The tension:</strong></p>
-            <ul>
-                <li>Relational contracts need flexibility (can't predict future)</li>
-                <li>BUT parties need some certainty to make investments</li>
-                <li>How much can BSC deviate from forecasts before it's bad faith?</li>
-            </ul>
-        </div>
-
-        <h2 id="provisions">Key Contract Provisions in Commercial Deals</h2>
-
-        <div class="concept-box">
-            <h3>1. Price and Payment Terms</h3>
-            <ul>
-                <li>Fixed price vs cost-plus</li>
-                <li>Volume discounts</li>
-                <li>Payment schedule (Net 30, Net 60, etc.)</li>
-                <li>Price adjustment clauses (inflation, materials costs)</li>
+                <li>BSC provided unrealistically high forecasts knowing Medinol would make major investments based on them</li>
+                <li>BSC deliberately shifted focus to its own competing products instead of promoting Medinol's</li>
+                <li>Even if technically within contract terms, BSC violated the spirit and good faith of the partnership</li>
+                <li>BSC exploited Medinol's dependence and relationship-specific investments</li>
             </ul>
         </div>
 
         <div class="concept-box">
-            <h3>2. Delivery and Performance</h3>
+            <h3>The Legal Tensions</h3>
+
+            <h4>1. Are Volume Forecasts Binding?</h4>
+            <p><strong>General Rule:</strong> Forecasts are predictions, not promises—they're typically non-binding</p>
+            <p><strong>Exception:</strong> If given in bad faith (deliberately misleading to induce reliance), they might be actionable under promissory estoppel or fraud theories</p>
+            <p><strong>The question:</strong> Did BSC give inflated forecasts in bad faith, or did market conditions genuinely change?</p>
+
+            <h4>2. Implied Duty of Good Faith and Fair Dealing</h4>
+            <p><strong>The law:</strong> All contracts contain an implied obligation of good faith</p>
+            <p><strong>What it means:</strong> Can't deliberately undermine the purpose of the contract or exploit the other party's vulnerability</p>
+            <p><strong>Applied here:</strong> Did BSC violate good faith by:</p>
             <ul>
-                <li>Delivery schedules and deadlines</li>
-                <li>Quality standards and specifications</li>
-                <li>Acceptance testing procedures</li>
-                <li>Remedies for late delivery or defects</li>
+                <li>Providing inflated forecasts to induce Medinol's investments?</li>
+                <li>Prioritizing its own competing products over Medinol's?</li>
+                <li>Failing to make reasonable efforts to meet forecasts?</li>
+            </ul>
+
+            <h4>3. Flexibility vs Certainty in Relational Contracts</h4>
+            <p><strong>The fundamental tension:</strong></p>
+            <ul>
+                <li>Relational contracts need flexibility because the future is unpredictable</li>
+                <li>BUT parties need some certainty to justify making relationship-specific investments</li>
+                <li>How much deviation from forecasts/expectations is acceptable before it becomes bad faith?</li>
+            </ul>
+            
+            <p><strong>BSC/Medinol illustrates:</strong> When one party has made irreversible investments based on the other's representations, how much flexibility should the law allow?</p>
+        </div>
+
+        <!-- SECTION 3: KEY CONTRACT PROVISIONS -->
+        <h2>Key Provisions in Commercial Contracts</h2>
+
+        <div class="concept-box">
+            <h3>1. Effort Standards</h3>
+            
+            <p>Contracts often require parties to use certain levels of effort. Different standards impose different obligations:</p>
+
+            <p><strong>"Best Efforts":</strong></p>
+            <ul>
+                <li>Must do everything reasonably possible, even if costly</li>
+                <li>Highest standard—requires significant sacrifice</li>
+                <li>Example: "Seller shall use best efforts to obtain regulatory approval"</li>
+            </ul>
+
+            <p><strong>"Commercially Reasonable Efforts":</strong></p>
+            <ul>
+                <li>Must take reasonable steps consistent with normal business practices</li>
+                <li>Medium standard—balanced approach</li>
+                <li>Don't have to do things that would be economically irrational</li>
+            </ul>
+
+            <p><strong>"Reasonable Efforts":</strong></p>
+            <ul>
+                <li>Similar to commercially reasonable, but slightly less demanding</li>
+                <li>Must act reasonably but not heroically</li>
             </ul>
         </div>
 
         <div class="concept-box">
-            <h3>3. Warranties and Representations</h3>
+            <h3>2. Material Adverse Change (MAC) Clause</h3>
+            
+            <p><strong>What It Is:</strong> Allows a party (usually acquirer) to walk away from a deal if target company experiences a material adverse change before closing.</p>
+
+            <p><strong>Purpose:</strong> Protects buyer from unexpected bad events between signing and closing</p>
+
+            <p><strong>Common Exclusions:</strong></p>
             <ul>
-                <li>Product quality guarantees</li>
-                <li>Fitness for particular purpose</li>
-                <li>No infringement of IP</li>
-                <li>Disclaimer of implied warranties</li>
+                <li>General economic conditions (recession affects everyone)</li>
+                <li>Industry-wide changes (regulatory changes affecting all competitors)</li>
+                <li>Changes resulting from the announcement of the deal itself</li>
+                <li>Natural disasters or pandemics (unless disproportionately affecting target)</li>
             </ul>
+
+            <p><strong>Heavily negotiated:</strong> What counts as "material"? How severe must the change be?</p>
         </div>
 
         <div class="concept-box">
-            <h3>4. Intellectual Property</h3>
+            <h3>3. Force Majeure</h3>
+            
+            <p><strong>What It Is:</strong> Excuses performance when extraordinary events beyond the parties' control make performance impossible or impractical.</p>
+
+            <p><strong>Typical Force Majeure Events:</strong></p>
             <ul>
-                <li>Who owns developed IP</li>
-                <li>License grants</li>
-                <li>Confidentiality obligations</li>
-                <li>Use restrictions</li>
+                <li>Natural disasters (earthquakes, floods, hurricanes)</li>
+                <li>Wars, terrorism, civil unrest</li>
+                <li>Pandemics</li>
+                <li>Government actions (embargoes, expropriation)</li>
+                <li>Strikes or labor disputes</li>
             </ul>
+
+            <p><strong>Effect:</strong> Suspends obligations without penalty during the force majeure event</p>
+            <p><strong>Does NOT:</strong> Automatically terminate the contract or excuse payment obligations already due</p>
         </div>
 
         <div class="concept-box">
-            <h3>5. Termination</h3>
+            <h3>4. Warranties and Representations</h3>
+            
+            <p><strong>Representations:</strong> Statements of fact that are true as of signing</p>
+            <p><strong>Warranties:</strong> Promises that certain facts are and will remain true</p>
+
+            <p><strong>Common Examples:</strong></p>
             <ul>
-                <li>Termination for cause (breach)</li>
-                <li>Termination for convenience</li>
-                <li>Notice requirements</li>
-                <li>Wind-down obligations</li>
-                <li>Survival of certain provisions</li>
+                <li>Product quality meets specified standards</li>
+                <li>No pending litigation against the company</li>
+                <li>No infringement of third-party intellectual property</li>
+                <li>Financial statements are accurate</li>
+                <li>Company has authority to enter into contract</li>
             </ul>
+
+            <p><strong>Breach Consequences:</strong> If representations/warranties are false, injured party can sue for damages or terminate</p>
         </div>
 
         <div class="concept-box">
-            <h3>6. Dispute Resolution</h3>
+            <h3>5. Indemnification</h3>
+            
+            <p><strong>What It Is:</strong> One party agrees to reimburse the other for losses from specified events</p>
+
+            <p><strong>Example:</strong> "Seller shall indemnify Buyer for any losses arising from third-party IP infringement claims"</p>
+
+            <p><strong>Key Issues:</strong></p>
             <ul>
-                <li>Escalation procedures (talk to manager first, then VP, then arbitration)</li>
-                <li>Arbitration vs litigation</li>
-                <li>Choice of law</li>
-                <li>Venue/jurisdiction</li>
+                <li>What's covered? (breach of warranties, third-party claims, specific risks)</li>
+                <li>Any caps or limits?</li>
+                <li>Survival period—how long does indemnity last?</li>
+                <li>Procedures for making claims</li>
             </ul>
         </div>
 
-        <div class="concept-box">
-            <h3>7. Force Majeure</h3>
-            <p><strong>What it is:</strong> Excuses performance for events beyond control</p>
-            <p><strong>Typical events:</strong> Natural disasters, wars, pandemics, government actions</p>
-            <p><strong>Effect:</strong> Suspends obligations without penalty during force majeure event</p>
+        <!-- PRACTICE QUESTIONS -->
+        <h2>Practice Questions</h2>
+
+        <div class="practice-box">
+            <h3>Question 1: Relational vs Ordinary Contracts</h3>
+            <p><strong>Explain the key differences between relational contracts and ordinary contracts. Provide one example of each type and explain why the characteristics of relational contracts make them both necessary and challenging.</strong></p>
+            
+            <details style="margin-top: 1rem;">
+                <summary style="cursor: pointer; color: var(--uva-orange); font-weight: 600;">Show Sample Answer</summary>
+                <div style="margin-top: 1rem; padding: 1rem; background: white; border-radius: 6px;">
+                    <p><strong>Key Differences:</strong></p>
+                    
+                    <p><strong>Ordinary Contracts:</strong> One-time transactions where parties can specify all terms upfront. Example: buying a car. The price, vehicle specifications, and delivery date are all clear. If there's a breach, the injured party sues and walks away—there's no ongoing relationship to preserve.</p>
+                    
+                    <p><strong>Relational Contracts:</strong> Long-term relationships where the future is uncertain and complete specification is impossible. Example: a 10-year supplier agreement. The parties can't predict future market conditions, technology changes, or volume needs. They need flexibility to adapt.</p>
+                    
+                    <p><strong>Why Relational Contracts Are Necessary:</strong></p>
+                    <ul>
+                        <li>Some business relationships require long-term commitments and relationship-specific investments</li>
+                        <li>Parties can't foresee all contingencies years in advance</li>
+                        <li>Value comes from ongoing cooperation and adaptation, not one-time exchange</li>
+                    </ul>
+                    
+                    <p><strong>Why They're Challenging:</strong></p>
+                    <ul>
+                        <li>Flexibility creates ambiguity—when has someone breached vs just adapted?</li>
+                        <li>Parties make irreversible investments based on expectations that may not be contractually enforceable</li>
+                        <li>Trust is essential but hard to enforce legally</li>
+                        <li>Disputes are costly because the relationship itself has value that litigation destroys</li>
+                    </ul>
+                </div>
+            </details>
         </div>
 
-        <div class="alert alert-exam">
-            <h3>💡 Exam Tips for Contracts</h3>
+        <div class="practice-box">
+            <h3>Question 2: BSC/Medinol Case Analysis</h3>
+            <p><strong>In the BSC/Medinol case, explain what went wrong in the relationship. What legal arguments did each side make, and what does this case illustrate about the tension between flexibility and certainty in relational contracts?</strong></p>
+            
+            <details style="margin-top: 1rem;">
+                <summary style="cursor: pointer; color: var(--uva-orange); font-weight: 600;">Show Sample Answer</summary>
+                <div style="margin-top: 1rem; padding: 1rem; background: white; border-radius: 6px;">
+                    <p><strong>What Went Wrong:</strong></p>
+                    <ul>
+                        <li>BSC gave Medinol volume forecasts showing substantial growth</li>
+                        <li>Medinol invested millions in production capacity based on these forecasts</li>
+                        <li>BSC's actual orders fell far short of forecasts</li>
+                        <li>Medinol was left with expensive excess capacity and mounting losses</li>
+                    </ul>
+                    
+                    <p><strong>BSC's Legal Argument:</strong></p>
+                    <ul>
+                        <li>Forecasts were explicitly non-binding estimates, not purchase commitments</li>
+                        <li>Contract clearly stated no obligation to buy forecasted amounts</li>
+                        <li>Market conditions changed unexpectedly</li>
+                        <li>BSC stayed within its contractual rights to sell competing products</li>
+                    </ul>
+                    
+                    <p><strong>Medinol's Legal Argument:</strong></p>
+                    <ul>
+                        <li>BSC gave unrealistic forecasts in bad faith to induce Medinol's investments</li>
+                        <li>BSC violated the implied duty of good faith by prioritizing competing products</li>
+                        <li>Even if technically legal, BSC exploited Medinol's relationship-specific investments</li>
+                    </ul>
+                    
+                    <p><strong>The Tension Illustrated:</strong></p>
+                    <p>Relational contracts need flexibility because the future is unpredictable—BSC couldn't commit to exact volumes years in advance. BUT Medinol needed some certainty to justify massive investments. The case shows the difficulty of balancing these competing needs: too much flexibility leaves one party vulnerable to exploitation; too much rigidity makes adaptation impossible. The law must navigate between enforcing literal contract terms (which protects flexibility) and the duty of good faith (which protects reasonable reliance).</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- EXAM TIP -->
+        <div class="alert alert-info">
+            <h4>✓ What's Testable</h4>
             <ul>
-                <li>Know the difference: Relational = long-term + flexibility, Ordinary = one-shot + detailed</li>
-                <li>BSC/Medinol shows tension between flexibility and certainty in relational contracts</li>
-                <li>Forecasts are generally not binding commitments</li>
-                <li>Good faith duty applies to all contracts (can't deliberately undermine deal)</li>
-                <li>Integration clause = only written contract counts, not side promises</li>
+                <li>Difference between relational and ordinary contracts</li>
+                <li>BSC/Medinol case facts and legal issues</li>
+                <li>Why forecasts are generally non-binding but can raise good faith issues</li>
+                <li>Duty of good faith and fair dealing in contracts</li>
+                <li>Effort standards (best efforts vs commercially reasonable efforts)</li>
+                <li>MAC clauses and force majeure concepts</li>
+            </ul>
+            
+            <h4 style="margin-top: 1rem;">✗ What's NOT Testable</h4>
+            <ul>
+                <li>Detailed contract drafting</li>
+                <li>Exact legal language of specific provisions</li>
+                <li>Complex UCC provisions</li>
             </ul>
         </div>
 
         <div style="margin: 3rem 0; text-align: center;">
-            <a href="class5.html" class="btn btn-secondary">← Class 5 (Term Sheets)</a>
-            <a href="class7.html" class="btn">Next: Class 8-9 (M&A) →</a>
+            <a href="class5.html" class="btn btn-secondary">← Class 5: Term Sheets</a>
+            <a href="class7.html" class="btn btn-primary">Next: Class 7 →</a>
         </div>
     </div>
 </body>
