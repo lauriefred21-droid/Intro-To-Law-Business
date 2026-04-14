@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes 8-9: M&A - UVA Law</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">⚖️ UVA Law</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="class1.html">Class 1</a></li>
+                <li><a href="class2.html">Class 2</a></li>
+                <li><a href="class3.html">Class 3</a></li>
+                <li><a href="class4.html">Class 4</a></li>
+                <li><a href="class5.html">Class 5</a></li>
+                <li><a href="class6.html">Class 6-7</a></li>
+                <li><a href="class7.html">Class 8-9</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <a href="index.html" class="btn btn-secondary">← Back to Home</a>
+        
+        <h1>Classes 8-9: Mergers & Acquisitions</h1>
+        
+        <div style="margin: 1rem 0;">
+            <span class="badge important">IMPORTANT</span>
+            <span class="badge explain">MUST EXPLAIN</span>
+        </div>
+
+        <div class="toc">
+            <strong>Quick Jump:</strong>
+            <a href="#strategic-vs-financial">Strategic vs Financial</a>
+            <a href="#premiums">Why Premiums Exist</a>
+            <a href="#defenses">Takeover Defenses</a>
+            <a href="#mechanics">Deal Mechanics</a>
+        </div>
+
+        <div class="alert alert-exam">
+            <strong>🎯 Focus:</strong> Strategic vs financial acquirers, why premiums exist, poison pills, stock collars
+        </div>
+
+        <h2 id="strategic-vs-financial">Strategic vs Financial Acquirers</h2>
+
+        <div class="concept-box">
+            <h3>Strategic Acquirers</h3>
+            <p><strong>Who they are:</strong> Operating companies in same or related industry</p>
+
+            <p><strong>Why they buy companies:</strong></p>
+            <ul>
+                <li><strong>Synergies:</strong> 1 + 1 = 3 (combined worth more than separate)</li>
+                <li><strong>Market expansion:</strong> Enter new geographies or customer segments</li>
+                <li><strong>Eliminate competition:</strong> Buy a competitor</li>
+                <li><strong>Acquire technology/IP:</strong> Buy innovation instead of building it</li>
+                <li><strong>Vertical integration:</strong> Buy supplier or distributor</li>
+            </ul>
+
+            <p><strong>Examples:</strong></p>
+            <ul>
+                <li>Facebook buying Instagram (eliminate competitor, acquire talent/users)</li>
+                <li>Disney buying Pixar (acquire content and creative talent)</li>
+                <li>Amazon buying Whole Foods (enter grocery retail)</li>
+            </ul>
+
+            <p><strong>Can pay premium because:</strong> Synergies create extra value</p>
+        </div>
+
+        <div class="concept-box">
+            <h3>Financial Acquirers (Private Equity)</h3>
+            <p><strong>Who they are:</strong> PE firms, investment funds</p>
+
+            <p><strong>Why they buy companies:</strong></p>
+            <ul>
+                <li><strong>Financial engineering:</strong> Use leverage (debt) to amplify returns</li>
+                <li><strong>Operational improvements:</strong> Cut costs, improve management</li>
+                <li><strong>Portfolio diversification:</strong> Spread risk across multiple companies</li>
+                <li><strong>Exit in 3-7 years:</strong> Flip for profit via IPO or sale</li>
+            </ul>
+
+            <p><strong>How they create value:</strong></p>
+            <ul>
+                <li>Use lots of debt (leverage magnifies equity returns)</li>
+                <li>Improve operations and cut costs</li>
+                <li>Provide management expertise</li>
+                <li>Sell at higher multiple later</li>
+            </ul>
+
+            <p><strong>Examples:</strong></p>
+            <ul>
+                <li>KKR buying RJR Nabisco (famous 1980s LBO)</li>
+                <li>Blackstone buying Hilton Hotels</li>
+                <li>Vista Equity buying software companies</li>
+            </ul>
+
+            <p><strong>Can't pay as much because:</strong> No operating synergies, rely on financial engineering</p>
+        </div>
+
+        <div class="example-box">
+            <h3>Key Differences</h3>
+            <table style="width: 100%;">
+                <tr>
+                    <th>Aspect</th>
+                    <th>Strategic</th>
+                    <th>Financial (PE)</th>
+                </tr>
+                <tr>
+                    <td><strong>Holding Period</strong></td>
+                    <td>Forever (integrate)</td>
+                    <td>3-7 years (flip it)</td>
+                </tr>
+                <tr>
+                    <td><strong>Value Source</strong></td>
+                    <td>Synergies</td>
+                    <td>Leverage + ops improvements</td>
+                </tr>
+                <tr>
+                    <td><strong>Price Premium</strong></td>
+                    <td>Higher (pay for synergies)</td>
+                    <td>Lower (no synergies)</td>
+                </tr>
+                <tr>
+                    <td><strong>Integration</strong></td>
+                    <td>Deep (merge operations)</td>
+                    <td>Light (keep independent)</td>
+                </tr>
+                <tr>
+                    <td><strong>Management</strong></td>
+                    <td>Often replace</td>
+                    <td>Often keep/incentivize</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2 id="premiums">Why Acquisition Premiums Exist</h2>
+
+        <div class="concept-box">
+            <h3>What Is a Premium?</h3>
+            <p><strong>Definition:</strong> Amount paid above current stock price</p>
+
+            <p><strong>Typical premium:</strong> 20-40% above pre-announcement stock price</p>
+
+            <p><strong>Example:</strong></p>
+            <ul>
+                <li>Target company trading at $50/share</li>
+                <li>Acquirer offers $65/share</li>
+                <li>Premium = $15/share = 30%</li>
+            </ul>
+        </div>
+
+        <div class="concept-box">
+            <h3>Why Premiums Are Paid</h3>
+
+            <h4>1. Control Premium</h4>
+            <p>Buying the whole company gives you CONTROL - worth more than just owning shares</p>
+            <ul>
+                <li>Can change strategy</li>
+                <li>Replace management</li>
+                <li>Merge operations</li>
+                <li>Sell off pieces</li>
+            </ul>
+
+            <h4>2. Synergies</h4>
+            <p>Combined company worth more than two separate companies</p>
+            <ul>
+                <li><strong>Cost synergies:</strong> Eliminate duplicate functions (two HR departments → one)</li>
+                <li><strong>Revenue synergies:</strong> Cross-sell products, bigger market share</li>
+                <li><strong>Operational synergies:</strong> Shared technology, economies of scale</li>
+            </ul>
+
+            <h4>3. Market Undervaluation</h4>
+            <p>Acquirer believes stock price is too low (market doesn't see full value)</p>
+
+            <h4>4. Competition Among Bidders</h4>
+            <p>Multiple acquirers drive up price in bidding war</p>
+
+            <h4>5. Target Board Needs to Recommend</h4>
+            <p>Board won't recommend deal unless shareholders get premium</p>
+        </div>
+
+        <div class="concept-box">
+            <h3>Discount Rates and Valuation</h3>
+            
+            <p><strong>Key Concept:</strong> Future cash flows are worth less today (time value of money)</p>
+
+            <p><strong>Discount rate = Required rate of return</strong></p>
+
+            <p><strong>Who has lower discount rates:</strong></p>
+            <ul>
+                <li><strong>Large public companies:</strong> Can borrow cheap, diversified, stable</li>
+                <li><strong>Strategic acquirers:</strong> Lower risk (synergies reduce uncertainty)</li>
+            </ul>
+
+            <p><strong>Who has higher discount rates:</strong></p>
+            <ul>
+                <li><strong>Startups:</strong> High risk, uncertain future</li>
+                <li><strong>PE firms:</strong> Use lots of debt (debt is risky)</li>
+            </ul>
+
+            <p><strong>Why this matters for M&A:</strong></p>
+            <ul>
+                <li>Lower discount rate → higher valuation</li>
+                <li>Strategic acquirer with low discount rate values target higher than PE firm</li>
+                <li>This is why strategics often outbid PE firms</li>
+            </ul>
+        </div>
+
+        <h2 id="defenses">Takeover Defenses</h2>
+
+        <div class="concept-box">
+            <h3>Poison Pill (Shareholder Rights Plan)</h3>
+            <p><strong>What it is:</strong> Defensive mechanism that makes hostile takeover extremely expensive</p>
+
+            <p><strong>How it works:</strong></p>
+            <ol>
+                <li>Board adopts poison pill (usually as prevention, before any threat)</li>
+                <li>If hostile acquirer buys >10-20% of shares (trigger)</li>
+                <li>ALL OTHER shareholders get right to buy shares at huge discount (like 50% off)</li>
+                <li>This massively dilutes the hostile acquirer</li>
+                <li>Makes takeover prohibitively expensive</li>
+            </ol>
+
+            <p><strong>Example:</strong></p>
+            <ul>
+                <li>Hostile acquirer buys 15% of company for $1 billion</li>
+                <li>Poison pill triggers</li>
+                <li>Other shareholders can now buy shares at 50% discount</li>
+                <li>They exercise these rights, doubling number of shares</li>
+                <li>Acquirer's 15% becomes 7.5%, and they paid full price!</li>
+            </ul>
+
+            <p><strong>Purpose:</strong> Force hostile acquirer to negotiate with board</p>
+        </div>
+
+        <div class="concept-box">
+            <h3>Other Takeover Defenses</h3>
+
+            <h4>Staggered Board</h4>
+            <p>Only 1/3 of board elected each year → takes 2 years to gain control</p>
+
+            <h4>Supermajority Voting</h4>
+            <p>Require 2/3 or 3/4 vote to approve merger (not just 50%+1)</p>
+
+            <h4>Golden Parachutes</h4>
+            <p>Huge severance for executives if company is acquired → makes deal more expensive</p>
+
+            <h4>Crown Jewel Defense</h4>
+            <p>Sell off best assets to make company less attractive</p>
+
+            <h4>White Knight</h4>
+            <p>Find friendly acquirer to outbid hostile one</p>
+        </div>
+
+        <h2 id="mechanics">Deal Mechanics</h2>
+
+        <div class="concept-box">
+            <h3>Stock vs Cash Deals</h3>
+
+            <h4>Cash Deal</h4>
+            <p><strong>What happens:</strong> Acquirer pays cash for target shares</p>
+            <p><strong>Target shareholders:</strong> Get cash, walk away</p>
+            <p><strong>Pros for acquirer:</strong> Clean, simple, target shareholders gone</p>
+            <p><strong>Cons for acquirer:</strong> Need to raise cash (debt or sell assets)</p>
+
+            <h4>Stock Deal</h4>
+            <p><strong>What happens:</strong> Acquirer gives its own stock in exchange for target shares</p>
+            <p><strong>Target shareholders:</strong> Become shareholders of combined company</p>
+            <p><strong>Pros for acquirer:</strong> Don't need cash</p>
+            <p><strong>Cons for acquirer:</strong> Dilutes existing shareholders</p>
+
+            <p><strong>Risk in stock deals:</strong> Stock price can change between announcement and close</p>
+        </div>
+
+        <div class="concept-box">
+            <h3>Stock Collar</h3>
+            <p><strong>Purpose:</strong> Protect both parties from stock price volatility in stock deals</p>
+
+            <p><strong>How it works:</strong></p>
+            <ul>
+                <li>Set floor and ceiling on exchange ratio</li>
+                <li>If acquirer stock goes up a lot → target gets fewer shares (collar caps their gain)</li>
+                <li>If acquirer stock goes down a lot → target gets more shares (collar limits their loss)</li>
+            </ul>
+
+            <p><strong>Example:</strong></p>
+            <div class="calculation-box">
+                <pre>Deal: Target shareholders get $50 worth of acquirer stock
+Collar: 0.8 to 1.2 shares per target share
+
+Acquirer stock at announcement: $50/share
+→ Exchange ratio: 1.0 share per target share
+
+Scenario 1: Acquirer stock rises to $75
+Without collar: 0.67 shares (target loses out)
+With collar: 0.8 shares (floor protects target)
+
+Scenario 2: Acquirer stock falls to $30
+Without collar: 1.67 shares (acquirer pays more)
+With collar: 1.2 shares (ceiling protects acquirer)</pre>
+            </div>
+        </div>
+
+        <div class="concept-box">
+            <h3>Material Adverse Change (MAC) Clause</h3>
+            <p><strong>What it is:</strong> Lets acquirer walk away if something really bad happens to target</p>
+
+            <p><strong>Examples of MAC:</strong></p>
+            <ul>
+                <li>Major customer leaves</li>
+                <li>Key technology obsoleted</li>
+                <li>Large lawsuit filed</li>
+                <li>Fraud discovered</li>
+            </ul>
+
+            <p><strong>NOT considered MAC:</strong></p>
+            <ul>
+                <li>General economic downturn</li>
+                <li>Industry-wide problems</li>
+                <li>Normal business fluctuations</li>
+            </ul>
+
+            <p><strong>Very hard to invoke</strong> - courts interpret narrowly</p>
+        </div>
+
+        <div class="concept-box">
+            <h3>Break-Up Fees</h3>
+            <p><strong>What it is:</strong> Target pays acquirer if deal falls apart (usually 2-4% of deal value)</p>
+
+            <p><strong>When target pays:</strong></p>
+            <ul>
+                <li>Target accepts competing bid</li>
+                <li>Target shareholders vote down the deal</li>
+                <li>Target board changes recommendation</li>
+            </ul>
+
+            <p><strong>Purpose:</strong> Compensate acquirer for diligence costs and time</p>
+        </div>
+
+        <div class="alert alert-exam">
+            <h3>💡 Exam Tips for M&A</h3>
+            <ul>
+                <li><strong>Strategic vs Financial:</strong> Strategic pays more (synergies), PE uses leverage</li>
+                <li><strong>Premiums exist because:</strong> Control value + synergies + undervaluation</li>
+                <li><strong>Poison pill:</strong> Triggers massive dilution if hostile acquirer crosses threshold</li>
+                <li><strong>Stock collar:</strong> Sets floor and ceiling on exchange ratio</li>
+                <li><strong>Discount rates:</strong> Lower rate = higher valuation (strategics < PE firms)</li>
+            </ul>
+        </div>
+
+        <div class="alert-not-tested alert">
+            <strong>❌ NOT TESTED:</strong> Complex valuation calculations (DCF, etc.), detailed merger agreement structure
+        </div>
+
+        <div style="margin: 3rem 0; text-align: center;">
+            <a href="class6.html" class="btn btn-secondary">← Class 6-7 (Contracts)</a>
+            <a href="index.html" class="btn">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
