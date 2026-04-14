@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classes 8-9: M&A - UVA Law</title>
+    <title>Class 7: M&A - UVA Law</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
         <div class="container">
-            <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">⚖️ UVA Law</a></div>
+            <div class="logo">⚖️ UVA Law - Intro to Law & Business</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="class1.html">Class 1</a></li>
@@ -17,347 +17,485 @@
                 <li><a href="class3.html">Class 3</a></li>
                 <li><a href="class4.html">Class 4</a></li>
                 <li><a href="class5.html">Class 5</a></li>
-                <li><a href="class6.html">Class 6-7</a></li>
-                <li><a href="class7.html">Class 8-9</a></li>
+                <li><a href="class6.html">Class 6</a></li>
+                <li><a href="class7.html">Class 7</a></li>
             </ul>
         </div>
     </nav>
 
     <div class="container">
-        <a href="index.html" class="btn btn-secondary">← Back to Home</a>
-        
-        <h1>Classes 8-9: Mergers & Acquisitions</h1>
-        
-        <div style="margin: 1rem 0;">
-            <span class="badge important">IMPORTANT</span>
-            <span class="badge explain">MUST EXPLAIN</span>
-        </div>
+        <h1>Class 7: Mergers & Acquisitions</h1>
+        <p style="font-size: 1.1rem; color: var(--cool-gray); margin-bottom: 2rem;">
+            Understanding buyer types, deal structures, and strategic considerations in M&A
+        </p>
 
-        <div class="toc">
-            <strong>Quick Jump:</strong>
-            <a href="#strategic-vs-financial">Strategic vs Financial</a>
-            <a href="#premiums">Why Premiums Exist</a>
-            <a href="#defenses">Takeover Defenses</a>
-            <a href="#mechanics">Deal Mechanics</a>
-        </div>
-
-        <div class="alert alert-exam">
-            <strong>🎯 Focus:</strong> Strategic vs financial acquirers, why premiums exist, poison pills, stock collars
-        </div>
-
-        <h2 id="strategic-vs-financial">Strategic vs Financial Acquirers</h2>
-
-        <div class="concept-box">
-            <h3>Strategic Acquirers</h3>
-            <p><strong>Who they are:</strong> Operating companies in same or related industry</p>
-
-            <p><strong>Why they buy companies:</strong></p>
-            <ul>
-                <li><strong>Synergies:</strong> 1 + 1 = 3 (combined worth more than separate)</li>
-                <li><strong>Market expansion:</strong> Enter new geographies or customer segments</li>
-                <li><strong>Eliminate competition:</strong> Buy a competitor</li>
-                <li><strong>Acquire technology/IP:</strong> Buy innovation instead of building it</li>
-                <li><strong>Vertical integration:</strong> Buy supplier or distributor</li>
-            </ul>
-
-            <p><strong>Examples:</strong></p>
-            <ul>
-                <li>Facebook buying Instagram (eliminate competitor, acquire talent/users)</li>
-                <li>Disney buying Pixar (acquire content and creative talent)</li>
-                <li>Amazon buying Whole Foods (enter grocery retail)</li>
-            </ul>
-
-            <p><strong>Can pay premium because:</strong> Synergies create extra value</p>
-        </div>
-
-        <div class="concept-box">
-            <h3>Financial Acquirers (Private Equity)</h3>
-            <p><strong>Who they are:</strong> PE firms, investment funds</p>
-
-            <p><strong>Why they buy companies:</strong></p>
-            <ul>
-                <li><strong>Financial engineering:</strong> Use leverage (debt) to amplify returns</li>
-                <li><strong>Operational improvements:</strong> Cut costs, improve management</li>
-                <li><strong>Portfolio diversification:</strong> Spread risk across multiple companies</li>
-                <li><strong>Exit in 3-7 years:</strong> Flip for profit via IPO or sale</li>
-            </ul>
-
-            <p><strong>How they create value:</strong></p>
-            <ul>
-                <li>Use lots of debt (leverage magnifies equity returns)</li>
-                <li>Improve operations and cut costs</li>
-                <li>Provide management expertise</li>
-                <li>Sell at higher multiple later</li>
-            </ul>
-
-            <p><strong>Examples:</strong></p>
-            <ul>
-                <li>KKR buying RJR Nabisco (famous 1980s LBO)</li>
-                <li>Blackstone buying Hilton Hotels</li>
-                <li>Vista Equity buying software companies</li>
-            </ul>
-
-            <p><strong>Can't pay as much because:</strong> No operating synergies, rely on financial engineering</p>
-        </div>
-
-        <div class="example-box">
-            <h3>Key Differences</h3>
-            <table style="width: 100%;">
-                <tr>
-                    <th>Aspect</th>
-                    <th>Strategic</th>
-                    <th>Financial (PE)</th>
-                </tr>
-                <tr>
-                    <td><strong>Holding Period</strong></td>
-                    <td>Forever (integrate)</td>
-                    <td>3-7 years (flip it)</td>
-                </tr>
-                <tr>
-                    <td><strong>Value Source</strong></td>
-                    <td>Synergies</td>
-                    <td>Leverage + ops improvements</td>
-                </tr>
-                <tr>
-                    <td><strong>Price Premium</strong></td>
-                    <td>Higher (pay for synergies)</td>
-                    <td>Lower (no synergies)</td>
-                </tr>
-                <tr>
-                    <td><strong>Integration</strong></td>
-                    <td>Deep (merge operations)</td>
-                    <td>Light (keep independent)</td>
-                </tr>
-                <tr>
-                    <td><strong>Management</strong></td>
-                    <td>Often replace</td>
-                    <td>Often keep/incentivize</td>
-                </tr>
-            </table>
-        </div>
-
-        <h2 id="premiums">Why Acquisition Premiums Exist</h2>
-
-        <div class="concept-box">
-            <h3>What Is a Premium?</h3>
-            <p><strong>Definition:</strong> Amount paid above current stock price</p>
-
-            <p><strong>Typical premium:</strong> 20-40% above pre-announcement stock price</p>
-
-            <p><strong>Example:</strong></p>
-            <ul>
-                <li>Target company trading at $50/share</li>
-                <li>Acquirer offers $65/share</li>
-                <li>Premium = $15/share = 30%</li>
-            </ul>
-        </div>
-
-        <div class="concept-box">
-            <h3>Why Premiums Are Paid</h3>
-
-            <h4>1. Control Premium</h4>
-            <p>Buying the whole company gives you CONTROL - worth more than just owning shares</p>
-            <ul>
-                <li>Can change strategy</li>
-                <li>Replace management</li>
-                <li>Merge operations</li>
-                <li>Sell off pieces</li>
-            </ul>
-
-            <h4>2. Synergies</h4>
-            <p>Combined company worth more than two separate companies</p>
-            <ul>
-                <li><strong>Cost synergies:</strong> Eliminate duplicate functions (two HR departments → one)</li>
-                <li><strong>Revenue synergies:</strong> Cross-sell products, bigger market share</li>
-                <li><strong>Operational synergies:</strong> Shared technology, economies of scale</li>
-            </ul>
-
-            <h4>3. Market Undervaluation</h4>
-            <p>Acquirer believes stock price is too low (market doesn't see full value)</p>
-
-            <h4>4. Competition Among Bidders</h4>
-            <p>Multiple acquirers drive up price in bidding war</p>
-
-            <h4>5. Target Board Needs to Recommend</h4>
-            <p>Board won't recommend deal unless shareholders get premium</p>
-        </div>
-
-        <div class="concept-box">
-            <h3>Discount Rates and Valuation</h3>
-            
-            <p><strong>Key Concept:</strong> Future cash flows are worth less today (time value of money)</p>
-
-            <p><strong>Discount rate = Required rate of return</strong></p>
-
-            <p><strong>Who has lower discount rates:</strong></p>
-            <ul>
-                <li><strong>Large public companies:</strong> Can borrow cheap, diversified, stable</li>
-                <li><strong>Strategic acquirers:</strong> Lower risk (synergies reduce uncertainty)</li>
-            </ul>
-
-            <p><strong>Who has higher discount rates:</strong></p>
-            <ul>
-                <li><strong>Startups:</strong> High risk, uncertain future</li>
-                <li><strong>PE firms:</strong> Use lots of debt (debt is risky)</li>
-            </ul>
-
-            <p><strong>Why this matters for M&A:</strong></p>
-            <ul>
-                <li>Lower discount rate → higher valuation</li>
-                <li>Strategic acquirer with low discount rate values target higher than PE firm</li>
-                <li>This is why strategics often outbid PE firms</li>
-            </ul>
-        </div>
-
-        <h2 id="defenses">Takeover Defenses</h2>
-
-        <div class="concept-box">
-            <h3>Poison Pill (Shareholder Rights Plan)</h3>
-            <p><strong>What it is:</strong> Defensive mechanism that makes hostile takeover extremely expensive</p>
-
-            <p><strong>How it works:</strong></p>
-            <ol>
-                <li>Board adopts poison pill (usually as prevention, before any threat)</li>
-                <li>If hostile acquirer buys >10-20% of shares (trigger)</li>
-                <li>ALL OTHER shareholders get right to buy shares at huge discount (like 50% off)</li>
-                <li>This massively dilutes the hostile acquirer</li>
-                <li>Makes takeover prohibitively expensive</li>
-            </ol>
-
-            <p><strong>Example:</strong></p>
-            <ul>
-                <li>Hostile acquirer buys 15% of company for $1 billion</li>
-                <li>Poison pill triggers</li>
-                <li>Other shareholders can now buy shares at 50% discount</li>
-                <li>They exercise these rights, doubling number of shares</li>
-                <li>Acquirer's 15% becomes 7.5%, and they paid full price!</li>
-            </ul>
-
-            <p><strong>Purpose:</strong> Force hostile acquirer to negotiate with board</p>
-        </div>
-
-        <div class="concept-box">
-            <h3>Other Takeover Defenses</h3>
-
-            <h4>Staggered Board</h4>
-            <p>Only 1/3 of board elected each year → takes 2 years to gain control</p>
-
-            <h4>Supermajority Voting</h4>
-            <p>Require 2/3 or 3/4 vote to approve merger (not just 50%+1)</p>
-
-            <h4>Golden Parachutes</h4>
-            <p>Huge severance for executives if company is acquired → makes deal more expensive</p>
-
-            <h4>Crown Jewel Defense</h4>
-            <p>Sell off best assets to make company less attractive</p>
-
-            <h4>White Knight</h4>
-            <p>Find friendly acquirer to outbid hostile one</p>
-        </div>
-
-        <h2 id="mechanics">Deal Mechanics</h2>
-
-        <div class="concept-box">
-            <h3>Stock vs Cash Deals</h3>
-
-            <h4>Cash Deal</h4>
-            <p><strong>What happens:</strong> Acquirer pays cash for target shares</p>
-            <p><strong>Target shareholders:</strong> Get cash, walk away</p>
-            <p><strong>Pros for acquirer:</strong> Clean, simple, target shareholders gone</p>
-            <p><strong>Cons for acquirer:</strong> Need to raise cash (debt or sell assets)</p>
-
-            <h4>Stock Deal</h4>
-            <p><strong>What happens:</strong> Acquirer gives its own stock in exchange for target shares</p>
-            <p><strong>Target shareholders:</strong> Become shareholders of combined company</p>
-            <p><strong>Pros for acquirer:</strong> Don't need cash</p>
-            <p><strong>Cons for acquirer:</strong> Dilutes existing shareholders</p>
-
-            <p><strong>Risk in stock deals:</strong> Stock price can change between announcement and close</p>
-        </div>
-
-        <div class="concept-box">
-            <h3>Stock Collar</h3>
-            <p><strong>Purpose:</strong> Protect both parties from stock price volatility in stock deals</p>
-
-            <p><strong>How it works:</strong></p>
-            <ul>
-                <li>Set floor and ceiling on exchange ratio</li>
-                <li>If acquirer stock goes up a lot → target gets fewer shares (collar caps their gain)</li>
-                <li>If acquirer stock goes down a lot → target gets more shares (collar limits their loss)</li>
-            </ul>
-
-            <p><strong>Example:</strong></p>
-            <div class="calculation-box">
-                <pre>Deal: Target shareholders get $50 worth of acquirer stock
-Collar: 0.8 to 1.2 shares per target share
-
-Acquirer stock at announcement: $50/share
-→ Exchange ratio: 1.0 share per target share
-
-Scenario 1: Acquirer stock rises to $75
-Without collar: 0.67 shares (target loses out)
-With collar: 0.8 shares (floor protects target)
-
-Scenario 2: Acquirer stock falls to $30
-Without collar: 1.67 shares (acquirer pays more)
-With collar: 1.2 shares (ceiling protects acquirer)</pre>
+        <div class="podcast-container">
+            <div class="podcast-header">
+                <span class="podcast-icon">🎧</span>
+                <div>
+                    <h3 class="podcast-title">Class 7 Podcast</h3>
+                    <p class="podcast-duration">Listen first for overview (~12 minutes)</p>
+                </div>
+            </div>
+            <audio controls>
+                <source src="PASTE_CLASS_7_PODCAST_LINK_HERE" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="speed-controls">
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=0.75">0.75x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=1.0">1x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=1.25">1.25x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=1.5">1.5x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=2.0">2x</button>
             </div>
         </div>
 
-        <div class="concept-box">
-            <h3>Material Adverse Change (MAC) Clause</h3>
-            <p><strong>What it is:</strong> Lets acquirer walk away if something really bad happens to target</p>
-
-            <p><strong>Examples of MAC:</strong></p>
-            <ul>
-                <li>Major customer leaves</li>
-                <li>Key technology obsoleted</li>
-                <li>Large lawsuit filed</li>
-                <li>Fraud discovered</li>
-            </ul>
-
-            <p><strong>NOT considered MAC:</strong></p>
-            <ul>
-                <li>General economic downturn</li>
-                <li>Industry-wide problems</li>
-                <li>Normal business fluctuations</li>
-            </ul>
-
-            <p><strong>Very hard to invoke</strong> - courts interpret narrowly</p>
+        <div class="alert alert-warning">
+            <strong>🎯 EXAM FOCUS:</strong> Know the difference between strategic and financial buyers (who pays more and why). Understand stock vs asset purchases and when each is preferred. Know what earnouts are and why they're used. Exchange ratio calculations and detailed merger mechanics are NOT tested.
         </div>
+
+        <!-- SECTION 1: BUYER TYPES -->
+        <h2>Strategic vs Financial Buyers</h2>
 
         <div class="concept-box">
-            <h3>Break-Up Fees</h3>
-            <p><strong>What it is:</strong> Target pays acquirer if deal falls apart (usually 2-4% of deal value)</p>
+            <h3>Strategic Buyers</h3>
+            
+            <p><strong>Who They Are:</strong> Operating companies in the same or related industry buying to integrate the target into their business.</p>
 
-            <p><strong>When target pays:</strong></p>
+            <p><strong>Examples:</strong></p>
             <ul>
-                <li>Target accepts competing bid</li>
-                <li>Target shareholders vote down the deal</li>
-                <li>Target board changes recommendation</li>
+                <li>Google buying YouTube</li>
+                <li>Facebook buying Instagram</li>
+                <li>Amazon buying Whole Foods</li>
+                <li>A pharmaceutical company buying a biotech startup</li>
             </ul>
 
-            <p><strong>Purpose:</strong> Compensate acquirer for diligence costs and time</p>
-        </div>
-
-        <div class="alert alert-exam">
-            <h3>💡 Exam Tips for M&A</h3>
+            <p><strong>Why They Buy:</strong></p>
             <ul>
-                <li><strong>Strategic vs Financial:</strong> Strategic pays more (synergies), PE uses leverage</li>
-                <li><strong>Premiums exist because:</strong> Control value + synergies + undervaluation</li>
-                <li><strong>Poison pill:</strong> Triggers massive dilution if hostile acquirer crosses threshold</li>
-                <li><strong>Stock collar:</strong> Sets floor and ceiling on exchange ratio</li>
-                <li><strong>Discount rates:</strong> Lower rate = higher valuation (strategics < PE firms)</li>
+                <li><strong>Synergies:</strong> 1 + 1 = 3 (combined company worth more than sum of parts)</li>
+                <li><strong>Eliminate competition:</strong> Remove a competitor from the market</li>
+                <li><strong>Vertical integration:</strong> Control more of the supply chain</li>
+                <li><strong>Acquire technology or talent:</strong> Get capabilities faster than building in-house</li>
+                <li><strong>Enter new markets:</strong> Geographic or product expansion</li>
+                <li><strong>Economies of scale:</strong> Spread fixed costs over larger revenue base</li>
+            </ul>
+
+            <p><strong>How They Create Value:</strong></p>
+            <ul>
+                <li>Revenue synergies (cross-sell products, expand distribution)</li>
+                <li>Cost synergies (eliminate duplicate functions, bulk purchasing)</li>
+                <li>Strategic positioning (market share, competitive advantage)</li>
             </ul>
         </div>
 
-        <div class="alert-not-tested alert">
-            <strong>❌ NOT TESTED:</strong> Complex valuation calculations (DCF, etc.), detailed merger agreement structure
+        <div class="concept-box">
+            <h3>Financial Buyers</h3>
+            
+            <p><strong>Who They Are:</strong> Private equity firms and investment funds buying to generate financial returns, not to integrate into an operating business.</p>
+
+            <p><strong>Examples:</strong></p>
+            <ul>
+                <li>KKR, Blackstone, Carlyle Group</li>
+                <li>Buying portfolio companies to hold for 3-7 years then sell</li>
+                <li>Not operating the business themselves—hire management team</li>
+            </ul>
+
+            <p><strong>Why They Buy:</strong></p>
+            <ul>
+                <li><strong>Financial return:</strong> Buy low, improve, sell high</li>
+                <li><strong>Portfolio diversification:</strong> Spread risk across multiple companies</li>
+                <li><strong>Operational improvements:</strong> Professionalize management, cut costs</li>
+                <li><strong>Leverage:</strong> Use debt to amplify returns</li>
+            </ul>
+
+            <p><strong>How They Create Value:</strong></p>
+            <ul>
+                <li>Operational improvements (better management, efficiency gains)</li>
+                <li>Financial engineering (optimize capital structure, use leverage)</li>
+                <li>Strategic repositioning (refocus on core business, shed underperforming units)</li>
+                <li>Multiple arbitrage (buy at low multiple, sell at higher multiple)</li>
+            </ul>
+        </div>
+
+        <div class="example-box">
+            <h3>Who Pays More?</h3>
+            
+            <p><strong>General Rule: Strategic buyers typically pay more than financial buyers</strong></p>
+
+            <p><strong>Why Strategic Buyers Pay More:</strong></p>
+            <ul>
+                <li>Can realize <strong>synergies</strong> that financial buyers can't (revenue growth from combined customer base, cost savings from eliminating duplicates)</li>
+                <li>Willing to pay for strategic value beyond pure financials (eliminating a competitor, preventing competitor from acquiring target)</li>
+                <li>Can use their own stock as currency (doesn't require raising cash)</li>
+                <li>May face competitive pressure (if we don't buy them, our rival will)</li>
+            </ul>
+
+            <p><strong>Why Financial Buyers Pay Less:</strong></p>
+            <ul>
+                <li>Can only realize <strong>standalone value</strong> (no synergies with other businesses)</li>
+                <li>Disciplined return requirements (need specific IRR, won't overpay)</li>
+                <li>Limited by debt capacity (can only borrow so much to finance deal)</li>
+                <li>Must exit in 3-7 years (can't justify paying for very long-term value)</li>
+            </ul>
+
+            <p><strong>Exception:</strong> In auction processes with multiple bidders, financial buyers sometimes win by being faster, more certain, or less demanding on due diligence.</p>
+        </div>
+
+        <!-- SECTION 2: DEAL STRUCTURES -->
+        <h2>Stock Purchase vs Asset Purchase</h2>
+
+        <div class="concept-box">
+            <h3>Stock Purchase</h3>
+            
+            <p><strong>What It Is:</strong> Buyer purchases the target company's shares directly from shareholders. Buyer owns the entire company including all assets, liabilities, and legal history.</p>
+
+            <p><strong>Structure:</strong></p>
+            <ul>
+                <li>Buyer acquires shares from target's shareholders</li>
+                <li>Target company continues to exist (same legal entity)</li>
+                <li>Buyer becomes new owner of the company</li>
+                <li>All contracts, licenses, and obligations transfer automatically</li>
+            </ul>
+
+            <p><strong>Advantages for Buyer:</strong></p>
+            <ul>
+                <li><strong>Simplicity:</strong> One transaction, no need to transfer individual assets</li>
+                <li><strong>Contracts stay intact:</strong> Licenses, permits, customer contracts transfer automatically</li>
+                <li><strong>Employees transfer automatically:</strong> No need to rehire everyone</li>
+                <li><strong>Minority squeeze-out:</strong> Can often force minority shareholders to sell</li>
+            </ul>
+
+            <p><strong>Disadvantages for Buyer:</strong></p>
+            <ul>
+                <li><strong>Inherit all liabilities:</strong> Known and unknown (lawsuits, environmental, tax issues)</li>
+                <li><strong>Can't cherry-pick:</strong> Must take everything (good and bad assets)</li>
+                <li><strong>No step-up in tax basis:</strong> Can't depreciate assets to reduce taxes</li>
+                <li><strong>Due diligence risk:</strong> Hidden liabilities may exist</li>
+            </ul>
+
+            <p><strong>When Used:</strong></p>
+            <ul>
+                <li>Target has valuable contracts that are hard to transfer</li>
+                <li>Target has licenses or permits tied to the corporate entity</li>
+                <li>Target is clean with limited liability concerns</li>
+                <li>Many shareholders (easier than getting everyone to agree to asset sale)</li>
+            </ul>
+        </div>
+
+        <div class="concept-box">
+            <h3>Asset Purchase</h3>
+            
+            <p><strong>What It Is:</strong> Buyer purchases specific assets from the target company. Target company remains intact but sells off its assets.</p>
+
+            <p><strong>Structure:</strong></p>
+            <ul>
+                <li>Buyer selects which assets to buy</li>
+                <li>Seller retains corporate entity and any excluded assets/liabilities</li>
+                <li>Each asset must be transferred individually</li>
+                <li>Contracts may need consent to assign</li>
+            </ul>
+
+            <p><strong>Advantages for Buyer:</strong></p>
+            <ul>
+                <li><strong>Cherry-pick assets:</strong> Buy what you want, leave what you don't</li>
+                <li><strong>Leave liabilities behind:</strong> Generally don't assume seller's liabilities (except assumed ones)</li>
+                <li><strong>Tax benefits:</strong> Step-up in asset basis allows higher depreciation</li>
+                <li><strong>Cleaner transaction:</strong> Less risk of inheriting problems</li>
+            </ul>
+
+            <p><strong>Disadvantages for Buyer:</strong></p>
+            <ul>
+                <li><strong>Complexity:</strong> Must transfer each asset individually</li>
+                <li><strong>Third-party consents:</strong> May need consent to transfer contracts, leases, licenses</li>
+                <li><strong>Sales tax:</strong> May trigger sales tax on asset transfers</li>
+                <li><strong>Can lose key contracts:</strong> If counterparty won't consent to assignment</li>
+            </ul>
+
+            <p><strong>When Used:</strong></p>
+            <ul>
+                <li>Target has significant liabilities buyer wants to avoid</li>
+                <li>Buyer wants only specific assets (certain product lines, facilities)</li>
+                <li>Target is in bankruptcy (asset sale preferred)</li>
+                <li>Buyer wants tax benefits from stepped-up basis</li>
+            </ul>
+        </div>
+
+        <div class="example-box">
+            <h3>Stock vs Asset: Quick Comparison</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Factor</th>
+                        <th>Stock Purchase</th>
+                        <th>Asset Purchase</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Liabilities</strong></td>
+                        <td>Buyer inherits all</td>
+                        <td>Buyer generally avoids</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Contracts</strong></td>
+                        <td>Transfer automatically</td>
+                        <td>May need consents</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tax Basis</strong></td>
+                        <td>No step-up</td>
+                        <td>Step-up available</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Complexity</strong></td>
+                        <td>Simpler</td>
+                        <td>More complex</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cherry-Pick</strong></td>
+                        <td>No</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Buyer Preference</strong></td>
+                        <td>Clean target, valuable contracts</td>
+                        <td>Messy target, want to avoid liabilities</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- SECTION 3: EARNOUTS -->
+        <h2>Earnouts</h2>
+
+        <div class="concept-box">
+            <h3>What Is an Earnout?</h3>
+            
+            <p><strong>Definition:</strong> Part of the purchase price is contingent on the target achieving certain performance metrics post-closing (typically revenue, EBITDA, or product milestones).</p>
+
+            <p><strong>Structure:</strong></p>
+            <ul>
+                <li>Base payment at closing (e.g., $50M upfront)</li>
+                <li>Additional payment if targets met (e.g., up to $20M if revenue exceeds $100M in Year 1)</li>
+                <li>Performance measured over 1-3 years typically</li>
+            </ul>
+        </div>
+
+        <div class="concept-box">
+            <h3>Why Use Earnouts?</h3>
+            
+            <p><strong>Bridge Valuation Gap:</strong></p>
+            <ul>
+                <li>Seller thinks company worth $100M</li>
+                <li>Buyer thinks it's worth $70M</li>
+                <li>Solution: $70M upfront + $30M earnout if seller's projections prove correct</li>
+            </ul>
+
+            <p><strong>Align Incentives:</strong></p>
+            <ul>
+                <li>Keep sellers (now employees) motivated post-closing</li>
+                <li>Ensure sellers don't walk away after collecting cash</li>
+                <li>Tie payout to actual performance, not just promises</li>
+            </ul>
+
+            <p><strong>Reduce Risk for Buyer:</strong></p>
+            <ul>
+                <li>Don't pay full price if projections don't materialize</li>
+                <li>Seller shares downside risk if performance disappoints</li>
+            </ul>
+
+            <p><strong>When Commonly Used:</strong></p>
+            <ul>
+                <li>High uncertainty about future performance</li>
+                <li>Target is a startup or early-stage company with unproven projections</li>
+                <li>Seller's management staying on post-acquisition</li>
+                <li>Cyclical business where current earnings may not be sustainable</li>
+            </ul>
+        </div>
+
+        <div class="concept-box">
+            <h3>Common Earnout Issues</h3>
+            
+            <p><strong>1. Metric Definition</strong></p>
+            <ul>
+                <li>What exactly counts as "revenue"? (gross vs net, one-time vs recurring)</li>
+                <li>How is EBITDA calculated? (what adjustments allowed?)</li>
+                <li>Must be precisely defined to avoid disputes</li>
+            </ul>
+
+            <p><strong>2. Buyer's Control</strong></p>
+            <ul>
+                <li>Buyer now controls the business and can affect earnout metrics</li>
+                <li>Could shift resources away from target, hurting its performance</li>
+                <li>Could change accounting methods to reduce earnout payment</li>
+                <li>Sellers worry about buyer manipulation</li>
+            </ul>
+
+            <p><strong>3. Integration vs Standalone Performance</strong></p>
+            <ul>
+                <li>If business integrated into buyer's operations, hard to measure standalone performance</li>
+                <li>Shared costs, transferred customers, combined products—who gets credit?</li>
+            </ul>
+
+            <p><strong>4. Seller Retention</strong></p>
+            <ul>
+                <li>Earnouts often require seller to stay as employee</li>
+                <li>What if seller quits or is fired? Do they forfeit earnout?</li>
+                <li>Can create golden handcuffs or hostage situations</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 4: OTHER KEY CONCEPTS -->
+        <h2>Other M&A Considerations</h2>
+
+        <div class="concept-box">
+            <h3>Merger vs Acquisition</h3>
+            
+            <p><strong>Merger:</strong> Two companies combine into one, typically with both boards approving and both sets of shareholders voting.</p>
+            <ul>
+                <li>Often called "merger of equals" (though rarely truly equal)</li>
+                <li>Target company ceases to exist, merged into buyer</li>
+                <li>Shareholders of both companies become shareholders of combined entity</li>
+            </ul>
+
+            <p><strong>Acquisition:</strong> One company buys another, which may or may not continue to exist separately.</p>
+            <ul>
+                <li>Clear buyer and seller</li>
+                <li>Target's shareholders cash out or receive acquirer's stock</li>
+                <li>Target may be kept as subsidiary or fully integrated</li>
+            </ul>
+
+            <p><strong>Practical Reality:</strong> Most "mergers" are actually acquisitions—one company is really in control.</p>
+        </div>
+
+        <div class="concept-box">
+            <h3>Deal Protections</h3>
+            
+            <p><strong>No-Shop Clause:</strong> Seller can't solicit other bids once deal is signed</p>
+            <ul>
+                <li>Protects buyer's investment in due diligence</li>
+                <li>Usually allows "fiduciary out" for superior proposals</li>
+            </ul>
+
+            <p><strong>Breakup Fee:</strong> If deal fails under certain conditions, seller pays buyer a fee (typically 2-4% of deal value)</p>
+            <ul>
+                <li>Compensates buyer for deal costs if seller walks to superior bid</li>
+                <li>Discourages competing bids (they must be significantly better to justify paying the fee)</li>
+            </ul>
+
+            <p><strong>Matching Rights:</strong> Buyer gets chance to match any superior offer before seller can accept it</p>
+        </div>
+
+        <!-- PRACTICE QUESTIONS -->
+        <h2>Practice Questions</h2>
+
+        <div class="practice-box">
+            <h3>Question 1: Strategic vs Financial Buyers</h3>
+            <p><strong>Explain the difference between strategic and financial buyers. Why do strategic buyers typically pay more for the same target company? Provide a specific example.</strong></p>
+            
+            <details style="margin-top: 1rem;">
+                <summary style="cursor: pointer; color: var(--uva-orange); font-weight: 600;">Show Sample Answer</summary>
+                <div style="margin-top: 1rem; padding: 1rem; background: white; border-radius: 6px;">
+                    <p><strong>Strategic Buyers:</strong> Operating companies in the same or related industry that acquire targets to integrate them into their existing business. They seek synergies and strategic benefits.</p>
+                    
+                    <p><strong>Financial Buyers:</strong> Private equity firms that acquire companies as financial investments, planning to hold for 3-7 years and sell. They focus on standalone financial returns.</p>
+                    
+                    <p><strong>Why Strategic Buyers Pay More:</strong></p>
+                    <ul>
+                        <li><strong>Synergies:</strong> Can realize revenue synergies (cross-selling, expanded distribution) and cost synergies (eliminating duplicate functions) that financial buyers cannot</li>
+                        <li><strong>Strategic value:</strong> Willing to pay to eliminate a competitor, acquire key technology, or prevent a rival from acquiring the target</li>
+                        <li><strong>Currency:</strong> Can use their stock as acquisition currency, not limited to cash</li>
+                        <li><strong>Competitive dynamics:</strong> May face pressure to act before competitors acquire the target</li>
+                    </ul>
+                    
+                    <p><strong>Example:</strong> Facebook's acquisition of Instagram for $1B in 2012. A financial buyer would have valued Instagram based on its standalone financials (minimal revenue at the time). Facebook (strategic buyer) paid significantly more because they saw synergies: integrate Instagram into Facebook's ad platform, leverage Facebook's infrastructure, prevent Google or Twitter from acquiring it, and capture mobile photo-sharing market.</p>
+                </div>
+            </details>
+        </div>
+
+        <div class="practice-box">
+            <h3>Question 2: Stock vs Asset Purchase</h3>
+            <p><strong>Compare stock purchases and asset purchases from a buyer's perspective. When would a buyer prefer an asset purchase over a stock purchase? What are the key trade-offs?</strong></p>
+            
+            <details style="margin-top: 1rem;">
+                <summary style="cursor: pointer; color: var(--uva-orange); font-weight: 600;">Show Sample Answer</summary>
+                <div style="margin-top: 1rem; padding: 1rem; background: white; border-radius: 6px;">
+                    <p><strong>Stock Purchase:</strong> Buyer purchases shares of the target company, acquiring the entire entity with all its assets and liabilities.</p>
+                    
+                    <p><strong>Asset Purchase:</strong> Buyer purchases specific assets from the target, cherry-picking what to buy and leaving unwanted assets and liabilities behind.</p>
+                    
+                    <p><strong>When Buyer Prefers Asset Purchase:</strong></p>
+                    <ul>
+                        <li><strong>Significant liabilities:</strong> Target has pending lawsuits, environmental issues, or tax problems buyer wants to avoid</li>
+                        <li><strong>Selective acquisition:</strong> Buyer wants only certain product lines, facilities, or assets—not the entire business</li>
+                        <li><strong>Tax benefits:</strong> Asset purchase allows step-up in tax basis, enabling higher depreciation deductions</li>
+                        <li><strong>Bankruptcy:</strong> Target is in bankruptcy and buyer wants clean acquisition</li>
+                    </ul>
+                    
+                    <p><strong>Key Trade-Offs:</strong></p>
+                    <ul>
+                        <li><strong>Liability protection vs Simplicity:</strong> Asset purchase avoids liabilities but is more complex (must transfer each asset individually)</li>
+                        <li><strong>Tax benefits vs Contract transfers:</strong> Asset purchase provides tax step-up but may require third-party consents for contracts, licenses, permits</li>
+                        <li><strong>Flexibility vs Transaction costs:</strong> Can cherry-pick assets but higher legal and transaction costs</li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+
+        <div class="practice-box">
+            <h3>Question 3: Earnouts</h3>
+            <p><strong>What is an earnout and why are they used in M&A transactions? What are the main challenges with earnouts?</strong></p>
+            
+            <details style="margin-top: 1rem;">
+                <summary style="cursor: pointer; color: var(--uva-orange); font-weight: 600;">Show Sample Answer</summary>
+                <div style="margin-top: 1rem; padding: 1rem; background: white; border-radius: 6px;">
+                    <p><strong>What an Earnout Is:</strong> A portion of the purchase price that is contingent on the target company achieving specified performance metrics after closing (typically revenue, EBITDA, or product development milestones measured over 1-3 years).</p>
+                    
+                    <p><strong>Why Earnouts Are Used:</strong></p>
+                    <ul>
+                        <li><strong>Bridge valuation gap:</strong> When buyer and seller disagree on value, earnout allows seller to get higher price if their optimistic projections prove correct</li>
+                        <li><strong>Align incentives:</strong> Keep seller's management team motivated and engaged post-closing</li>
+                        <li><strong>Reduce buyer's risk:</strong> Don't pay full price upfront if performance targets aren't met</li>
+                        <li><strong>Handle uncertainty:</strong> Appropriate when future performance is genuinely unpredictable (early-stage company, new product, uncertain market)</li>
+                    </ul>
+                    
+                    <p><strong>Main Challenges:</strong></p>
+                    <ul>
+                        <li><strong>Metric definition:</strong> Parties often dispute what counts toward earnout (what expenses are deducted? which revenue counts?)</li>
+                        <li><strong>Buyer control:</strong> Buyer now controls the business and can influence earnout metrics through resource allocation, accounting changes, or integration decisions</li>
+                        <li><strong>Integration conflicts:</strong> Integrating target into buyer's business makes it hard to measure standalone performance for earnout purposes</li>
+                        <li><strong>Retention issues:</strong> If seller must stay as employee to earn earnout, creates golden handcuffs and potential for disputes if employment terminates</li>
+                    </ul>
+                    
+                    <p><strong>Bottom Line:</strong> Earnouts can be useful tools but require very precise drafting and create potential for post-closing disputes.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- EXAM TIP -->
+        <div class="alert alert-info">
+            <h4>✓ What's Testable</h4>
+            <ul>
+                <li>Difference between strategic and financial buyers</li>
+                <li>Why strategic buyers typically pay more (synergies, strategic value)</li>
+                <li>Stock purchase vs asset purchase (when to use each, pros/cons)</li>
+                <li>What earnouts are and why they're used</li>
+                <li>Key challenges with earnouts</li>
+                <li>General M&A concepts and motivations</li>
+            </ul>
+            
+            <h4 style="margin-top: 1rem;">✗ What's NOT Testable</h4>
+            <ul>
+                <li>Detailed exchange ratio calculations</li>
+                <li>Complex merger agreement mechanics</li>
+                <li>Tax accounting details</li>
+                <li>Specific regulatory approval processes</li>
+            </ul>
         </div>
 
         <div style="margin: 3rem 0; text-align: center;">
-            <a href="class6.html" class="btn btn-secondary">← Class 6-7 (Contracts)</a>
-            <a href="index.html" class="btn">Back to Home</a>
+            <a href="class6.html" class="btn btn-secondary">← Class 6: Commercial Contracts</a>
+            <a href="index.html" class="btn btn-primary">Back to Home</a>
         </div>
     </div>
 </body>
