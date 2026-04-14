@@ -1,0 +1,125 @@
+# UVA Law - Intro to Law & Business Study System
+
+Complete study system for UVA Law's Introduction to Law & Business course.
+
+## 🎓 What's Included
+
+- **7 Complete Lessons** - One HTML file per class with full content
+- **Shared Styling** - Professional UVA-branded CSS
+- **GitHub Pages Ready** - Upload and go!
+
+## 📁 File Structure
+
+```
+uva-law-study-site/
+├── index.html          # Home page with all class cards
+├── class1.html         # Financial Statements (cupcake problem, accrual accounting)
+├── class2.html         # Transaction Costs (Boeing/Spirit, Coase theorem)
+├── class3.html         # Entity Choice (C-Corp vs LLC, tax calculations)
+├── class4.html         # VC Finance (Series B problem, cap tables)
+├── class5.html         # Term Sheets (liquidation prefs, all terms)
+├── class6.html         # Contracts (BSC/Medinol relational contract)
+├── class7.html         # M&A (strategic vs financial, discount rates)
+├── styles.css          # Shared styling for all pages
+└── README.md           # This file
+```
+
+## 🚀 How to Deploy to GitHub Pages
+
+1. **Create a new GitHub repository**
+   - Go to github.com → New repository
+   - Name it something like `uva-law-study`
+   - Make it public (for GitHub Pages to work free)
+
+2. **Upload all files**
+   - Drag and drop this entire folder into the repo
+   - OR use git:
+     ```bash
+     git init
+     git add .
+     git commit -m "Initial commit"
+     git remote add origin YOUR_REPO_URL
+     git push -u origin main
+     ```
+
+3. **Enable GitHub Pages**
+   - Go to Settings → Pages
+   - Source: Deploy from a branch
+   - Branch: `main` / `root`
+   - Save
+
+4. **Done!**
+   - Your site will be at: `https://yourusername.github.io/repo-name`
+   - Takes 1-2 minutes to build first time
+
+## ✨ Features
+
+### Each Class Page Includes:
+- ✅ Complete lesson content with full explanations
+- ✅ Step-by-step calculation examples
+- ✅ Real-world examples (Boeing/Spirit, Coca-Cola, etc.)
+- ✅ Exam tips and strategy
+- ✅ Review questions from professor
+- ✅ What's tested vs NOT tested
+- ✅ Common mistakes to avoid
+- ✅ Quick navigation between classes
+
+### Home Page Features:
+- 📊 All 7 classes at a glance
+- 🎯 Recommended study order
+- 📝 Quick reference of what to calculate
+- ✅ What's NOT on the exam
+
+## 📱 Mobile Friendly
+
+Works great on phones, tablets, and laptops.
+
+## 🎨 UVA Branded
+
+Uses official UVA colors:
+- UVA Blue (#232D4B)
+- UVA Orange (#E57200)
+- Lawn Green (#00843D)
+
+## 🔧 Easy to Update
+
+Want to add podcasts or more content to a class?
+- Just edit that specific class HTML file
+- Everything else stays the same
+- No need to rebuild the whole site
+
+## 📚 Content Coverage
+
+### Critical (Must Calculate):
+- Class 1: Cupcake problem
+- Class 3: Tax comparison
+- Class 4: Series B problem, liquidation preferences
+
+### Important (Must Explain):
+- Class 2: Transaction costs framework
+- Class 5: Term sheet provisions
+- Classes 6-7: Relational contracts
+- Classes 8-9: M&A concepts
+
+## 🆘 Troubleshooting
+
+**Classes not linking?**
+- Make sure all files are in the same folder
+- Check that file names match exactly (class1.html not Class1.html)
+
+**Styling not working?**
+- Verify styles.css is in the same folder as HTML files
+- Check browser console for errors
+
+**GitHub Pages not deploying?**
+- Make sure repo is public
+- Check Settings → Pages is enabled
+- Wait 2-3 minutes for first build
+
+## 📝 License
+
+This is a study tool for UVA Law students. Share it with classmates!
+
+## 🎯 Good Luck on the Exam!
+
+You've got this. Now go study! 💪
