@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 1: Financial Statements - UVA Law</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">⚖️ UVA Law</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="class1.html">Class 1</a></li>
+                <li><a href="class2.html">Class 2</a></li>
+                <li><a href="class3.html">Class 3</a></li>
+                <li><a href="class4.html">Class 4</a></li>
+                <li><a href="class5.html">Class 5</a></li>
+                <li><a href="class6.html">Class 6-7</a></li>
+                <li><a href="class7.html">Class 8-9</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <a href="index.html" class="btn btn-secondary">← Back to Home</a>
+        
+        <h1>Class 1: Financial Statements</h1>
+        
+        <div style="margin: 1rem 0;">
+            <span class="badge critical">CRITICAL</span>
+            <span class="badge calculation">MUST CALCULATE</span>
+        </div>
+
+        <div class="toc">
+            <strong>Quick Jump:</strong>
+            <a href="#book-value">Book vs Market</a>
+            <a href="#accrual">Accrual Accounting</a>
+            <a href="#cupcake">Cupcake Problem</a>
+            <a href="#statements">3 Statements</a>
+            <a href="#review">Review Questions</a>
+        </div>
+
+        <div class="alert alert-warning">
+            <strong>⚠️ CRITICAL:</strong> The cupcake problem WILL be on the exam with different numbers. Master this calculation!
+        </div>
+
+        <h2 id="book-value">Book Value vs Market Value</h2>
+
+        <div class="concept-box">
+            <h3>The Core Concepts</h3>
+            <p><strong>Book Value</strong> = Assets - Liabilities (what's on the balance sheet)</p>
+            <p><strong>Market Value</strong> = What investors think the company is worth (stock price × shares)</p>
+        </div>
+
+        <div class="concept-box">
+            <h3>What Book Value Captures</h3>
+            <ul>
+                <li><strong>Physical/tangible assets:</strong> Buildings, equipment, inventory, cash</li>
+                <li><strong>Historical cost:</strong> What you paid for it, not what it's worth now</li>
+                <li><strong>Depreciated value:</strong> Assets lose value over time on books</li>
+            </ul>
+
+            <p><strong>Example:</strong> You buy an oven for $1,000. After one year, it's worth $800 on the balance sheet (depreciation), even if you could still sell it for $900.</p>
+        </div>
+
+        <div class="concept-box">
+            <h3>What Market Value Includes (But Book Value Doesn't)</h3>
+
+            <h4>1. Intangible Assets NOT on Balance Sheet:</h4>
+            <ul>
+                <li><strong>Brand value:</strong> Coca-Cola's brand worth $80+ billion, not on books</li>
+                <li><strong>Patents & IP:</strong> Internally developed (vs purchased) IP often not valued</li>
+                <li><strong>Customer relationships:</strong> Loyal customer base has value</li>
+                <li><strong>Employee talent:</strong> Great team creates value</li>
+                <li><strong>Network effects:</strong> Facebook's value is users connecting</li>
+                <li><strong>Data:</strong> Google's search data, Amazon's customer data</li>
+            </ul>
+
+            <h4>2. Future Earnings Expectations:</h4>
+            <ul>
+                <li><strong>Growth potential:</strong> Expected future revenues</li>
+                <li><strong>Market position:</strong> Competitive advantages</li>
+                <li><strong>Moats:</strong> Things that protect against competition</li>
+            </ul>
+        </div>
+
+        <div class="example-box">
+            <h3>🥤 Example: Coca-Cola</h3>
+            
+            <p><strong>Book Value: Relatively Low</strong></p>
+            <ul>
+                <li>Owns some factories and equipment</li>
+                <li>But franchises most bottling (bottlers own those assets)</li>
+                <li>Keeps balance sheet lean - outsources capital-intensive work</li>
+            </ul>
+
+            <p><strong>Market Value: MASSIVE</strong></p>
+            <ul>
+                <li>Brand worth estimated $80+ billion</li>
+                <li>Secret formula (intangible)</li>
+                <li>Global distribution network</li>
+                <li>Customer loyalty</li>
+                <li>Future profits from selling syrup</li>
+            </ul>
+
+            <p><strong>Why?</strong> Coke's value is in the BRAND and FORMULA, not in physical assets. Book value doesn't capture that.</p>
+        </div>
+
+        <div class="alert alert-exam">
+            <h4>💡 Exam Application</h4>
+            <p><strong>Question:</strong> "Why might a tech startup have $500K in book value but a $50M market value?"</p>
+            
+            <p><strong>Your Answer:</strong></p>
+            <p>Book value only shows tangible assets (equipment, cash). Market value includes:</p>
+            <ol>
+                <li>Intellectual property and proprietary technology</li>
+                <li>Engineering team expertise</li>
+                <li>User base and growth metrics</li>
+                <li>Future revenue expectations</li>
+                <li>Competitive position in the market</li>
+            </ol>
+        </div>
+
+        <h2 id="accrual">Accrual vs Cash Accounting</h2>
+
+        <div class="concept-box">
+            <h3>The Fundamental Difference</h3>
+
+            <p><strong>Cash Accounting:</strong> Record when money actually moves</p>
+            <ul>
+                <li>Got cash? → Record revenue</li>
+                <li>Paid cash? → Record expense</li>
+                <li>Simple! But misleading for most businesses...</li>
+            </ul>
+
+            <p><strong>Accrual Accounting:</strong> Record when earned/incurred (regardless of cash timing)</p>
+            <ul>
+                <li>Earned revenue? → Record it (even if customer hasn't paid yet)</li>
+                <li>Incurred expense? → Record it (even if you haven't paid yet)</li>
+                <li>More complex BUT more accurate picture of business performance</li>
+            </ul>
+        </div>
+
+        <div class="example-box">
+            <h3>📰 Example: Magazine Subscription</h3>
+            
+            <p><strong>Situation:</strong> Customer pays $120 for 12-month subscription in January</p>
+
+            <div class="calculation-box">
+                <strong>CASH ACCOUNTING</strong>
+                <pre>January:   $120 revenue (looks amazing!)
+February:  $0 revenue (looks dead!)
+March:     $0 revenue
+...
+December:  $0 revenue
+
+→ Terrible picture of the business</pre>
+            </div>
+
+            <div class="calculation-box">
+                <strong>ACCRUAL ACCOUNTING</strong>
+                <pre>January:   $10 revenue (1 month earned)
+February:  $10 revenue (1 month earned)
+March:     $10 revenue
+...
+December:  $10 revenue
+
+→ Accurate picture: steady $10/month business</pre>
+            </div>
+
+            <p><strong>The Principle:</strong> Match revenues to the period when the service is delivered, not when cash is received.</p>
+        </div>
+
+        <h2 id="cupcake">THE CUPCAKE PROBLEM ⭐</h2>
+
+        <div class="alert alert-warning">
+            <strong>🔥 THIS EXACT CALCULATION WILL BE ON THE EXAM WITH DIFFERENT NUMBERS</strong>
+        </div>
+
+        <div class="concept-box">
+            <h3>The Scenario</h3>
+            <p>You start a cupcake business and take these actions:</p>
+            <ol>
+                <li>Incorporate and deposit <strong>$3,000</strong> cash into the business</li>
+                <li>Buy an oven for <strong>$1,000</strong></li>
+                <li>Buy ingredients for <strong>$500</strong></li>
+                <li>Receive <strong>$800</strong> advance payment for a wedding order you will fulfill NEXT quarter</li>
+            </ol>
+
+            <p><strong>Questions:</strong></p>
+            <ol>
+                <li>How much CASH do you have right now?</li>
+                <li>What is your total REVENUE?</li>
+                <li>Why do these numbers differ under accrual accounting?</li>
+            </ol>
+        </div>
+
+        <div class="calculation-box">
+            <h3>STEP 1: Calculate CASH</h3>
+            <pre>Starting cash:             $3,000
+Buy oven (cash out):      -$1,000
+Buy ingredients (cash out): -$500
+Receive advance (cash in):  +$800
+──────────────────────────────────
+CASH ON HAND:              $2,300</pre>
+        </div>
+
+        <div class="calculation-box">
+            <h3>STEP 2: Calculate REVENUE</h3>
+            <pre>Under Accrual Accounting:
+
+The $800 advance payment:
+- Have we EARNED it yet? NO
+- Have we delivered cupcakes? NO
+- Have we fulfilled the order? NO
+
+→ NOT revenue yet!
+
+TOTAL REVENUE:             $0</pre>
+        </div>
+
+        <div class="concept-box">
+            <h3>Why Cash ≠ Revenue</h3>
+
+            <p><strong>Cash = $2,300</strong> (physical dollars in the bank)</p>
+            <p><strong>Revenue = $0</strong> (what you've actually earned)</p>
+
+            <h4>Key Understanding:</h4>
+            <ul>
+                <li>The $800 is a <strong>LIABILITY</strong>, not revenue</li>
+                <li>You OWE the customer cupcakes</li>
+                <li>Until you deliver, you haven't earned that money</li>
+                <li>It's called "Unearned Revenue" or "Deferred Revenue"</li>
+            </ul>
+
+            <h4>What Happens Next Quarter (When You Deliver):</h4>
+            <ul>
+                <li><strong>Revenue increases by $800</strong> (you earned it!)</li>
+                <li><strong>Cash stays at $2,300</strong> (you already got paid)</li>
+                <li>The liability disappears (you fulfilled your obligation)</li>
+            </ul>
+        </div>
+
+        <div class="calculation-box">
+            <h3>STEP 3: The Balance Sheet Right Now</h3>
+            <pre><strong>ASSETS (what you own):</strong>
+Cash:                      $2,300
+Oven:                      $1,000
+Ingredients:                 $500
+────────────────────────────────
+Total Assets:              $3,800
+
+<strong>LIABILITIES (what you owe):</strong>
+Unearned Revenue:            $800
+(You owe wedding cupcakes)
+
+<strong>EQUITY (owner's stake):</strong>
+Owner's Equity:            $3,000
+
+Check the accounting equation:
+Assets = Liabilities + Equity
+$3,800 = $800 + $3,000 ✓</pre>
+        </div>
+
+        <div class="mistake-box">
+            <h4>❌ Common Mistakes</h4>
+            
+            <p><strong>WRONG:</strong> "I received $800, so I have $800 in revenue"</p>
+            <p><strong>RIGHT:</strong> "I received $800 but haven't earned it yet - it's a liability"</p>
+            <br>
+            <p><strong>WRONG:</strong> "The oven is an expense of $1,000"</p>
+            <p><strong>RIGHT:</strong> "The oven is an asset that will depreciate over time"</p>
+            <br>
+            <p><strong>WRONG:</strong> "Cash and revenue are the same thing"</p>
+            <p><strong>RIGHT:</strong> "Cash is when you receive money; revenue is when you earn it"</p>
+        </div>
+
+        <div class="alert alert-exam">
+            <h3>Exam Strategy for Cupcake-Style Problems</h3>
+            <ol>
+                <li><strong>Draw a T-chart:</strong> Cash column | Revenue column</li>
+                <li><strong>Track cash first:</strong> Start + In - Out = Ending Cash</li>
+                <li><strong>For revenue, ask:</strong> "Have I EARNED this yet?"</li>
+                <li><strong>Advance payments:</strong> Cash YES, Revenue NO (until delivered)</li>
+                <li><strong>Assets vs Expenses:</strong> Oven = asset, Ingredients = will be expense when used</li>
+            </ol>
+        </div>
+
+        <h2 id="statements">The Three Financial Statements</h2>
+
+        <div class="concept-box">
+            <h3>1. Balance Sheet</h3>
+            <p><strong>Core Question:</strong> What do you OWN and what do you OWE?</p>
+
+            <div class="calculation-box">
+                <pre><strong>ASSETS = LIABILITIES + EQUITY</strong>
+
+<strong>ASSETS</strong> (what you own):
+Current Assets:
+  - Cash
+  - Accounts Receivable (customers owe you)
+  - Inventory
+  - Prepaid Expenses
+
+Long-term Assets:
+  - Property, Plant & Equipment (PP&E)
+  - Investments
+  - Intangible Assets
+
+<strong>LIABILITIES</strong> (what you owe):
+Current Liabilities (due < 1 year):
+  - Accounts Payable (you owe suppliers)
+  - Unearned Revenue
+  - Short-term Debt
+
+Long-term Liabilities:
+  - Long-term Debt
+  - Bonds Payable
+
+<strong>EQUITY</strong> (owner's stake):
+  - Paid-in Capital (money investors put in)
+  - Retained Earnings (profits kept in company)</pre>
+            </div>
+
+            <p><strong>Timing:</strong> Snapshot at a point in time ("As of December 31, 2025...")</p>
+            <p><strong>Key Insight:</strong> It must always balance! Assets = Liabilities + Equity</p>
+        </div>
+
+        <div class="concept-box">
+            <h3>2. Income Statement (P&L)</h3>
+            <p><strong>Core Question:</strong> Are you making MONEY?</p>
+
+            <div class="calculation-box">
+                <pre><strong>REVENUE</strong> (money earned from sales)
+- Cost of Goods Sold (COGS)
+  (direct costs to make the product)
+──────────────────────────────
+= <strong>GROSS PROFIT</strong>
+
+- Operating Expenses
+  (salaries, rent, marketing, R&D)
+──────────────────────────────
+= <strong>OPERATING INCOME</strong> (EBIT)
+
+- Interest Expense
+- Taxes
+──────────────────────────────
+= <strong>NET INCOME</strong> (the bottom line!)</pre>
+            </div>
+
+            <p><strong>Timing:</strong> Period of time ("For the year ended December 31, 2025...")</p>
+            <p><strong>Key Insight:</strong> Shows if your business model works - can you sell for more than it costs to make?</p>
+        </div>
+
+        <div class="concept-box">
+            <h3>3. Cash Flow Statement</h3>
+            <p><strong>Core Question:</strong> Where did the CASH actually go?</p>
+
+            <div class="calculation-box">
+                <pre><strong>CASH FROM OPERATING ACTIVITIES</strong>
+(day-to-day business operations)
+  Start with Net Income
+  + Depreciation (non-cash expense)
+  - Increase in Accounts Receivable
+  + Increase in Accounts Payable
+  ...
+
+<strong>CASH FROM INVESTING ACTIVITIES</strong>
+(buying/selling assets)
+  - Purchase of Equipment
+  + Sale of Investments
+  ...
+
+<strong>CASH FROM FINANCING ACTIVITIES</strong>
+(raising money, paying investors)
+  + New Debt Issued
+  - Debt Repayment
+  + Stock Issued
+  - Dividends Paid
+  ...
+──────────────────────────────
+= <strong>NET CHANGE IN CASH</strong></pre>
+            </div>
+
+            <p><strong>Timing:</strong> Period of time ("For the year ended December 31, 2025...")</p>
+            <p><strong>Key Insight:</strong> You can be profitable on the income statement but still run out of cash!</p>
+        </div>
+
+        <div class="example-box">
+            <h3>⚠️ Example: Profitable But Cash-Poor</h3>
+            
+            <p><strong>Situation:</strong></p>
+            <ul>
+                <li>Sell $100,000 of products in December</li>
+                <li>Customers pay Net-90 (pay in 90 days)</li>
+                <li>Need to pay employees NOW</li>
+                <li>Need to buy materials NOW</li>
+            </ul>
+
+            <p><strong>Result:</strong></p>
+            <ul>
+                <li><strong>Income Statement:</strong> Shows $100K revenue (profitable!)</li>
+                <li><strong>Cash Flow:</strong> $0 cash received yet</li>
+                <li>→ Can't pay bills even though "profitable"</li>
+                <li>→ This is a cash flow crisis</li>
+            </ul>
+
+            <p><strong>Why it matters:</strong> "Revenue is vanity, profit is sanity, cash is reality"</p>
+        </div>
+
+        <h2>Why Large Companies Use Accrual Accounting</h2>
+
+        <div class="concept-box">
+            <h3>The Four Main Reasons</h3>
+
+            <h4>1. Matching Principle</h4>
+            <p>Match revenues with the expenses that generated them in the SAME period</p>
+
+            <h4>2. Accurate Performance Measurement</h4>
+            <p>Cash accounting can be easily manipulated - accrual smooths out timing games</p>
+
+            <h4>3. Comparability (GAAP Requirements)</h4>
+            <p>Industry standards require accrual accounting so investors can compare companies fairly</p>
+
+            <h4>4. Complex Operations Need It</h4>
+            <p>Multi-year contracts, subscriptions, international operations - all require accrual</p>
+        </div>
+
+        <h2 id="review">Review Questions (From Professor)</h2>
+
+        <div class="concept-box">
+            <h3>Question 1</h3>
+            <p><strong>Explain the difference between book value and market value: why might a company's market value be significantly higher than the value of assets reported on its balance sheet?</strong></p>
+            
+            <p><strong>Your Answer Should Include:</strong></p>
+            <ul>
+                <li>Book value = historical cost of tangible assets on balance sheet</li>
+                <li>Market value = investor expectations of future earnings</li>
+                <li>Intangibles not on balance sheet (brand, IP, people, network effects)</li>
+                <li>Growth potential and competitive advantages</li>
+                <li>Example: tech companies with huge market/book gaps</li>
+            </ul>
+        </div>
+
+        <div class="concept-box">
+            <h3>Question 2 (THE CUPCAKE PROBLEM)</h3>
+            <p><strong>Following the cupcake example from class: Suppose you incorporate and deposit $3,000, buy a $1,000 oven and $500 in ingredients, then receive $800 cash for a wedding order you will fulfill next quarter. At this point, how much cash do you have, and what is your total revenue? Explain why these two numbers differ under accrual accounting.</strong></p>
+            
+            <div class="calculation-box">
+                <strong>ANSWER:</strong>
+                <pre>Cash: $2,300 ($3,000 - $1,000 - $500 + $800)
+Revenue: $0 (Order not yet fulfilled)
+
+Why they differ:
+Accrual accounting recognizes revenue when 
+EARNED, not when cash RECEIVED.
+
+The $800 is unearned revenue (a LIABILITY)
+until we deliver the cupcakes next quarter.</pre>
+            </div>
+        </div>
+
+        <div class="concept-box">
+            <h3>Question 3</h3>
+            <p><strong>More generally, why do you think large public companies use accrual accounting?</strong></p>
+            
+            <p><strong>Your Answer Should Include:</strong></p>
+            <ol>
+                <li>Matching Principle: Match revenues to expenses in same period</li>
+                <li>Prevents Manipulation: Cash accounting can be gamed by timing payments</li>
+                <li>GAAP Required: Public companies must use it; allows comparability</li>
+                <li>Complex Operations: Multi-year contracts, subscriptions need accrual</li>
+            </ol>
+        </div>
+
+        <div class="concept-box">
+            <h3>Question 4</h3>
+            <p><strong>Identify and briefly describe the three key financial statements. For each, state the core question it answers about a company.</strong></p>
+            
+            <p><strong>Your Answer:</strong></p>
+            <ol>
+                <li><strong>Balance Sheet</strong> - What do you own and owe? Shows assets, liabilities, equity at a point in time</li>
+                <li><strong>Income Statement</strong> - Are you making money? Shows revenue, expenses, net income over a period</li>
+                <li><strong>Cash Flow Statement</strong> - Where did the cash go? Shows cash from operations, investing, financing</li>
+            </ol>
+        </div>
+
+        <div class="alert-not-tested alert">
+            <strong>❌ NOT TESTED:</strong> You will NOT be required to know the details of amortization or depreciation calculations.
+        </div>
+
+        <div class="alert alert-exam">
+            <h3>💡 Final Exam Tips for Class 1</h3>
+            <ul>
+                <li>Practice cupcake problem with 3-4 different number sets</li>
+                <li>Remember: advance payments = cash YES, revenue NO</li>
+                <li>Book vs market gap: always mention intangibles + future expectations</li>
+                <li>Three statements: memorize what question each answers</li>
+            </ul>
+        </div>
+
+        <div style="margin: 3rem 0; text-align: center;">
+            <a href="class2.html" class="btn">Next: Class 2 (Transaction Costs) →</a>
+        </div>
+    </div>
+</body>
+</html>
