@@ -9,7 +9,7 @@
 <body>
     <nav>
         <div class="container">
-            <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">⚖️ UVA Law</a></div>
+            <div class="logo">⚖️ UVA Law - Intro to Law & Business</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="class1.html">Class 1</a></li>
@@ -17,361 +17,510 @@
                 <li><a href="class3.html">Class 3</a></li>
                 <li><a href="class4.html">Class 4</a></li>
                 <li><a href="class5.html">Class 5</a></li>
-                <li><a href="class6.html">Class 6-7</a></li>
-                <li><a href="class7.html">Class 8-9</a></li>
+                <li><a href="class6.html">Class 6</a></li>
+                <li><a href="class7.html">Class 7</a></li>
             </ul>
         </div>
     </nav>
 
     <div class="container">
-        <a href="index.html" class="btn btn-secondary">← Back to Home</a>
-        
         <h1>Class 4: VC Finance & Preferred Stock</h1>
-        
-        <div style="margin: 1rem 0;">
-            <span class="badge critical">CRITICAL</span>
-            <span class="badge calculation">MUST CALCULATE</span>
+        <p style="font-size: 1.1rem; color: var(--cool-gray); margin-bottom: 2rem;">
+            Understanding venture capital deal structure, valuations, and liquidation preferences
+        </p>
+
+        <div class="podcast-container">
+            <div class="podcast-header">
+                <span class="podcast-icon">🎧</span>
+                <div>
+                    <h3 class="podcast-title">Class 4 Podcast</h3>
+                    <p class="podcast-duration">Listen first for overview (~12 minutes)</p>
+                </div>
+            </div>
+            <audio controls>
+                <source src="PASTE_CLASS_4_PODCAST_LINK_HERE" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="speed-controls">
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=0.75">0.75x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=1.0">1x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=1.25">1.25x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=1.5">1.5x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=2.0">2x</button>
+            </div>
         </div>
 
         <div class="alert alert-warning">
-            <strong>🔥 THE SERIES B PROBLEM IS THE MOST IMPORTANT CALCULATION ON THE EXAM!</strong>
+            <strong>🎯 EXAM FOCUS:</strong> The Series B calculation is THE most important calculation on the exam. Master the formula: Existing shares ÷ (1 - New investor %) = Total shares after investment. Liquidation preferences (non-participating vs participating) and when VCs convert are testable. Anti-dilution calculations are NOT tested.
         </div>
 
-        <div class="toc">
-            <strong>Quick Jump:</strong>
-            <a href="#valuation">Pre/Post-Money</a>
-            <a href="#series-b">Series B Problem</a>
-            <a href="#liq-pref">Liquidation Preferences</a>
-            <a href="#review">Review Questions</a>
-        </div>
-
-        <h2 id="valuation">Pre-Money vs Post-Money Valuation</h2>
+        <!-- SECTION 1: PRE/POST MONEY VALUATION -->
+        <h2>Pre-Money vs Post-Money Valuation</h2>
 
         <div class="concept-box">
-            <h3>The Core Concepts</h3>
+            <h3>Core Definitions</h3>
             
-            <p><strong>Pre-Money Valuation:</strong> What the company is worth BEFORE the new investment</p>
-            <p><strong>Post-Money Valuation:</strong> What the company is worth AFTER the new investment</p>
+            <p><strong>Pre-Money Valuation:</strong> What the company is worth BEFORE the new investment comes in.</p>
+            
+            <p><strong>Post-Money Valuation:</strong> What the company is worth AFTER the new investment is added.</p>
 
-            <p><strong>The Formula:</strong></p>
+            <p><strong>The Fundamental Relationship:</strong></p>
             <div class="calculation-box">
-                <pre>Post-Money = Pre-Money + Investment Amount
+Post-Money Valuation = Pre-Money Valuation + Investment Amount
 
-OR
+OR (solving from the other direction):
 
-Investment Amount ÷ Ownership % = Post-Money Valuation</pre>
+Investment Amount ÷ Ownership % = Post-Money Valuation
             </div>
         </div>
 
         <div class="example-box">
             <h3>Simple Example</h3>
-            <p>VC wants to invest <strong>$5M for 25%</strong> of the company.</p>
+            <p><strong>Scenario:</strong> A VC wants to invest <strong>$5M for 25%</strong> of the company.</p>
 
             <div class="calculation-box">
-                <pre>Post-Money Valuation:
-$5M ÷ 25% = $20M
+<strong>Step 1: Calculate Post-Money Valuation</strong>
+If $5M buys 25%, then:
+$5M ÷ 0.25 = $20M post-money valuation
 
-Pre-Money Valuation:
-$20M - $5M = $15M
+<strong>Step 2: Calculate Pre-Money Valuation</strong>
+Post-money - Investment = Pre-money
+$20M - $5M = $15M pre-money valuation
 
-So the company was worth $15M before,
-and will be worth $20M after the investment.</pre>
+<strong>Interpretation:</strong>
+The company was worth $15M before the investment,
+and will be worth $20M after the investment.
             </div>
         </div>
 
-        <h2 id="series-b">THE SERIES B PROBLEM ⭐⭐⭐</h2>
+        <div class="practice-box">
+            <h3>Quick Practice</h3>
+            <p><strong>A VC invests $8M for 40% of a company. What are the pre-money and post-money valuations?</strong></p>
+            
+            <details style="margin-top: 1rem;">
+                <summary style="cursor: pointer; color: var(--uva-orange); font-weight: 600;">Show Answer</summary>
+                <div style="margin-top: 1rem; padding: 1rem; background: white; border-radius: 6px;">
+                    <div class="calculation-box">
+Post-Money = $8M ÷ 0.40 = $20M
+Pre-Money = $20M - $8M = $12M
+                    </div>
+                </div>
+            </details>
+        </div>
 
-        <div class="alert alert-warning">
-            <strong>THIS IS THE BIG ONE!</strong> Master this calculation. It WILL be on the exam with different numbers.
+        <!-- SECTION 2: THE SERIES B PROBLEM -->
+        <h2>The Series B Problem ⭐⭐⭐</h2>
+
+        <div class="exam-box">
+            <h3>🔥 THIS IS THE BIG ONE</h3>
+            <p>This calculation WILL appear on your exam with different numbers. Master the methodology, not just this specific example.</p>
         </div>
 
         <div class="concept-box">
             <h3>The Setup</h3>
-            <p><strong>Current Cap Table:</strong></p>
+            
+            <p><strong>Current Capitalization Table:</strong></p>
             <ul>
                 <li>Common stockholders: <strong>10,000,000 shares</strong></li>
-                <li>Series A investors: <strong>5,000,000 shares</strong> (invested $5M at $1.00/share)</li>
-                <li><strong>Total current shares: 15,000,000</strong></li>
+                <li>Series A Preferred investors: <strong>5,000,000 shares</strong> (invested $5M at $1.00/share previously)</li>
+                <li><strong>Total existing shares: 15,000,000</strong></li>
             </ul>
 
-            <p><strong>Series B wants to invest:</strong></p>
+            <p><strong>Series B Investment Terms:</strong></p>
             <ul>
                 <li>Investment amount: <strong>$10,000,000</strong></li>
-                <li>For: <strong>50% ownership</strong></li>
+                <li>For ownership stake: <strong>50%</strong></li>
             </ul>
 
-            <p><strong>Questions:</strong></p>
+            <p><strong>Questions to Solve:</strong></p>
             <ol>
-                <li>How many total shares must be outstanding after Series B for them to own exactly 50%?</li>
+                <li>How many total shares must be outstanding after Series B closes for them to own exactly 50%?</li>
                 <li>How many new shares does Series B receive?</li>
-                <li>What is the price per share for Series B?</li>
-                <li>After Series B, what % does Common own? What % does Series A own?</li>
+                <li>What is the price per share for Series B stock?</li>
+                <li>After Series B closes, what percentage does Common own? Series A?</li>
             </ol>
         </div>
 
         <div class="calculation-box">
-            <h3>STEP 1: Total Shares After Series B</h3>
-            <pre>If Series B owns 50%, then the other 50% is everyone else.
+<strong>STEP 1: Calculate Total Shares After Series B</strong>
 
-Currently: 15M shares (Common + Series A)
-These 15M shares will be 50% after the deal.
+The key insight: If Series B owns 50%, then everyone else
+(Common + Series A) collectively owns the other 50%.
 
-If 15M = 50%
-Then Total Shares = 15M ÷ 0.5 = 30M shares
+We know:
+- Current shareholders have 15M shares
+- After the deal, those 15M shares = 50% of total
 
-Answer: 30,000,000 total shares after Series B</pre>
+Set up the equation:
+15M shares = 50% of Total
+15M = 0.5 × Total
+Total = 15M ÷ 0.5
+Total = 30,000,000 shares
+
+<strong>Answer: 30,000,000 total shares after Series B</strong>
         </div>
 
         <div class="calculation-box">
-            <h3>STEP 2: Shares for Series B</h3>
-            <pre>Total shares after: 30M
-Existing shares: 15M
-New shares issued: 30M - 15M = 15M
+<strong>STEP 2: Calculate New Shares Issued to Series B</strong>
 
-Answer: Series B receives 15,000,000 new shares</pre>
+Total shares after investment:     30,000,000
+Existing shares (before Series B): 15,000,000
+─────────────────────────────────────────────
+New shares issued:                 15,000,000
+
+<strong>Answer: Series B receives 15,000,000 new shares</strong>
         </div>
 
         <div class="calculation-box">
-            <h3>STEP 3: Price Per Share</h3>
-            <pre>Series B investment: $10,000,000
-Series B shares: 15,000,000
+<strong>STEP 3: Calculate Price Per Share</strong>
 
-Price per share = $10M ÷ 15M = $0.67 per share
+Series B investment amount:    $10,000,000
+Series B shares received:      15,000,000
+─────────────────────────────────────────
+Price per share = $10M ÷ 15M = $0.6667/share
 
-Answer: $0.67 per share
+<strong>Answer: $0.67 per share (rounded)</strong>
 
-Note: This is a DOWN ROUND (price went from $1.00 to $0.67)</pre>
+<strong>Important Note:</strong> This is a DOWN ROUND!
+Series A paid $1.00/share, Series B pays $0.67/share.
+The company's valuation decreased between rounds.
         </div>
 
         <div class="calculation-box">
-            <h3>STEP 4: Final Ownership Percentages</h3>
-            <pre>Total shares: 30,000,000
+<strong>STEP 4: Calculate Final Ownership Percentages</strong>
 
-Common: 10M ÷ 30M = 33.3%
-Series A: 5M ÷ 30M = 16.7%
-Series B: 15M ÷ 30M = 50.0%
+Total shares outstanding:        30,000,000
 
-Check: 33.3% + 16.7% + 50% = 100% ✓</pre>
+Common stockholders:
+  10,000,000 ÷ 30,000,000 = 33.3%
+
+Series A investors:
+  5,000,000 ÷ 30,000,000 = 16.7%
+
+Series B investors:
+  15,000,000 ÷ 30,000,000 = 50.0%
+
+Check (must equal 100%):
+  33.3% + 16.7% + 50.0% = 100.0% ✓
+
+<strong>Final Ownership:</strong>
+- Common: 33.3%
+- Series A: 16.7%
+- Series B: 50.0%
         </div>
 
-        <div class="example-box">
-            <h3>The Complete Answer</h3>
+        <div class="exam-box">
+            <h3>The Universal Formula (Use This on the Exam)</h3>
+            
+            <p><strong>Given:</strong> Existing shares, Investment amount, Desired ownership %</p>
+            
+            <p><strong>Step-by-step solution:</strong></p>
             <ol>
-                <li><strong>Total shares after Series B:</strong> 30,000,000</li>
-                <li><strong>New shares to Series B:</strong> 15,000,000</li>
-                <li><strong>Price per share:</strong> $0.67</li>
-                <li><strong>Final ownership:</strong>
-                    <ul>
-                        <li>Common: 33.3%</li>
-                        <li>Series A: 16.7%</li>
-                        <li>Series B: 50%</li>
-                    </ul>
-                </li>
+                <li><strong>Total shares after =</strong> Existing shares ÷ (1 - New investor %)</li>
+                <li><strong>New shares =</strong> Total shares after - Existing shares</li>
+                <li><strong>Price per share =</strong> Investment amount ÷ New shares</li>
+                <li><strong>Each party's % =</strong> Their shares ÷ Total shares after</li>
             </ol>
+
+            <p><strong>For the Series B problem:</strong></p>
+            <div class="calculation-box">
+1. Total = 15M ÷ (1 - 0.5) = 15M ÷ 0.5 = 30M
+2. New shares = 30M - 15M = 15M
+3. Price = $10M ÷ 15M = $0.67
+4. Common % = 10M ÷ 30M = 33.3%, etc.
+            </div>
         </div>
 
-        <div class="alert alert-exam">
-            <h3>How to Solve ANY Series B Type Problem</h3>
-            <ol>
-                <li><strong>Find current total shares</strong> (add up all existing shareholders)</li>
-                <li><strong>Set up the equation:</strong> Current shares = (1 - New investor %) × Total after</li>
-                <li><strong>Solve for total after:</strong> Total = Current ÷ (1 - New %)</li>
-                <li><strong>New shares:</strong> Total after - Current</li>
-                <li><strong>Price per share:</strong> Investment ÷ New shares</li>
-                <li><strong>Final %s:</strong> Each shareholder's shares ÷ Total</li>
-            </ol>
-        </div>
-
-        <h2 id="liq-pref">Liquidation Preferences</h2>
+        <!-- SECTION 3: LIQUIDATION PREFERENCES -->
+        <h2>Liquidation Preferences</h2>
 
         <div class="concept-box">
             <h3>What Is a Liquidation Preference?</h3>
-            <p><strong>Definition:</strong> VCs get paid back their investment (or a multiple) BEFORE common stockholders get anything when the company exits.</p>
+            
+            <p><strong>Definition:</strong> A term in preferred stock that ensures VCs get paid back their investment (or a multiple of it) BEFORE common stockholders receive anything when the company is sold or liquidated.</p>
 
-            <p><strong>Why VCs Want This:</strong> Downside protection. If company sells for less than hoped, VCs at least get their money back.</p>
+            <p><strong>Why VCs Demand This:</strong></p>
+            <ul>
+                <li><strong>Downside protection:</strong> If the exit is disappointing, VCs at least recover their investment</li>
+                <li>Common stockholders bear more of the downside risk</li>
+                <li>Creates a "floor" on VC returns</li>
+            </ul>
+
+            <p><strong>Common Multiples:</strong></p>
+            <ul>
+                <li><strong>1X:</strong> Get investment back (most common)</li>
+                <li><strong>1.5X or 2X:</strong> Get multiple of investment back (more aggressive)</li>
+            </ul>
         </div>
 
         <div class="concept-box">
             <h3>Types of Liquidation Preferences</h3>
 
             <h4>1. Non-Participating Preferred</h4>
-            <p>VC chooses EITHER:</p>
+            <p>At exit, preferred investor chooses the BETTER of:</p>
             <ul>
-                <li>Get liquidation preference (1X or more), OR</li>
-                <li>Convert to common and get pro-rata share</li>
+                <li><strong>Option A:</strong> Take liquidation preference (get 1X, 1.5X, or 2X investment back), OR</li>
+                <li><strong>Option B:</strong> Convert to common stock and take pro-rata ownership share</li>
             </ul>
-            <p><strong>Whichever is higher!</strong></p>
+            <p><strong>Key Point:</strong> Investor picks whichever option pays more.</p>
 
             <h4>2. Participating Preferred</h4>
-            <p>VC gets BOTH:</p>
+            <p>At exit, preferred investor gets BOTH:</p>
             <ul>
-                <li>Liquidation preference back, AND</li>
-                <li>Pro-rata share of remaining proceeds</li>
+                <li><strong>First:</strong> Liquidation preference back, AND THEN</li>
+                <li><strong>Second:</strong> Pro-rata share of remaining proceeds</li>
             </ul>
-            <p><strong>(Much better for VCs, worse for founders)</strong></p>
+            <p><strong>Result:</strong> Much better for VCs (they "double dip"), much worse for founders.</p>
         </div>
 
         <div class="example-box">
-            <h3>Non-Participating Example</h3>
-            <p><strong>Setup:</strong></p>
+            <h3>Non-Participating Preferred: Detailed Example</h3>
+            
+            <p><strong>Investment Terms:</strong></p>
             <ul>
-                <li>VC invested: $1M</li>
-                <li>Pre-money valuation: $4M</li>
-                <li>Post-money: $5M</li>
-                <li>VC owns: 20% ($1M ÷ $5M)</li>
-                <li>Liquidation preference: 1.5X ($1.5M)</li>
+                <li>VC invested: <strong>$1,000,000</strong></li>
+                <li>Pre-money valuation: <strong>$4,000,000</strong></li>
+                <li>Post-money valuation: <strong>$5,000,000</strong></li>
+                <li>VC ownership: <strong>20%</strong> ($1M ÷ $5M)</li>
+                <li>Liquidation preference: <strong>1.5X</strong> (VC gets $1.5M preference)</li>
             </ul>
 
-            <h4>Scenario 1: Company Sells for $2M</h4>
+            <h4>Scenario 1: Company Sells for $2 Million</h4>
             <div class="calculation-box">
-                <pre>Option A - Take liquidation preference:
-VC gets: $1.5M (their 1.5X preference)
-Common gets: $0.5M (what's left)
+<strong>Option A - Take Liquidation Preference:</strong>
+VC gets: $1,500,000 (their 1.5X preference)
+Common gets: $500,000 (what's left: $2M - $1.5M)
 
-Option B - Convert to common and take pro-rata:
-VC gets: $2M × 20% = $400K
-Common gets: $2M × 80% = $1.6M
+<strong>Option B - Convert to Common and Take Pro-Rata:</strong>
+VC gets: $2M × 20% = $400,000
+Common gets: $2M × 80% = $1,600,000
 
-VC chooses: Option A ($1.5M > $400K)
-<strong>Result: VC gets $1.5M, Common gets $500K</strong></pre>
+<strong>VC Decision: Choose Option A</strong>
+$1,500,000 > $400,000
+
+<strong>Final Distribution:</strong>
+VC: $1,500,000
+Common: $500,000
             </div>
 
-            <h4>Scenario 2: Company Sells for $10M</h4>
+            <h4>Scenario 2: Company Sells for $10 Million</h4>
             <div class="calculation-box">
-                <pre>Option A - Take liquidation preference:
-VC gets: $1.5M
-Common gets: $8.5M
+<strong>Option A - Take Liquidation Preference:</strong>
+VC gets: $1,500,000
+Common gets: $8,500,000 ($10M - $1.5M)
 
-Option B - Convert to common:
-VC gets: $10M × 20% = $2M
-Common gets: $10M × 80% = $8M
+<strong>Option B - Convert to Common:</strong>
+VC gets: $10M × 20% = $2,000,000
+Common gets: $10M × 80% = $8,000,000
 
-VC chooses: Option B ($2M > $1.5M)
-<strong>Result: VC gets $2M, Common gets $8M</strong></pre>
+<strong>VC Decision: Choose Option B</strong>
+$2,000,000 > $1,500,000
+
+<strong>Final Distribution:</strong>
+VC: $2,000,000
+Common: $8,000,000
             </div>
 
-            <p><strong>The Pattern:</strong></p>
+            <p style="margin-top: 1.5rem;"><strong>The Pattern:</strong></p>
             <ul>
-                <li>Low exit → VCs take the preference (downside protection)</li>
-                <li>High exit → VCs convert to common (upside participation)</li>
+                <li><strong>Low exit price:</strong> VCs take the liquidation preference (downside protection kicks in)</li>
+                <li><strong>High exit price:</strong> VCs convert to common stock (participate in upside)</li>
             </ul>
         </div>
 
         <div class="concept-box">
             <h3>Anti-Dilution Protection</h3>
-            <p><strong>What it is:</strong> Protection for VCs if company raises money at a lower valuation (down round)</p>
-
-            <p><strong>When it kicks in:</strong> Series B price < Series A price</p>
-
-            <p><strong>Who bears the cost:</strong> Common stockholders (founders) get diluted more to give VCs extra shares</p>
-
-            <p><strong>Not tested:</strong> You do NOT need to know how to calculate anti-dilution adjustments</p>
-        </div>
-
-        <h2 id="review">Review Questions (From Professor)</h2>
-
-        <div class="concept-box">
-            <h3>Question 1</h3>
-            <p><strong>Be able to compute the pre-and post-money valuation of a firm based on an investment amount and share of the company.</strong></p>
             
-            <p><strong>Formula:</strong></p>
-            <div class="calculation-box">
-                <pre>Investment Amount ÷ Ownership % = Post-Money
+            <p><strong>What It Is:</strong> Protection for existing investors if the company raises money in a later round at a lower price per share (down round).</p>
 
-Post-Money - Investment = Pre-Money</pre>
-            </div>
+            <p><strong>When It Matters:</strong> Series C price < Series B price triggers anti-dilution for Series B investors.</p>
 
-            <p><strong>Example:</strong> $8M for 40%</p>
-            <div class="calculation-box">
-                <pre>Post-Money = $8M ÷ 0.40 = $20M
-Pre-Money = $20M - $8M = $12M</pre>
-            </div>
+            <p><strong>How It Works:</strong></p>
+            <ul>
+                <li>Series B investors receive additional shares to maintain their value</li>
+                <li>Common stockholders (founders) get diluted more to compensate Series B</li>
+                <li>Protects VCs from being "punished" by future down rounds</li>
+            </ul>
+
+            <p><strong>Who Bears the Cost:</strong> Common stockholders (founders) absorb the extra dilution.</p>
+
+            <p style="margin-top: 1rem;"><strong>Important for Exam:</strong> You do NOT need to calculate anti-dilution adjustments. Just know conceptually what it is and who it protects.</p>
         </div>
 
-        <div class="concept-box">
-            <h3>Question 2 (THE SERIES B PROBLEM)</h3>
-            <p><strong>Using the cap chart from the slides: Common stockholders hold 10,000,000 shares. Series A Preferred investors invested $5,000,000 for 5,000,000 shares at $1.00 per share. A Series B investor now wants to invest $10,000,000 for 50% of the company. Calculate:</strong></p>
+        <!-- PRACTICE QUESTIONS -->
+        <h2>Practice Questions</h2>
+
+        <div class="practice-box">
+            <h3>Question 1: Pre/Post-Money Valuation</h3>
+            <p><strong>Be able to compute the pre-money and post-money valuation of a firm based on an investment amount and share of the company.</strong></p>
+            
+            <p><strong>Example:</strong> A VC invests $6M for 30% of a startup. What are the pre-money and post-money valuations?</p>
+            
+            <details style="margin-top: 1rem;">
+                <summary style="cursor: pointer; color: var(--uva-orange); font-weight: 600;">Show Answer</summary>
+                <div style="margin-top: 1rem; padding: 1rem; background: white; border-radius: 6px;">
+                    <div class="calculation-box">
+<strong>Step 1: Calculate Post-Money Valuation</strong>
+Investment ÷ Ownership % = Post-Money
+$6M ÷ 0.30 = $20M
+
+<strong>Step 2: Calculate Pre-Money Valuation</strong>
+Post-Money - Investment = Pre-Money
+$20M - $6M = $14M
+
+<strong>Answer:</strong>
+Pre-Money Valuation: $14M
+Post-Money Valuation: $20M
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <div class="practice-box">
+            <h3>Question 2: The Series B Problem</h3>
+            <p><strong>Using the cap table from class: Common stockholders hold 10,000,000 shares. Series A Preferred investors invested $5,000,000 for 5,000,000 shares at $1.00 per share. A Series B investor now wants to invest $10,000,000 for 50% of the company. Calculate:</strong></p>
             
             <ol>
                 <li>How many total shares must be outstanding after Series B?</li>
                 <li>How many new shares does Series B receive?</li>
                 <li>What is the price per share?</li>
-                <li>Final ownership percentages?</li>
+                <li>What are the final ownership percentages?</li>
             </ol>
-
-            <p><strong>Answer:</strong></p>
-            <div class="calculation-box">
-                <pre>1. Total shares: 30,000,000
-   (Current 15M = 50%, so total = 15M ÷ 0.5)
-
-2. New shares: 15,000,000
-   (30M total - 15M current)
-
-3. Price per share: $0.67
-   ($10M ÷ 15M shares)
-
-4. Final ownership:
-   Common: 33.3% (10M ÷ 30M)
-   Series A: 16.7% (5M ÷ 30M)
-   Series B: 50.0% (15M ÷ 30M)</pre>
-            </div>
-        </div>
-
-        <div class="concept-box">
-            <h3>Question 3</h3>
-            <p><strong>Explain what a liquidation preference is and why venture capital investors typically require one. Using the non-participating preferred example from the slides ($1M investment, $4M pre-money valuation, 1.5X liquidation preference), explain why the preferred investor would choose NOT to convert when the company sells for $2 million, but WOULD choose to convert when the company sells for $10 million.</strong></p>
             
-            <p><strong>Your Answer Should Include:</strong></p>
-            <ul>
-                <li><strong>What it is:</strong> VCs get their money back (or multiple) before common gets anything</li>
-                <li><strong>Why VCs want it:</strong> Downside protection - if exit is disappointing, at least get investment back</li>
-                <li><strong>At $2M sale:</strong>
-                    <ul>
-                        <li>Preference: $1.5M (1.5X of $1M investment)</li>
-                        <li>Convert to common: $2M × 20% = $400K</li>
-                        <li>Choose preference: $1.5M > $400K</li>
-                    </ul>
-                </li>
-                <li><strong>At $10M sale:</strong>
-                    <ul>
-                        <li>Preference: $1.5M</li>
-                        <li>Convert to common: $10M × 20% = $2M</li>
-                        <li>Choose convert: $2M > $1.5M</li>
-                    </ul>
-                </li>
-            </ul>
+            <details style="margin-top: 1rem;">
+                <summary style="cursor: pointer; color: var(--uva-orange); font-weight: 600;">Show Complete Solution</summary>
+                <div style="margin-top: 1rem; padding: 1rem; background: white; border-radius: 6px;">
+                    <div class="calculation-box">
+<strong>Given Information:</strong>
+Current shares: 15,000,000 (10M Common + 5M Series A)
+New investment: $10,000,000
+Desired ownership: 50%
+
+<strong>1. Total Shares After Series B:</strong>
+Existing shares ÷ (1 - New %) = Total after
+15,000,000 ÷ (1 - 0.5) = 15M ÷ 0.5
+= 30,000,000 shares
+
+<strong>2. New Shares to Series B:</strong>
+Total after - Existing = New shares
+30,000,000 - 15,000,000 = 15,000,000 shares
+
+<strong>3. Price Per Share:</strong>
+Investment ÷ New shares = Price
+$10,000,000 ÷ 15,000,000 = $0.67/share
+
+Note: This is a down round (Series A paid $1.00/share)
+
+<strong>4. Final Ownership Percentages:</strong>
+Common: 10M ÷ 30M = 33.3%
+Series A: 5M ÷ 30M = 16.7%
+Series B: 15M ÷ 30M = 50.0%
+
+Check: 33.3% + 16.7% + 50.0% = 100% ✓
+                    </div>
+                </div>
+            </details>
         </div>
 
-        <div class="concept-box">
-            <h3>Question 4</h3>
+        <div class="practice-box">
+            <h3>Question 3: Liquidation Preferences</h3>
+            <p><strong>Explain what a liquidation preference is and why venture capital investors typically require one. Using the non-participating preferred example from class ($1M investment, $4M pre-money valuation, 1.5X liquidation preference), explain why the preferred investor would choose NOT to convert when the company sells for $2 million, but WOULD choose to convert when the company sells for $10 million.</strong></p>
+            
+            <details style="margin-top: 1rem;">
+                <summary style="cursor: pointer; color: var(--uva-orange); font-weight: 600;">Show Sample Answer</summary>
+                <div style="margin-top: 1rem; padding: 1rem; background: white; border-radius: 6px;">
+                    <p><strong>What a Liquidation Preference Is:</strong></p>
+                    <p>A liquidation preference is a term in preferred stock that ensures VCs get paid back their investment (or a multiple of it) BEFORE common stockholders receive anything when the company exits through sale or liquidation.</p>
+                    
+                    <p><strong>Why VCs Require It:</strong></p>
+                    <ul>
+                        <li><strong>Downside protection:</strong> If the company sells for less than expected, VCs at least recover their investment (or a multiple)</li>
+                        <li>Reduces risk for VCs by creating a payment priority</li>
+                        <li>Common stockholders (founders) bear more downside risk</li>
+                    </ul>
+                    
+                    <p><strong>Analysis of the Example:</strong></p>
+                    <p><em>Setup: $1M invested at $4M pre-money ($5M post-money), so VC owns 20%, with 1.5X liquidation preference ($1.5M)</em></p>
+                    
+                    <p><strong>At $2M Exit - DON'T Convert:</strong></p>
+                    <div class="calculation-box">
+Option A (Take preference): $1,500,000
+Option B (Convert to 20%): $2M × 20% = $400,000
+
+VC chooses Option A: $1,500,000 > $400,000
+                    </div>
+                    <p>At a low exit price, the liquidation preference is worth more than the pro-rata ownership share. The VC uses downside protection.</p>
+                    
+                    <p><strong>At $10M Exit - DO Convert:</strong></p>
+                    <div class="calculation-box">
+Option A (Take preference): $1,500,000
+Option B (Convert to 20%): $10M × 20% = $2,000,000
+
+VC chooses Option B: $2,000,000 > $1,500,000
+                    </div>
+                    <p>At a high exit price, the pro-rata ownership share is worth more than the fixed liquidation preference. The VC converts to participate in the upside.</p>
+                    
+                    <p><strong>The Pattern:</strong> VCs choose whichever option pays more—preference at low exits (downside protection), conversion at high exits (upside participation).</p>
+                </div>
+            </details>
+        </div>
+
+        <div class="practice-box">
+            <h3>Question 4: Anti-Dilution Protection</h3>
             <p><strong>Suppose that after the $10,000,000 Series B investment, the company needs to raise a Series C. Suppose that the Series B investor has anti-dilution protection. At what valuation would the anti-dilution protection become relevant? Who would bear the cost?</strong></p>
             
-            <p><strong>Your Answer:</strong></p>
-            <ul>
-                <li><strong>When relevant:</strong> If Series C price < Series B price ($0.67/share)</li>
-                <li><strong>Example:</strong> If Series C is at $0.50/share, that's a down round</li>
-                <li><strong>Who bears cost:</strong> Common stockholders (founders) get diluted extra to give Series B more shares</li>
-                <li><strong>Series B protected:</strong> Their ownership % stays the same or increases</li>
-            </ul>
+            <details style="margin-top: 1rem;">
+                <summary style="cursor: pointer; color: var(--uva-orange); font-weight: 600;">Show Answer</summary>
+                <div style="margin-top: 1rem; padding: 1rem; background: white; border-radius: 6px;">
+                    <p><strong>When Anti-Dilution Becomes Relevant:</strong></p>
+                    <p>Anti-dilution protection kicks in when the Series C price per share is LOWER than the Series B price per share. Since Series B paid $0.67/share, anti-dilution would trigger if Series C is priced below $0.67/share.</p>
+                    
+                    <p><strong>Example:</strong> If Series C investors pay $0.50/share, that's a down round—the company's value decreased.</p>
+                    
+                    <p><strong>Who Bears the Cost:</strong></p>
+                    <ul>
+                        <li><strong>Common stockholders (founders)</strong> bear the cost</li>
+                        <li>Series B investors receive additional shares to compensate for the down round</li>
+                        <li>These additional shares come from diluting the common stockholders more heavily</li>
+                        <li>Series B's ownership percentage stays the same or increases, while founders' percentage decreases more than it would have without anti-dilution protection</li>
+                    </ul>
+                    
+                    <p><strong>Note:</strong> You do NOT need to calculate the specific anti-dilution adjustment for the exam—just understand the concept and who it protects.</p>
+                </div>
+            </details>
         </div>
 
-        <div class="alert-not-tested alert">
-            <strong>❌ NOT TESTED:</strong> "Fundamental Ideas of Finance" section. You do NOT need to calculate anti-dilution protection.
-        </div>
-
-        <div class="alert alert-exam">
-            <h3>💡 Final Exam Tips for Class 4</h3>
+        <!-- EXAM TIP -->
+        <div class="alert alert-info">
+            <h4>✓ What's Testable</h4>
             <ul>
-                <li>PRACTICE Series B problem 5 times with different numbers</li>
-                <li>Know the formula: Current shares ÷ (1 - New %) = Total after</li>
-                <li>Liquidation preference: Low exit = take preference, High exit = convert</li>
-                <li>Show all your work on calculations!</li>
+                <li>Pre-money and post-money valuation calculations</li>
+                <li>THE SERIES B PROBLEM: shares outstanding, new shares, price per share, final ownership %s</li>
+                <li>Liquidation preferences: what they are, why VCs want them</li>
+                <li>Non-participating preferred: when VCs take preference vs convert to common</li>
+                <li>Anti-dilution: when it matters, who bears the cost (CONCEPT only, not calculations)</li>
             </ul>
+            
+            <h4 style="margin-top: 1rem;">✗ What's NOT Testable</h4>
+            <ul>
+                <li>Detailed anti-dilution calculations (weighted average, full ratchet)</li>
+                <li>"Fundamental Ideas of Finance" section from slides</li>
+                <li>Complex participating preferred scenarios</li>
+            </ul>
+            
+            <h4 style="margin-top: 1rem;">📝 Critical Exam Strategy</h4>
+            <p><strong>Practice the Series B problem 5+ times with different numbers:</strong></p>
+            <ul>
+                <li>Try: 20M existing shares, $15M investment for 60%</li>
+                <li>Try: 8M existing shares, $4M investment for 25%</li>
+                <li>Try: 12M existing shares, $20M investment for 40%</li>
+            </ul>
+            <p>The formula stays the same: <strong>Existing ÷ (1 - New %) = Total after</strong></p>
         </div>
 
         <div style="margin: 3rem 0; text-align: center;">
-            <a href="class3.html" class="btn btn-secondary">← Class 3 (Entity Choice)</a>
-            <a href="class5.html" class="btn">Next: Class 5 (Term Sheets) →</a>
+            <a href="class3.html" class="btn btn-secondary">← Class 3: Entity Choice</a>
+            <a href="class5.html" class="btn btn-primary">Next: Class 5 →</a>
         </div>
     </div>
 </body>
