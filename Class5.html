@@ -9,7 +9,7 @@
 <body>
     <nav>
         <div class="container">
-            <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">⚖️ UVA Law</a></div>
+            <div class="logo">⚖️ UVA Law - Intro to Law & Business</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="class1.html">Class 1</a></li>
@@ -17,357 +17,429 @@
                 <li><a href="class3.html">Class 3</a></li>
                 <li><a href="class4.html">Class 4</a></li>
                 <li><a href="class5.html">Class 5</a></li>
-                <li><a href="class6.html">Class 6-7</a></li>
-                <li><a href="class7.html">Class 8-9</a></li>
+                <li><a href="class6.html">Class 6</a></li>
+                <li><a href="class7.html">Class 7</a></li>
             </ul>
         </div>
     </nav>
 
     <div class="container">
-        <a href="index.html" class="btn btn-secondary">← Back to Home</a>
-        
         <h1>Class 5: Term Sheets</h1>
-        
-        <div style="margin: 1rem 0;">
-            <span class="badge critical">CRITICAL</span>
-            <span class="badge explain">MUST EXPLAIN</span>
+        <p style="font-size: 1.1rem; color: var(--cool-gray); margin-bottom: 2rem;">
+            Understanding venture capital deal terms and who wants what
+        </p>
+
+        <div class="podcast-container">
+            <div class="podcast-header">
+                <span class="podcast-icon">🎧</span>
+                <div>
+                    <h3 class="podcast-title">Class 5 Podcast</h3>
+                    <p class="podcast-duration">Listen first for overview (~12 minutes)</p>
+                </div>
+            </div>
+            <audio controls>
+                <source src="PASTE_CLASS_5_PODCAST_LINK_HERE" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="speed-controls">
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=0.75">0.75x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=1.0">1x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=1.25">1.25x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=1.5">1.5x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=2.0">2x</button>
+            </div>
         </div>
 
-        <div class="alert alert-exam">
-            <strong>🎯 KEY SKILL:</strong> For EVERY term sheet provision, know WHO wants it and WHY they want it.
+        <div class="alert alert-warning">
+            <strong>🎯 EXAM FOCUS:</strong> For EVERY term sheet provision, know WHO wants it and WHY they want it. This is the key to answering term sheet questions correctly.
         </div>
 
-        <div class="toc">
-            <strong>Quick Jump:</strong>
-            <a href="#economic">Economic Terms</a>
-            <a href="#control">Control Terms</a>
-            <a href="#other">Other Terms</a>
-            <a href="#review">Review Questions</a>
-        </div>
-
-        <h2 id="economic">Economic Terms</h2>
+        <!-- SECTION 1: ECONOMIC TERMS -->
+        <h2>Economic Terms</h2>
 
         <div class="concept-box">
             <h3>1. Liquidation Preference</h3>
-            <p><strong>What it is:</strong> VCs get paid first (and potentially extra) when company exits</p>
             
-            <p><strong>WHO wants it:</strong> VCs</p>
-            <p><strong>WHY they want it:</strong> Downside protection - if exit disappoints, at least get money back</p>
+            <p><strong>What It Is:</strong> VCs get paid first (and potentially extra) when the company exits through sale or liquidation.</p>
+            
+            <p><strong>WHO Wants It:</strong> VCs</p>
+            <p><strong>WHY They Want It:</strong> Downside protection—if the exit is disappointing, VCs at least get their money back before common stockholders get anything.</p>
 
             <h4>The Mechanics:</h4>
             <ul>
-                <li><strong>1X preference:</strong> Get investment back, then split rest pro-rata</li>
-                <li><strong>2X or 3X preference:</strong> Get 2X or 3X investment back first (better for VCs)</li>
-                <li><strong>Non-participating:</strong> Choose preference OR convert to common (not both)</li>
-                <li><strong>Participating:</strong> Get preference AND pro-rata share (double-dipping!)</li>
+                <li><strong>1X preference:</strong> Get investment back first, then split remaining proceeds pro-rata with common</li>
+                <li><strong>2X or 3X preference:</strong> Get 2X or 3X investment back first (stronger protection for VCs)</li>
             </ul>
 
-            <p><strong>Founders prefer:</strong> 1X non-participating (least VC-friendly)</p>
-            <p><strong>VCs prefer:</strong> Multiple X participating (most VC-friendly)</p>
+            <h4>Non-Participating vs Participating:</h4>
+            <p><strong>Non-Participating:</strong> VC chooses EITHER preference OR convert to common (whichever is higher)</p>
+            <ul>
+                <li>Low exit → take preference</li>
+                <li>High exit → convert to common</li>
+            </ul>
+
+            <p><strong>Participating:</strong> VC gets BOTH preference AND pro-rata share (double-dipping)</p>
+            <ul>
+                <li>Much better for VCs, much worse for founders</li>
+                <li>Sometimes called "participating preferred with cap"</li>
+            </ul>
+
+            <p><strong>Founders Prefer:</strong> 1X non-participating (least favorable to VCs)</p>
+            <p><strong>VCs Prefer:</strong> Multiple X participating (most favorable to VCs)</p>
         </div>
 
         <div class="concept-box">
             <h3>2. Dividends</h3>
-            <p><strong>What it is:</strong> Regular payments to preferred stockholders (like bond interest)</p>
             
-            <p><strong>WHO wants it:</strong> VCs</p>
-            <p><strong>WHY they want it:</strong> Get returns even if no exit happens soon</p>
+            <p><strong>What It Is:</strong> Regular payments to preferred stockholders, similar to bond interest.</p>
+            
+            <p><strong>WHO Wants It:</strong> VCs</p>
+            <p><strong>WHY They Want It:</strong> Get returns even if no exit happens soon; provides ongoing cash flow.</p>
 
             <h4>Types:</h4>
             <ul>
-                <li><strong>Cumulative:</strong> Dividends accumulate if not paid (pile up debt to VCs)</li>
-                <li><strong>Non-cumulative:</strong> If not paid, they're gone</li>
-                <li><strong>Typically 6-8% annual rate</strong></li>
+                <li><strong>Cumulative:</strong> If not paid, dividends accumulate as debt to VCs (pile up over time)</li>
+                <li><strong>Non-cumulative:</strong> If not paid in a given year, they're forfeited</li>
+                <li><strong>Typical rate:</strong> 6-8% annually</li>
             </ul>
 
-            <p><strong>Founders prefer:</strong> No dividends at all (startups need cash for growth)</p>
-            <p><strong>Reality:</strong> Most VC deals have no mandatory dividends (startups are illiquid)</p>
+            <p><strong>Founders Prefer:</strong> No dividends at all—startups need cash for growth, not distributions</p>
+            <p><strong>Reality:</strong> Most VC deals have no mandatory dividends because early-stage companies are cash-constrained</p>
         </div>
 
         <div class="concept-box">
             <h3>3. Anti-Dilution Protection</h3>
-            <p><strong>What it is:</strong> If company raises at lower price (down round), VCs get extra shares to maintain value</p>
             
-            <p><strong>WHO wants it:</strong> VCs (especially early investors)</p>
-            <p><strong>WHY they want it:</strong> Protection if company's value drops</p>
+            <p><strong>What It Is:</strong> If company raises money at a lower price per share (down round), VCs get additional shares to maintain their investment value.</p>
+            
+            <p><strong>WHO Wants It:</strong> VCs (especially early investors)</p>
+            <p><strong>WHY They Want It:</strong> Protection if company's valuation drops; prevents being "punished" for investing early at a higher price.</p>
 
             <h4>Types:</h4>
             <ul>
-                <li><strong>Full ratchet:</strong> Adjust as if VC paid the new lower price (very harsh on founders)</li>
-                <li><strong>Weighted average:</strong> Blend of old and new price based on amounts (more fair)</li>
+                <li><strong>Full ratchet:</strong> VC's price adjusts completely to the new lower price (very harsh on founders)</li>
+                <li><strong>Weighted average:</strong> Blends old and new price based on investment amounts (more fair to both sides)</li>
             </ul>
 
-            <p><strong>WHO bears the cost:</strong> Common stockholders (founders) get diluted extra</p>
-            <p><strong>When it matters:</strong> Only in down rounds</p>
+            <p><strong>WHO Bears the Cost:</strong> Common stockholders (founders) get diluted extra to give VCs more shares</p>
+            <p><strong>When It Matters:</strong> Only triggers in down rounds (when new round price < previous round price)</p>
         </div>
 
         <div class="concept-box">
-            <h3>4. Valuation Cap (for Convertible Notes)</h3>
-            <p><strong>What it is:</strong> Maximum valuation at which note converts to equity</p>
+            <h3>4. Valuation Cap (Convertible Notes)</h3>
             
-            <p><strong>WHO wants it:</strong> Early investors</p>
-            <p><strong>WHY they want it:</strong> Cap their risk if company valuation skyrockets before conversion</p>
+            <p><strong>What It Is:</strong> Maximum valuation at which a convertible note converts to equity.</p>
+            
+            <p><strong>WHO Wants It:</strong> Early investors (using convertible notes instead of priced equity rounds)</p>
+            <p><strong>WHY They Want It:</strong> Limits their downside if company's valuation skyrockets before conversion; ensures they get rewarded for early risk.</p>
 
             <p><strong>Example:</strong></p>
             <ul>
-                <li>Invest $100K on note with $5M cap</li>
-                <li>Company raises Series A at $20M valuation</li>
-                <li>Note converts at $5M cap (not $20M) → investor gets 4X more shares</li>
+                <li>Investor puts $100K into convertible note with $5M cap</li>
+                <li>Company later raises Series A at $20M valuation</li>
+                <li>Note converts at the $5M cap (not $20M)</li>
+                <li>Investor gets 4X more shares than Series A investors per dollar invested</li>
             </ul>
         </div>
 
-        <h2 id="control">Control and Governance Terms</h2>
+        <!-- SECTION 2: CONTROL TERMS -->
+        <h2>Control and Governance Terms</h2>
 
         <div class="concept-box">
             <h3>5. Board Composition</h3>
-            <p><strong>What it is:</strong> Who sits on the board and makes major decisions</p>
             
-            <p><strong>Common structure:</strong></p>
+            <p><strong>What It Is:</strong> Who sits on the board of directors and makes major strategic decisions.</p>
+            
+            <p><strong>Common Structure:</strong></p>
             <ul>
-                <li>2 seats for founders</li>
-                <li>2 seats for VCs</li>
-                <li>1 independent seat (mutually agreed)</li>
+                <li>2 seats for founders/management</li>
+                <li>2 seats for VCs/investors</li>
+                <li>1 independent seat (mutually agreed upon)</li>
             </ul>
 
-            <p><strong>WHO wants control:</strong> Both founders and VCs</p>
-            <p><strong>WHY VCs want board seats:</strong></p>
+            <p><strong>WHO Wants Board Seats:</strong> Both VCs and founders</p>
+            
+            <p><strong>WHY VCs Want Them:</strong></p>
             <ul>
-                <li>Oversight and monitoring</li>
-                <li>Influence major decisions</li>
-                <li>Protect their investment</li>
-                <li>Remove CEO if needed</li>
+                <li>Oversight and monitoring of their investment</li>
+                <li>Ability to influence major decisions</li>
+                <li>Protect their investment from founder mistakes</li>
+                <li>Remove CEO if necessary</li>
             </ul>
 
-            <p><strong>WHY founders want seats:</strong></p>
+            <p><strong>WHY Founders Want Them:</strong></p>
             <ul>
-                <li>Keep operational control</li>
-                <li>Make strategic decisions</li>
-                <li>Avoid being fired</li>
+                <li>Maintain operational control</li>
+                <li>Drive strategic direction</li>
+                <li>Avoid being fired from their own company</li>
             </ul>
         </div>
 
         <div class="concept-box">
             <h3>6. Protective Provisions</h3>
-            <p><strong>What it is:</strong> List of actions that require VC approval (veto power)</p>
             
-            <p><strong>WHO wants it:</strong> VCs</p>
-            <p><strong>WHY they want it:</strong> Prevent founders from doing things that hurt VCs</p>
+            <p><strong>What It Is:</strong> List of major actions that require VC approval (essentially veto power over certain decisions).</p>
+            
+            <p><strong>WHO Wants It:</strong> VCs</p>
+            <p><strong>WHY They Want It:</strong> Prevent founders from taking actions that could harm VC interests.</p>
 
             <h4>Typical Protected Actions:</h4>
             <ul>
-                <li>Issuing new stock (prevents dilution)</li>
-                <li>Selling the company (VCs want say in exit)</li>
-                <li>Changing stock rights (can't reduce VC privileges)</li>
-                <li>Incurring debt above threshold (limits risk)</li>
-                <li>Changing business model fundamentally</li>
+                <li><strong>Issuing new stock:</strong> Prevents dilution of VCs without their consent</li>
+                <li><strong>Selling the company:</strong> VCs want control over exit timing and terms</li>
+                <li><strong>Changing stock rights:</strong> Can't reduce VC privileges unilaterally</li>
+                <li><strong>Incurring debt above threshold:</strong> Limits financial risk</li>
+                <li><strong>Changing business model:</strong> Can't pivot away from what VCs invested in</li>
+                <li><strong>Declaring dividends:</strong> Prevents founders from paying themselves instead of reinvesting</li>
             </ul>
         </div>
 
         <div class="concept-box">
             <h3>7. Drag-Along Rights</h3>
-            <p><strong>What it is:</strong> If majority votes to sell, minority must sell too</p>
             
-            <p><strong>WHO wants it:</strong> VCs (and majority shareholders)</p>
-            <p><strong>WHY they want it:</strong> Prevent one stubborn shareholder from blocking a good exit</p>
+            <p><strong>What It Is:</strong> If a majority of shareholders vote to sell the company, minority shareholders are forced to sell too on the same terms.</p>
+            
+            <p><strong>WHO Wants It:</strong> VCs and majority shareholders</p>
+            <p><strong>WHY They Want It:</strong> Prevent one stubborn minority shareholder from blocking a good exit opportunity.</p>
 
-            <p><strong>Example scenario:</strong></p>
+            <p><strong>Example Scenario:</strong></p>
             <ul>
-                <li>Acquirer wants to buy 100% of company</li>
-                <li>VCs + founders agree (90% vote yes)</li>
-                <li>One early employee with 2% says no</li>
-                <li>Drag-along forces that 2% to sell</li>
+                <li>Acquirer offers to buy 100% of company for good price</li>
+                <li>VCs + founders agree (representing 90% of shares)</li>
+                <li>One early employee with 2% refuses to sell</li>
+                <li>Acquirer wants 100% ownership, not 98%</li>
+                <li>Drag-along forces the 2% minority to sell</li>
+                <li>Deal closes successfully</li>
             </ul>
 
-            <p><strong>Without drag-along:</strong> Deal could fall apart because acquirer wants 100%</p>
+            <p><strong>Without Drag-Along:</strong> The entire acquisition could fall apart over one small minority holder</p>
         </div>
 
         <div class="concept-box">
-            <h3>8. Tag-Along Rights (Co-Sale)</h3>
-            <p><strong>What it is:</strong> If founders sell shares, VCs can sell too on same terms</p>
+            <h3>8. Tag-Along Rights (Co-Sale Rights)</h3>
             
-            <p><strong>WHO wants it:</strong> VCs</p>
-            <p><strong>WHY they want it:</strong> Prevent founders from cashing out and leaving VCs stuck</p>
+            <p><strong>What It Is:</strong> If founders sell their shares to a third party, VCs can sell their shares too on the same terms.</p>
+            
+            <p><strong>WHO Wants It:</strong> VCs</p>
+            <p><strong>WHY They Want It:</strong> Prevent founders from cashing out and abandoning ship while VCs remain locked in.</p>
 
-            <p><strong>Example scenario:</strong></p>
+            <p><strong>Example Scenario:</strong></p>
             <ul>
-                <li>Founder gets offer to sell 20% stake to private buyer</li>
-                <li>VCs can tag along and sell their shares too</li>
-                <li>Ensures everyone has same liquidity opportunities</li>
+                <li>Founder receives offer from private buyer to purchase 20% of founder's stake</li>
+                <li>VCs can "tag along" and sell their shares to the same buyer on identical terms</li>
+                <li>Ensures everyone has equal liquidity opportunities</li>
+                <li>Prevents founders from selling early while VCs are stuck</li>
             </ul>
         </div>
 
         <div class="concept-box">
             <h3>9. Right of First Refusal (ROFR)</h3>
-            <p><strong>What it is:</strong> If shareholder wants to sell, company (or VCs) can buy first</p>
             
-            <p><strong>WHO wants it:</strong> Company and existing investors</p>
-            <p><strong>WHY they want it:</strong> Control who becomes a shareholder</p>
+            <p><strong>What It Is:</strong> If a shareholder wants to sell shares, the company (or existing investors) gets the first opportunity to buy them.</p>
+            
+            <p><strong>WHO Wants It:</strong> Company and existing investors</p>
+            <p><strong>WHY They Want It:</strong> Control who becomes a shareholder; keep ownership within the existing group.</p>
 
-            <p><strong>How it works:</strong></p>
+            <h4>How It Works:</h4>
             <ol>
-                <li>Employee wants to sell 10,000 shares</li>
-                <li>Gets outside offer for $5/share</li>
-                <li>Company has 30 days to match the $5/share offer</li>
-                <li>If company declines, VCs can match</li>
-                <li>Only if both decline can employee sell to outsider</li>
+                <li>Employee receives outside offer to buy their 10,000 shares at $5/share</li>
+                <li>Company has 30 days to match the $5/share offer and buy the shares</li>
+                <li>If company declines, VCs have 30 days to match the offer</li>
+                <li>Only if both company and VCs decline can employee sell to the outside buyer</li>
             </ol>
         </div>
 
-        <h2 id="other">Other Important Terms</h2>
+        <!-- SECTION 3: OTHER TERMS -->
+        <h2>Other Important Terms</h2>
 
         <div class="concept-box">
             <h3>10. Vesting</h3>
-            <p><strong>What it is:</strong> Founders earn their shares over time (typically 4 years)</p>
             
-            <p><strong>WHO wants it:</strong> VCs</p>
-            <p><strong>WHY they want it:</strong> Ensure founders stay committed and don't leave early with all their equity</p>
+            <p><strong>What It Is:</strong> Founders earn their shares over time (typically 4 years) rather than owning them all immediately.</p>
+            
+            <p><strong>WHO Wants It:</strong> VCs</p>
+            <p><strong>WHY They Want It:</strong> Ensure founders stay committed to the company; prevent founders from leaving early with all their equity.</p>
 
-            <h4>Standard Vesting:</h4>
+            <h4>Standard Vesting Schedule:</h4>
             <ul>
-                <li><strong>4-year vesting</strong></li>
-                <li><strong>1-year cliff:</strong> Nothing vests until year 1, then 25% vests</li>
-                <li><strong>Monthly after cliff:</strong> Remaining 75% vests monthly over 3 years</li>
+                <li><strong>4-year total vesting period</strong></li>
+                <li><strong>1-year cliff:</strong> Nothing vests for the first year, then 25% vests all at once</li>
+                <li><strong>Monthly vesting after cliff:</strong> Remaining 75% vests in equal monthly increments over 36 months</li>
             </ul>
 
-            <p><strong>Example:</strong></p>
+            <h4>Example:</h4>
+            <p>Founder receives 1,000,000 shares with standard 4-year vesting, 1-year cliff:</p>
             <ul>
-                <li>Founder gets 1M shares with 4-year vesting, 1-year cliff</li>
-                <li>Month 11: Quits → gets ZERO shares (before cliff)</li>
-                <li>Month 13: Quits → gets 250K shares (cliff vested)</li>
-                <li>Month 25: Quits → gets 500K shares (cliff + 12 more months)</li>
-                <li>Year 4: Gets all 1M shares</li>
+                <li><strong>Month 11 (before cliff):</strong> Quits → gets 0 shares</li>
+                <li><strong>Month 13 (after cliff):</strong> Quits → gets 250,000 shares (25%)</li>
+                <li><strong>Month 25:</strong> Quits → gets 500,000 shares (cliff + 12 more months)</li>
+                <li><strong>Year 4 completion:</strong> Gets all 1,000,000 shares</li>
             </ul>
         </div>
 
         <div class="concept-box">
             <h3>11. Information Rights</h3>
-            <p><strong>What it is:</strong> VCs get regular financial statements and reports</p>
             
-            <p><strong>WHO wants it:</strong> VCs</p>
-            <p><strong>WHY they want it:</strong> Monitor investment, no surprises</p>
+            <p><strong>What It Is:</strong> VCs receive regular financial statements, reports, and updates about company performance.</p>
+            
+            <p><strong>WHO Wants It:</strong> VCs</p>
+            <p><strong>WHY They Want It:</strong> Monitor their investment; no surprises about company performance.</p>
 
-            <h4>Typical Rights:</h4>
+            <h4>Typical Information Rights:</h4>
             <ul>
-                <li>Monthly financial statements</li>
-                <li>Annual audited financials</li>
+                <li>Monthly unaudited financial statements</li>
+                <li>Annual audited financial statements</li>
                 <li>Annual budget and business plan</li>
-                <li>Board meeting attendance</li>
+                <li>Quarterly board meeting attendance rights</li>
+                <li>Access to company facilities for inspection</li>
             </ul>
         </div>
 
         <div class="concept-box">
             <h3>12. Registration Rights</h3>
-            <p><strong>What it is:</strong> VCs can force company to file for IPO or include VC shares in IPO</p>
             
-            <p><strong>WHO wants it:</strong> VCs</p>
-            <p><strong>WHY they want it:</strong> Ensure they can exit via IPO</p>
+            <p><strong>What It Is:</strong> VCs can force the company to file for an IPO or include VC shares when company goes public.</p>
+            
+            <p><strong>WHO Wants It:</strong> VCs</p>
+            <p><strong>WHY They Want It:</strong> Ensure they can exit their investment via public markets; prevents being locked into illiquid stock forever.</p>
 
             <h4>Types:</h4>
             <ul>
-                <li><strong>Demand rights:</strong> VCs can force company to register for IPO</li>
-                <li><strong>Piggyback rights:</strong> If company does IPO, VCs can include their shares</li>
+                <li><strong>Demand rights:</strong> VCs can force the company to register for IPO (usually after certain timeframe or conditions)</li>
+                <li><strong>Piggyback rights:</strong> If company decides to do an IPO, VCs can include their shares in the offering</li>
             </ul>
         </div>
 
         <div class="concept-box">
             <h3>13. No-Shop Clause</h3>
-            <p><strong>What it is:</strong> Founder can't negotiate with other VCs for X days</p>
             
-            <p><strong>WHO wants it:</strong> VCs</p>
-            <p><strong>WHY they want it:</strong> Prevent being used for leverage while doing diligence</p>
+            <p><strong>What It Is:</strong> Founders cannot negotiate with other VCs for a specified period (typically 30-60 days).</p>
+            
+            <p><strong>WHO Wants It:</strong> VCs</p>
+            <p><strong>WHY They Want It:</strong> Prevent being used as leverage while conducting due diligence; ensures exclusive negotiation period.</p>
 
-            <p><strong>Typical duration:</strong> 30-60 days</p>
+            <p><strong>Typical Duration:</strong> 30-60 days</p>
+            <p><strong>Founders' Concern:</strong> Gets locked into one VC without ability to create competitive pressure</p>
         </div>
 
         <div class="concept-box">
             <h3>14. Pay-to-Play</h3>
-            <p><strong>What it is:</strong> VCs lose privileges if they don't invest in future rounds</p>
             
-            <p><strong>WHO wants it:</strong> Lead investors in new rounds</p>
-            <p><strong>WHY they want it:</strong> Punish VCs who don't support struggling company</p>
+            <p><strong>What It Is:</strong> Existing investors lose certain privileges if they don't invest their pro-rata share in future funding rounds.</p>
+            
+            <p><strong>WHO Wants It:</strong> Lead investors in new rounds (especially down rounds)</p>
+            <p><strong>WHY They Want It:</strong> Punish investors who won't support a struggling company when it needs more capital.</p>
 
-            <p><strong>Example:</strong> Series B investors say: "If you don't invest pro-rata in Series C, you lose your board seat and liquidation preference converts to common"</p>
+            <p><strong>Example:</strong></p>
+            <ul>
+                <li>Company raises Series C at lower valuation (down round)</li>
+                <li>Series C investors add pay-to-play provision</li>
+                <li>Series A and B investors must invest their pro-rata share</li>
+                <li>If they don't: their preferred stock converts to common, they lose board seat, lose liquidation preference</li>
+            </ul>
         </div>
 
-        <h2 id="review">Term Sheet Summary Table</h2>
+        <!-- SUMMARY TABLE -->
+        <h2>Term Sheet Quick Reference</h2>
 
         <div class="example-box">
-            <table style="width: 100%; margin: 1rem 0; font-size: 0.9rem;">
-                <tr>
-                    <th>Term</th>
-                    <th>Who Wants It</th>
-                    <th>Why They Want It</th>
-                </tr>
-                <tr>
-                    <td><strong>Liquidation Preference</strong></td>
-                    <td>VCs</td>
-                    <td>Downside protection</td>
-                </tr>
-                <tr>
-                    <td><strong>Dividends</strong></td>
-                    <td>VCs</td>
-                    <td>Regular returns</td>
-                </tr>
-                <tr>
-                    <td><strong>Anti-Dilution</strong></td>
-                    <td>VCs</td>
-                    <td>Down round protection</td>
-                </tr>
-                <tr>
-                    <td><strong>Board Seats</strong></td>
-                    <td>VCs & Founders</td>
-                    <td>Control/oversight</td>
-                </tr>
-                <tr>
-                    <td><strong>Protective Provisions</strong></td>
-                    <td>VCs</td>
-                    <td>Veto bad decisions</td>
-                </tr>
-                <tr>
-                    <td><strong>Drag-Along</strong></td>
-                    <td>VCs</td>
-                    <td>Force exit if needed</td>
-                </tr>
-                <tr>
-                    <td><strong>Tag-Along</strong></td>
-                    <td>VCs</td>
-                    <td>Sell if founders sell</td>
-                </tr>
-                <tr>
-                    <td><strong>ROFR</strong></td>
-                    <td>Company/VCs</td>
-                    <td>Control shareholders</td>
-                </tr>
-                <tr>
-                    <td><strong>Vesting</strong></td>
-                    <td>VCs</td>
-                    <td>Keep founders committed</td>
-                </tr>
-                <tr>
-                    <td><strong>No-Shop</strong></td>
-                    <td>VCs</td>
-                    <td>Exclusive negotiation</td>
-                </tr>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Term</th>
+                        <th>Who Wants It</th>
+                        <th>Why They Want It</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Liquidation Preference</td>
+                        <td>VCs</td>
+                        <td>Downside protection—get money back first</td>
+                    </tr>
+                    <tr>
+                        <td>Dividends</td>
+                        <td>VCs</td>
+                        <td>Regular returns even without exit</td>
+                    </tr>
+                    <tr>
+                        <td>Anti-Dilution</td>
+                        <td>VCs</td>
+                        <td>Protection in down rounds</td>
+                    </tr>
+                    <tr>
+                        <td>Board Seats</td>
+                        <td>VCs & Founders</td>
+                        <td>Control and oversight vs operational control</td>
+                    </tr>
+                    <tr>
+                        <td>Protective Provisions</td>
+                        <td>VCs</td>
+                        <td>Veto power over major decisions</td>
+                    </tr>
+                    <tr>
+                        <td>Drag-Along</td>
+                        <td>VCs</td>
+                        <td>Force exit if majority agrees</td>
+                    </tr>
+                    <tr>
+                        <td>Tag-Along</td>
+                        <td>VCs</td>
+                        <td>Sell if founders sell (equal liquidity)</td>
+                    </tr>
+                    <tr>
+                        <td>ROFR</td>
+                        <td>Company/VCs</td>
+                        <td>Control who becomes shareholder</td>
+                    </tr>
+                    <tr>
+                        <td>Vesting</td>
+                        <td>VCs</td>
+                        <td>Keep founders committed long-term</td>
+                    </tr>
+                    <tr>
+                        <td>Information Rights</td>
+                        <td>VCs</td>
+                        <td>Monitor investment performance</td>
+                    </tr>
+                    <tr>
+                        <td>Registration Rights</td>
+                        <td>VCs</td>
+                        <td>Ensure IPO exit opportunity</td>
+                    </tr>
+                    <tr>
+                        <td>No-Shop</td>
+                        <td>VCs</td>
+                        <td>Exclusive negotiation period</td>
+                    </tr>
+                    <tr>
+                        <td>Pay-to-Play</td>
+                        <td>New Round VCs</td>
+                        <td>Punish non-participating investors</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
 
-        <div class="alert alert-exam">
-            <h3>💡 How to Answer Term Sheet Questions</h3>
-            <p><strong>Structure your answer:</strong></p>
+        <!-- EXAM TIP -->
+        <div class="alert alert-info">
+            <h4>✓ How to Answer Term Sheet Questions on the Exam</h4>
+            
+            <p><strong>Structure Every Answer This Way:</strong></p>
             <ol>
-                <li><strong>What it is:</strong> One sentence definition</li>
+                <li><strong>What it is:</strong> One-sentence definition of the term</li>
                 <li><strong>Who wants it:</strong> VCs, Founders, or Both</li>
                 <li><strong>Why they want it:</strong> The economic or control motivation</li>
                 <li><strong>Example:</strong> Concrete scenario showing how it works</li>
             </ol>
 
-            <p><strong>Example answer for Drag-Along:</strong></p>
-            <p>"Drag-along rights allow majority shareholders to force minority shareholders to sell in an acquisition. VCs want this because it prevents a small shareholder from blocking a good exit opportunity. For example, if 90% of shareholders agree to sell to an acquirer who wants 100% ownership, drag-along forces the remaining 10% to sell on the same terms."</p>
+            <p style="margin-top: 1.5rem;"><strong>Sample Answer for Drag-Along Rights:</strong></p>
+            <p><em>"Drag-along rights allow majority shareholders to force minority shareholders to sell their shares in an acquisition. VCs want this provision because it prevents a small minority shareholder from blocking a good exit opportunity for everyone. For example, if 90% of shareholders (VCs + founders) agree to sell the company to an acquirer who wants 100% ownership, drag-along forces the remaining 10% to sell on the same terms, ensuring the deal can close."</em></p>
         </div>
 
         <div style="margin: 3rem 0; text-align: center;">
-            <a href="class4.html" class="btn btn-secondary">← Class 4 (VC Finance)</a>
-            <a href="class6.html" class="btn">Next: Class 6-7 (Contracts) →</a>
+            <a href="class4.html" class="btn btn-secondary">← Class 4: VC Finance</a>
+            <a href="class6.html" class="btn btn-primary">Next: Class 6 →</a>
         </div>
     </div>
 </body>
