@@ -9,7 +9,7 @@
 <body>
     <nav>
         <div class="container">
-            <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">⚖️ UVA Law</a></div>
+            <div class="logo">⚖️ UVA Law - Intro to Law & Business</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="class1.html">Class 1</a></li>
@@ -17,434 +17,556 @@
                 <li><a href="class3.html">Class 3</a></li>
                 <li><a href="class4.html">Class 4</a></li>
                 <li><a href="class5.html">Class 5</a></li>
-                <li><a href="class6.html">Class 6-7</a></li>
-                <li><a href="class7.html">Class 8-9</a></li>
+                <li><a href="class6.html">Class 6</a></li>
+                <li><a href="class7.html">Class 7</a></li>
             </ul>
         </div>
     </nav>
 
     <div class="container">
-        <a href="index.html" class="btn btn-secondary">← Back to Home</a>
-        
         <h1>Class 3: Entity Choice</h1>
-        
-        <div style="margin: 1rem 0;">
-            <span class="badge critical">CRITICAL</span>
-            <span class="badge calculation">MUST CALCULATE</span>
-        </div>
+        <p style="font-size: 1.1rem; color: var(--cool-gray); margin-bottom: 2rem;">
+            Choosing the right business structure and understanding tax implications
+        </p>
 
-        <div class="toc">
-            <strong>Quick Jump:</strong>
-            <a href="#entities">Entity Types</a>
-            <a href="#tax-calc">Tax Calculation</a>
-            <a href="#ccorp-choice">Why C-Corps?</a>
-            <a href="#review">Review Questions</a>
+        <div class="podcast-container">
+            <div class="podcast-header">
+                <span class="podcast-icon">🎧</span>
+                <div>
+                    <h3 class="podcast-title">Class 3 Podcast</h3>
+                    <p class="podcast-duration">Listen first for overview (~12 minutes)</p>
+                </div>
+            </div>
+            <audio controls>
+                <source src="PASTE_CLASS_3_PODCAST_LINK_HERE" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="speed-controls">
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=0.75">0.75x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=1.0">1x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=1.25">1.25x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=1.5">1.5x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=2.0">2x</button>
+            </div>
         </div>
 
         <div class="alert alert-warning">
-            <strong>⚠️ CRITICAL:</strong> The tax comparison calculation WILL be on the exam with different numbers!
+            <strong>🎯 EXAM FOCUS:</strong> The tax comparison calculation (C-Corp vs pass-through on $100k profit) WILL appear with different numbers. Know why VCs require C-Corps despite higher taxes. S-Corp details and complex tax scenarios are NOT tested.
         </div>
 
-        <h2 id="entities">The Four Main Entity Types</h2>
+        <!-- SECTION 1: ENTITY TYPES -->
+        <h2>The Four Main Entity Types</h2>
 
         <div class="concept-box">
             <h3>1. C-Corporation</h3>
-            <p><strong>Taxation:</strong> Double taxation (corporate + personal)</p>
+            <p><strong>Taxation:</strong> Double taxation (corporate level + personal level)</p>
+            
             <p><strong>Key Features:</strong></p>
             <ul>
                 <li>Can have unlimited shareholders</li>
                 <li>Can have different classes of stock (preferred + common)</li>
                 <li>Foreign investors allowed</li>
-                <li>Required for VC-backed startups</li>
+                <li>Most formal structure with board requirements</li>
             </ul>
-            <p><strong>Best For:</strong> High-growth startups seeking VC funding</p>
+            
+            <p><strong>Best For:</strong> High-growth startups seeking venture capital funding, companies planning to go public</p>
         </div>
 
         <div class="concept-box">
             <h3>2. S-Corporation</h3>
-            <p><strong>Taxation:</strong> Pass-through (only personal tax)</p>
+            <p><strong>Taxation:</strong> Pass-through (only personal tax, no corporate tax)</p>
+            
             <p><strong>Key Features:</strong></p>
             <ul>
                 <li>Maximum 100 shareholders</li>
-                <li>Only US citizens/residents as shareholders</li>
+                <li>Only US citizens/residents can be shareholders</li>
                 <li>Only ONE class of stock allowed</li>
-                <li>No corporate-level tax</li>
+                <li>Corporate formalities required (board meetings, minutes)</li>
             </ul>
-            <p><strong>Best For:</strong> Small businesses with modest growth, US-only investors</p>
+            
+            <p><strong>Best For:</strong> Small to medium businesses with modest growth, US-only investors, want tax benefits but need corporate structure</p>
         </div>
 
         <div class="concept-box">
             <h3>3. LLC (Limited Liability Company)</h3>
-            <p><strong>Taxation:</strong> Pass-through (by default)</p>
+            <p><strong>Taxation:</strong> Pass-through by default (can elect to be taxed as C-Corp)</p>
+            
             <p><strong>Key Features:</strong></p>
             <ul>
                 <li>No limit on number of members</li>
                 <li>Foreign investors allowed</li>
                 <li>Very flexible operating agreement</li>
-                <li>Can choose to be taxed as C-Corp if desired</li>
+                <li>Less formal than corporations</li>
+                <li>Can customize member rights and distributions</li>
             </ul>
-            <p><strong>Best For:</strong> Flexible structure, real estate, partnerships</p>
+            
+            <p><strong>Best For:</strong> Flexible structure needed, real estate investments, partnerships, small businesses prioritizing simplicity</p>
         </div>
 
         <div class="concept-box">
             <h3>4. Partnership / Sole Proprietorship</h3>
             <p><strong>Taxation:</strong> Pass-through</p>
+            
             <p><strong>Key Features:</strong></p>
             <ul>
-                <li>No liability protection (general partnership)</li>
+                <li>No liability protection in general partnership</li>
                 <li>Simplest to set up</li>
                 <li>Partners personally liable for business debts</li>
+                <li>Minimal formalities</li>
             </ul>
-            <p><strong>Best For:</strong> Very small businesses, service providers</p>
+            
+            <p><strong>Best For:</strong> Very small businesses, service providers who don't need liability protection, sole operators</p>
         </div>
 
-        <h2 id="tax-calc">The Tax Calculation You MUST Know</h2>
+        <!-- SECTION 2: THE TAX CALCULATION -->
+        <h2>The Critical Tax Calculation</h2>
 
-        <div class="alert alert-exam">
-            <strong>🔥 This calculation WILL appear on the exam!</strong> Practice with different profit amounts.
+        <div class="exam-box">
+            <h3>🔥 This WILL Be On Your Exam</h3>
+            <p>You need to be able to calculate and compare tax burdens under C-Corp vs pass-through taxation with different profit amounts.</p>
         </div>
 
         <div class="concept-box">
             <h3>The Scenario</h3>
-            <p>A business earns <strong>$100,000</strong> in profit.</p>
-            <p>Compare the total tax burden under:</p>
+            <p>A business earns <strong>$100,000</strong> in profit before taxes.</p>
+            <p>Compare the total tax burden and owner take-home under:</p>
             <ol>
                 <li>C-Corporation (double taxation)</li>
                 <li>Pass-through entity (LLC or S-Corp)</li>
             </ol>
 
-            <p><strong>Assumptions:</strong></p>
+            <p><strong>Tax Rates:</strong></p>
             <ul>
-                <li>Corporate tax rate: 21%</li>
-                <li>Personal tax rate on dividends: 20%</li>
-                <li>Personal tax rate on pass-through income: 17.1% (includes self-employment tax consideration)</li>
+                <li>Corporate tax rate: <strong>21%</strong></li>
+                <li>Personal tax rate on dividends: <strong>20%</strong></li>
+                <li>Personal tax rate on pass-through income: <strong>17.1%</strong> (effective rate including self-employment tax considerations)</li>
             </ul>
         </div>
 
         <div class="calculation-box">
-            <h3>C-CORPORATION TAXATION</h3>
-            <pre><strong>LAYER 1: Corporate Tax</strong>
-Business profit:           $100,000
-Corporate tax (21%):       -$21,000
-─────────────────────────────────
-After-tax profit:           $79,000
+<strong>C-CORPORATION: DOUBLE TAXATION</strong>
+
+<strong>LAYER 1: Corporate Tax</strong>
+Business profit:                 $100,000
+Corporate tax (21%):              -21,000
+─────────────────────────────────────────
+After-tax corporate profit:       $79,000
 
 <strong>LAYER 2: Personal Tax on Dividends</strong>
-Dividends received:         $79,000
-Personal tax (20%):        -$15,800
-─────────────────────────────────
-Money in your pocket:       $63,200
+Dividends distributed:            $79,000
+Personal tax on dividends (20%):  -15,800
+─────────────────────────────────────────
+Money in owner's pocket:          $63,200
 
-<strong>TOTAL TAX PAID:</strong>
-Corporate tax:              $21,000
-Personal tax:              +$15,800
-─────────────────────────────────
-Total:                      $36,800
+<strong>TOTAL TAX BURDEN:</strong>
+Corporate tax:                    $21,000
+Personal tax:                    +$15,800
+─────────────────────────────────────────
+Total taxes paid:                 $36,800
 
-<strong>EFFECTIVE TAX RATE: 36.8%</strong></pre>
+<strong>EFFECTIVE TAX RATE: 36.8%</strong>
         </div>
 
         <div class="calculation-box">
-            <h3>PASS-THROUGH TAXATION (LLC or S-Corp)</h3>
-            <pre><strong>NO CORPORATE TAX</strong>
-Business profit:           $100,000
-Corporate tax:                  $0
-─────────────────────────────────
-Profit flows to owner:     $100,000
+<strong>PASS-THROUGH ENTITY: SINGLE TAXATION</strong>
 
-<strong>PERSONAL TAX</strong>
-Pass-through income:       $100,000
-Personal tax (17.1%):      -$17,100
-─────────────────────────────────
-Money in your pocket:       $82,900
+<strong>NO CORPORATE TAX LAYER</strong>
+Business profit:                 $100,000
+Corporate tax:                         $0
+─────────────────────────────────────────
+Profit flows to owner:           $100,000
 
-<strong>TOTAL TAX PAID: $17,100</strong>
+<strong>PERSONAL TAX ONLY</strong>
+Pass-through income:             $100,000
+Personal tax (17.1%):             -17,100
+─────────────────────────────────────────
+Money in owner's pocket:          $82,900
 
-<strong>EFFECTIVE TAX RATE: 17.1%</strong></pre>
+<strong>TOTAL TAX BURDEN: $17,100</strong>
+
+<strong>EFFECTIVE TAX RATE: 17.1%</strong>
         </div>
 
         <div class="example-box">
             <h3>The Comparison</h3>
-            <table style="width: 100%; margin: 1rem 0;">
-                <tr>
-                    <th>Entity Type</th>
-                    <th>Total Tax</th>
-                    <th>Money You Keep</th>
-                    <th>Effective Rate</th>
-                </tr>
-                <tr>
-                    <td><strong>C-Corp</strong></td>
-                    <td>$36,800</td>
-                    <td>$63,200</td>
-                    <td>36.8%</td>
-                </tr>
-                <tr>
-                    <td><strong>Pass-Through</strong></td>
-                    <td>$17,100</td>
-                    <td>$82,900</td>
-                    <td>17.1%</td>
-                </tr>
-                <tr style="background: #FFF5E6;">
-                    <td><strong>Difference</strong></td>
-                    <td>+$19,700 MORE tax</td>
-                    <td>-$19,700 LESS money</td>
-                    <td>+19.7% higher rate</td>
-                </tr>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Entity Type</th>
+                        <th>Total Tax Paid</th>
+                        <th>Owner Keeps</th>
+                        <th>Effective Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>C-Corporation</strong></td>
+                        <td>$36,800</td>
+                        <td>$63,200</td>
+                        <td>36.8%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pass-Through</strong></td>
+                        <td>$17,100</td>
+                        <td>$82,900</td>
+                        <td>17.1%</td>
+                    </tr>
+                    <tr style="background: #FFF5E6;">
+                        <td><strong>Difference</strong></td>
+                        <td>+$19,700 more tax</td>
+                        <td>-$19,700 less money</td>
+                        <td>+19.7 percentage points</td>
+                    </tr>
+                </tbody>
             </table>
 
-            <p><strong>C-Corps pay MORE THAN DOUBLE the tax!</strong></p>
+            <p style="margin-top: 1rem; font-size: 1.1rem;"><strong>Bottom Line:</strong> C-Corps pay more than double the tax rate of pass-through entities!</p>
         </div>
 
-        <div class="alert alert-exam">
-            <h4>How to Ace This on the Exam</h4>
+        <div class="concept-box">
+            <h3>How to Calculate This on the Exam</h3>
+            
+            <p><strong>For C-Corporation (Two Layers):</strong></p>
             <ol>
-                <li><strong>C-Corp: Calculate TWO layers</strong>
-                    <ul>
-                        <li>Step 1: Profit × 21% = corporate tax</li>
-                        <li>Step 2: (Profit - corporate tax) × 20% = personal tax</li>
-                        <li>Step 3: Add them together</li>
-                    </ul>
+                <li><strong>Step 1:</strong> Calculate corporate tax
+                    <ul><li>Profit × 21% = corporate tax paid</li></ul>
                 </li>
-                <li><strong>Pass-Through: ONE layer</strong>
-                    <ul>
-                        <li>Profit × 17.1% = total tax</li>
-                    </ul>
+                <li><strong>Step 2:</strong> Calculate what's left after corporate tax
+                    <ul><li>Profit - corporate tax = amount available for dividends</li></ul>
                 </li>
-                <li><strong>Show your work!</strong> Professor wants to see the calculation steps</li>
+                <li><strong>Step 3:</strong> Calculate personal tax on dividends
+                    <ul><li>Dividends × 20% = personal tax paid</li></ul>
+                </li>
+                <li><strong>Step 4:</strong> Add both tax layers together
+                    <ul><li>Corporate tax + personal tax = total tax burden</li></ul>
+                </li>
             </ol>
+
+            <p style="margin-top: 1rem;"><strong>For Pass-Through Entity (One Layer):</strong></p>
+            <ol>
+                <li><strong>Step 1:</strong> Calculate personal tax
+                    <ul><li>Profit × 17.1% = total tax burden</li></ul>
+                </li>
+                <li>That's it—there's no corporate layer!</li>
+            </ol>
+
+            <p style="margin-top: 1rem;"><strong>Pro tip:</strong> Show your work step by step. Professors want to see your calculation process, not just the final answer.</p>
         </div>
 
-        <h2 id="ccorp-choice">Why Choose a C-Corp Despite Higher Taxes?</h2>
+        <!-- SECTION 3: WHY C-CORPS DESPITE TAXES -->
+        <h2>Why Choose C-Corp Despite Higher Taxes?</h2>
 
         <div class="concept-box">
             <h3>The Paradox</h3>
-            <p>C-Corps pay nearly DOUBLE the tax, yet most VC-backed startups still choose them. Why?</p>
+            <p>C-Corporations pay nearly double the tax, yet most venture-backed startups still choose them. Why would anyone accept this tax disadvantage?</p>
+        </div>
 
-            <h4>Reasons VCs Require C-Corps:</h4>
-            <ol>
-                <li><strong>Preferred Stock</strong>
-                    <ul>
-                        <li>VCs want preferred stock with special rights</li>
-                        <li>S-Corps can only have ONE class of stock</li>
-                        <li>LLCs technically can, but it's messy</li>
-                        <li>C-Corps easily support multiple stock classes</li>
-                    </ul>
-                </li>
+        <div class="concept-box">
+            <h3>Why VCs Require C-Corporations</h3>
 
-                <li><strong>Unlimited Investors</strong>
-                    <ul>
-                        <li>VCs want to bring in more investors later</li>
-                        <li>S-Corps limited to 100 shareholders</li>
-                        <li>C-Corps have no limit</li>
-                    </ul>
-                </li>
+            <p><strong>1. Preferred Stock Required</strong></p>
+            <ul>
+                <li>VCs demand preferred stock with liquidation preferences, anti-dilution protection, and board rights</li>
+                <li>S-Corporations can only have ONE class of stock (no preferred/common distinction)</li>
+                <li>LLCs technically can create different membership interests, but it's messy and non-standard</li>
+                <li>C-Corporations easily support multiple classes of stock</li>
+            </ul>
 
-                <li><strong>Foreign Investors</strong>
-                    <ul>
-                        <li>VCs often have foreign LPs or want foreign investors</li>
-                        <li>S-Corps can't have foreign shareholders</li>
-                        <li>C-Corps can</li>
-                    </ul>
-                </li>
+            <p><strong>2. Unlimited Investors</strong></p>
+            <ul>
+                <li>VCs plan for multiple funding rounds with new investors each time</li>
+                <li>S-Corporations limited to 100 shareholders maximum</li>
+                <li>C-Corporations have no shareholder limit</li>
+                <li>Allows for Series A, B, C, D... with new investors each round</li>
+            </ul>
 
-                <li><strong>Easier Exit (IPO or Acquisition)</strong>
-                    <ul>
-                        <li>Public companies must be C-Corps</li>
-                        <li>Acquirers prefer buying C-Corps</li>
-                        <li>Converting S-Corp to C-Corp right before exit creates tax issues</li>
-                    </ul>
-                </li>
+            <p><strong>3. Foreign Investors</strong></p>
+            <ul>
+                <li>Many VC funds have foreign limited partners or want to bring in international investors</li>
+                <li>S-Corporations cannot have foreign shareholders (US citizens/residents only)</li>
+                <li>C-Corporations can have foreign investors without restriction</li>
+            </ul>
 
-                <li><strong>Stock Options for Employees</strong>
-                    <ul>
-                        <li>C-Corps can easily grant stock options</li>
-                        <li>S-Corp/LLC stock options are complicated</li>
-                    </ul>
-                </li>
-            </ol>
+            <p><strong>4. Exit Strategy (IPO or Acquisition)</strong></p>
+            <ul>
+                <li>Public companies must be C-Corporations</li>
+                <li>If planning IPO, need to be C-Corp from the start</li>
+                <li>Most acquirers prefer buying C-Corps (simpler, more familiar)</li>
+                <li>Converting from S-Corp to C-Corp right before exit creates tax complications</li>
+            </ul>
+
+            <p><strong>5. Stock Options for Employees</strong></p>
+            <ul>
+                <li>C-Corporations can easily grant stock options as employee compensation</li>
+                <li>Stock options in S-Corps and LLCs are complex and problematic</li>
+                <li>High-growth startups need to attract talent with equity</li>
+            </ul>
         </div>
 
         <div class="example-box">
             <h3>The Trade-Off in Practice</h3>
             
-            <p><strong>For a high-growth startup:</strong></p>
+            <p><strong>For a High-Growth Startup (VC-Backed):</strong></p>
             <ul>
-                <li>Early years: Usually no profit (losing money), so tax doesn't matter</li>
-                <li>Later years: If profitable, founders accept the tax hit because:</li>
-                <li>→ They raised VC money (couldn't do that without C-Corp)</li>
-                <li>→ They're heading toward exit (IPO or acquisition)</li>
-                <li>→ The business grew way bigger than it could have without VC</li>
+                <li><strong>Early years:</strong> Usually losing money, so no profit to tax anyway</li>
+                <li><strong>Growth phase:</strong> Reinvesting all profit into growth—not taking dividends</li>
+                <li><strong>Exit:</strong> Sell company or go public—founders cash out via capital gains, not dividends</li>
+                <li><strong>Result:</strong> Double taxation largely avoided because profits aren't distributed as dividends</li>
             </ul>
 
-            <p><strong>For a small business (bakery, consulting firm):</strong></p>
+            <p style="margin-top: 1rem;"><strong>For a Small Profitable Business (Bakery, Consulting Firm):</strong></p>
             <ul>
-                <li>Want to keep profits → tax matters a LOT</li>
-                <li>Don't need VC money</li>
-                <li>Not planning IPO</li>
-                <li>→ Choose LLC or S-Corp to save on taxes</li>
+                <li>Owners want to take profits home regularly</li>
+                <li>Not seeking VC funding</li>
+                <li>Not planning to go public</li>
+                <li>Tax burden matters enormously</li>
+                <li><strong>Result:</strong> Choose LLC or S-Corp to avoid double taxation and keep more money</li>
             </ul>
         </div>
 
+        <!-- SECTION 4: S-CORP LIMITATIONS -->
         <h2>When S-Corp Doesn't Work</h2>
 
         <div class="concept-box">
             <h3>Scenarios Where Pass-Through Taxation ≠ S-Corp</h3>
+            
+            <p>Sometimes founders want pass-through taxation but S-Corp won't work due to its restrictions:</p>
 
-            <p><strong>Founder wants pass-through taxation BUT S-Corp doesn't work if:</strong></p>
+            <p><strong>1. Foreign Co-Founder or Investor</strong></p>
+            <ul>
+                <li>S-Corps require all shareholders be US citizens or residents</li>
+                <li>If your co-founder is from another country → can't use S-Corp</li>
+                <li><strong>Solution:</strong> Use LLC instead</li>
+            </ul>
 
-            <ol>
-                <li><strong>Foreign co-founder or investor</strong>
-                    <ul><li>S-Corps require all shareholders be US citizens/residents</li>
-                    <li>→ Use LLC instead</li></ul>
-                </li>
+            <p><strong>2. More Than 100 Investors Planned</strong></p>
+            <ul>
+                <li>S-Corp caps at 100 shareholders</li>
+                <li>If you anticipate needing more → can't use S-Corp</li>
+                <li><strong>Solution:</strong> Use LLC or accept C-Corp taxation</li>
+            </ul>
 
-                <li><strong>More than 100 investors planned</strong>
-                    <ul><li>S-Corp caps at 100 shareholders</li>
-                    <li>→ Use LLC instead</li></ul>
-                </li>
+            <p><strong>3. Want Different Classes of Equity</strong></p>
+            <ul>
+                <li>S-Corp allows only one class of stock</li>
+                <li>Can't give some investors preferred rights over others</li>
+                <li><strong>Solution:</strong> Use LLC with different membership interests</li>
+            </ul>
 
-                <li><strong>Want different classes of stock</strong>
-                    <ul><li>S-Corp only allows one class</li>
-                    <li>→ Use LLC with different membership interests</li></ul>
-                </li>
-
-                <li><strong>Corporate investor wants in</strong>
-                    <ul><li>S-Corp can't have corporations as shareholders</li>
-                    <li>→ Use LLC instead</li></ul>
-                </li>
-            </ol>
+            <p><strong>4. Corporate Investor Wants In</strong></p>
+            <ul>
+                <li>S-Corp cannot have corporations as shareholders</li>
+                <li>If a company wants to invest → can't use S-Corp</li>
+                <li><strong>Solution:</strong> Use LLC instead</li>
+            </ul>
         </div>
 
-        <h2>Other Entity Choice Factors</h2>
+        <!-- SECTION 5: OTHER FACTORS -->
+        <h2>Other Entity Choice Considerations</h2>
 
         <div class="concept-box">
             <h3>Beyond Tax Treatment</h3>
 
-            <h4>Factors to Consider:</h4>
-            <ol>
-                <li><strong>Liability Protection</strong>
-                    <ul>
-                        <li>All corps and LLCs provide limited liability</li>
-                        <li>Partnerships/sole proprietors have UNLIMITED personal liability</li>
-                    </ul>
-                </li>
-
-                <li><strong>Formality Requirements</strong>
-                    <ul>
-                        <li>C-Corps: Board meetings, minutes, formal structure</li>
-                        <li>S-Corps: Same as C-Corp</li>
-                        <li>LLCs: Flexible, less formal</li>
-                    </ul>
-                </li>
-
-                <li><strong>Cost and Complexity</strong>
-                    <ul>
-                        <li>C-Corps: More expensive to set up and maintain</li>
-                        <li>LLCs: Simpler and cheaper</li>
-                    </ul>
-                </li>
-
-                <li><strong>Future Funding Plans</strong>
-                    <ul>
-                        <li>Need VC money? → Must be C-Corp</li>
-                        <li>Bootstrapping? → LLC or S-Corp fine</li>
-                    </ul>
-                </li>
-
-                <li><strong>Exit Strategy</strong>
-                    <ul>
-                        <li>Planning IPO? → Must be C-Corp</li>
-                        <li>Planning acquisition? → C-Corp preferred by acquirers</li>
-                        <li>Keep forever? → Pass-through saves taxes</li>
-                    </ul>
-                </li>
-            </ol>
-
-            <h4>Likely IRRELEVANT Factors:</h4>
+            <p><strong>Liability Protection</strong></p>
             <ul>
-                <li>The name of the business (has nothing to do with entity type)</li>
-                <li>What industry you're in (doesn't dictate entity choice)</li>
+                <li>C-Corps, S-Corps, and LLCs all provide limited liability</li>
+                <li>Owners not personally liable for business debts (with exceptions for fraud, personal guarantees)</li>
+                <li>Partnerships and sole proprietorships: UNLIMITED personal liability</li>
+            </ul>
+
+            <p><strong>Formality Requirements</strong></p>
+            <ul>
+                <li>C-Corps and S-Corps: Board meetings, minutes, formal corporate structure required</li>
+                <li>LLCs: Much more flexible, less formal</li>
+                <li>Partnerships: Minimal formalities</li>
+            </ul>
+
+            <p><strong>Cost and Complexity</strong></p>
+            <ul>
+                <li>C-Corps: More expensive to set up and maintain (corporate formalities, compliance)</li>
+                <li>LLCs: Simpler and cheaper to maintain</li>
+                <li>Sole proprietorships: Cheapest and simplest</li>
+            </ul>
+
+            <p><strong>Future Funding Plans</strong></p>
+            <ul>
+                <li>Need VC money? → Must be C-Corp</li>
+                <li>Bootstrapping? → LLC or S-Corp saves on taxes</li>
+                <li>Planning crowdfunding with many small investors? → Consider shareholder limits</li>
+            </ul>
+
+            <p><strong>Exit Strategy</strong></p>
+            <ul>
+                <li>Planning IPO? → Must be C-Corp</li>
+                <li>Planning acquisition? → C-Corp preferred by most acquirers</li>
+                <li>Keep forever and take distributions? → Pass-through saves taxes</li>
+            </ul>
+        </div>
+
+        <div class="concept-box">
+            <h3>Factors That Are Usually IRRELEVANT</h3>
+            <ul>
+                <li>The name of the business</li>
+                <li>What industry you're in (doesn't dictate entity type)</li>
                 <li>Whether founders are friends vs strangers</li>
+                <li>The size of the business in terms of revenue (tax treatment matters more)</li>
             </ul>
         </div>
 
-        <h2 id="review">Review Questions (From Professor)</h2>
+        <!-- PRACTICE QUESTIONS -->
+        <h2>Practice Questions</h2>
 
-        <div class="concept-box">
-            <h3>Question 1</h3>
-            <p><strong>A client comes to you and says she wants to start a small bakery with one partner. They expect modest income for the first few years and want to avoid double taxation. What entity type(s) would you recommend, and why? What factors beyond tax treatment should they consider when choosing an entity? Identify at least two. What is one factor that is likely irrelevant to their decision?</strong></p>
+        <div class="practice-box">
+            <h3>Question 1: Small Business Entity Choice</h3>
+            <p><strong>A client wants to start a small bakery with one partner. They expect modest income for the first few years and want to avoid double taxation. What entity type(s) would you recommend, and why? What factors beyond tax treatment should they consider? Identify at least two. What is one factor that is likely irrelevant to their decision?</strong></p>
             
-            <p><strong>Your Answer Should Include:</strong></p>
-            <ul>
-                <li><strong>Recommendation:</strong> LLC or S-Corp (both provide pass-through taxation)</li>
-                <li><strong>Why:</strong> Avoids double taxation, keeps more profit, provides liability protection</li>
-                <li><strong>Other factors to consider:</strong>
+            <details style="margin-top: 1rem;">
+                <summary style="cursor: pointer; color: var(--uva-orange); font-weight: 600;">Show Sample Answer</summary>
+                <div style="margin-top: 1rem; padding: 1rem; background: white; border-radius: 6px;">
+                    <p><strong>Recommendation:</strong> LLC or S-Corporation</p>
+                    
+                    <p><strong>Why:</strong></p>
+                    <ul>
+                        <li>Both provide pass-through taxation, avoiding the double taxation of C-Corps</li>
+                        <li>This means they keep more of their profits (17.1% vs 36.8% effective tax rate)</li>
+                        <li>Both provide limited liability protection for the owners</li>
+                        <li>For a modest-income bakery, tax savings are significant and they don't need C-Corp features</li>
+                    </ul>
+                    
+                    <p><strong>Other Factors Beyond Tax:</strong></p>
                     <ol>
-                        <li>Liability protection (both LLC and S-Corp provide this)</li>
-                        <li>Formality requirements (LLC is more flexible, S-Corp requires corporate formalities)</li>
-                        <li>Future funding plans (if they ever want investors, may need to convert)</li>
+                        <li><strong>Formality Requirements:</strong> S-Corp requires board meetings and corporate minutes; LLC is more flexible with fewer formalities. For a small bakery, LLC's flexibility may be preferable.</li>
+                        <li><strong>Liability Protection:</strong> Both LLC and S-Corp shield personal assets from business debts. This is important for a bakery (potential food safety issues, slip-and-fall claims, etc.).</li>
+                        <li><strong>Cost and Complexity:</strong> LLC is typically cheaper and simpler to maintain than S-Corp. For a small business, lower administrative burden matters.</li>
                     </ol>
-                </li>
-                <li><strong>Irrelevant factor:</strong> Name of the business, what baked goods they sell, whether partners are friends</li>
-            </ul>
+                    
+                    <p><strong>Irrelevant Factor:</strong></p>
+                    <ul>
+                        <li>The name of the bakery</li>
+                        <li>What types of baked goods they sell</li>
+                        <li>Whether the partners are friends or business acquaintances</li>
+                    </ul>
+                </div>
+            </details>
         </div>
 
-        <div class="concept-box">
-            <h3>Question 2</h3>
-            <p><strong>Describe a scenario where a founder wants pass-through taxation, but an S-Corp would not be a good fit.</strong></p>
+        <div class="practice-box">
+            <h3>Question 2: Pass-Through but Not S-Corp</h3>
+            <p><strong>Describe a scenario where a founder wants pass-through taxation, but an S-Corporation would not be a good fit.</strong></p>
             
-            <p><strong>Your Answer (pick one scenario):</strong></p>
-            <ul>
-                <li>Founder has a co-founder who is not a US citizen → Can't use S-Corp, use LLC instead</li>
-                <li>Founder wants to bring in corporate investors → S-Corp doesn't allow corporate shareholders</li>
-                <li>Founder plans to have 150 investors eventually → S-Corp caps at 100 shareholders</li>
-                <li>Founder wants to give different rights to different investors → S-Corp only allows one class of stock</li>
-            </ul>
+            <details style="margin-top: 1rem;">
+                <summary style="cursor: pointer; color: var(--uva-orange); font-weight: 600;">Show Sample Answer</summary>
+                <div style="margin-top: 1rem; padding: 1rem; background: white; border-radius: 6px;">
+                    <p><strong>Scenario Options (any one is a complete answer):</strong></p>
+                    
+                    <p><strong>Option 1: Foreign Co-Founder</strong></p>
+                    <ul>
+                        <li>Founder has a co-founder who is not a US citizen or resident</li>
+                        <li>S-Corp requires all shareholders be US citizens/residents</li>
+                        <li><strong>Solution:</strong> Use LLC instead—gets pass-through taxation and allows foreign owners</li>
+                    </ul>
+                    
+                    <p><strong>Option 2: Many Investors</strong></p>
+                    <ul>
+                        <li>Founder plans to have 150 investors through a crowdfunding campaign</li>
+                        <li>S-Corp caps at 100 shareholders</li>
+                        <li><strong>Solution:</strong> Use LLC instead—no shareholder limit</li>
+                    </ul>
+                    
+                    <p><strong>Option 3: Different Investor Rights</strong></p>
+                    <ul>
+                        <li>Founder wants to give early investors preferred rights (liquidation preference, anti-dilution)</li>
+                        <li>S-Corp only allows one class of stock</li>
+                        <li><strong>Solution:</strong> Use LLC with different membership interests</li>
+                    </ul>
+                    
+                    <p><strong>Option 4: Corporate Investor</strong></p>
+                    <ul>
+                        <li>A corporation wants to invest in the business</li>
+                        <li>S-Corp cannot have corporations as shareholders</li>
+                        <li><strong>Solution:</strong> Use LLC instead</li>
+                    </ul>
+                </div>
+            </details>
         </div>
 
-        <div class="concept-box">
-            <h3>Question 3 (THE TAX CALCULATION)</h3>
-            <p><strong>Walk through the two layers of tax that apply to a C-Corporation and explain why the effective tax rate (approximately 32.9%/36.8%) is significantly higher than for a pass-through entity (approximately 17.1%). Given this tax disadvantage, why might a startup still choose to organize as a C-Corporation?</strong></p>
+        <div class="practice-box">
+            <h3>Question 3: Tax Calculation (CRITICAL)</h3>
+            <p><strong>Walk through the two layers of tax that apply to a C-Corporation and explain why the effective tax rate (approximately 36.8%) is significantly higher than for a pass-through entity (approximately 17.1%). Given this tax disadvantage, why might a startup still choose to organize as a C-Corporation?</strong></p>
             
-            <div class="calculation-box">
-                <strong>ANSWER - Part 1: The Calculation</strong>
-                <pre>C-CORP (on $100k profit):
-Layer 1: $100k × 21% = $21k corporate tax
-After corp tax: $79k remains
-Layer 2: $79k × 20% = $15.8k personal tax
-Total tax: $21k + $15.8k = $36.8k (36.8% rate)
+            <details style="margin-top: 1rem;">
+                <summary style="cursor: pointer; color: var(--uva-orange); font-weight: 600;">Show Sample Answer</summary>
+                <div style="margin-top: 1rem; padding: 1rem; background: white; border-radius: 6px;">
+                    <p><strong>Part 1: The Two Layers of C-Corp Taxation</strong></p>
+                    
+                    <div class="calculation-box">
+Example: $100,000 profit
 
-PASS-THROUGH (on $100k profit):
-One layer: $100k × 17.1% = $17.1k
-Total tax: $17.1k (17.1% rate)
+C-CORPORATION:
+Layer 1 (Corporate Tax):
+  $100,000 × 21% = $21,000 corporate tax
+  $100,000 - $21,000 = $79,000 after corporate tax
 
-Difference: C-Corp pays 2x more!</pre>
-            </div>
+Layer 2 (Personal Tax):
+  $79,000 × 20% = $15,800 personal tax on dividends
+  $79,000 - $15,800 = $63,200 to owner
 
-            <p><strong>Part 2: Why Choose C-Corp Anyway?</strong></p>
-            <ul>
-                <li>VCs require preferred stock (S-Corp can't have multiple classes)</li>
-                <li>Need unlimited investors for future rounds (S-Corp caps at 100)</li>
-                <li>Want foreign investors (S-Corp requires US citizens only)</li>
-                <li>Planning IPO or acquisition (must be C-Corp)</li>
-                <li>Need stock options for employees (easier in C-Corp)</li>
-                <li>Early years have no profit anyway (so double taxation doesn't matter yet)</li>
-            </ul>
+Total Tax: $21,000 + $15,800 = $36,800 (36.8% effective rate)
+
+PASS-THROUGH:
+Single Layer (Personal Tax Only):
+  $100,000 × 17.1% = $17,100 total tax
+  $100,000 - $17,100 = $82,900 to owner
+
+Difference: $36,800 vs $17,100 = C-Corp pays 2.15x more!
+                    </div>
+                    
+                    <p><strong>Part 2: Why the Higher Rate?</strong></p>
+                    <ul>
+                        <li>C-Corp income is taxed twice: once at corporate level, again when distributed to owners</li>
+                        <li>Pass-through income is only taxed once at personal level</li>
+                        <li>The double taxation creates an effective rate more than double that of pass-through</li>
+                    </ul>
+                    
+                    <p><strong>Part 3: Why Choose C-Corp Anyway?</strong></p>
+                    <ul>
+                        <li><strong>VCs require preferred stock</strong> — S-Corp can only have one class, C-Corp can have multiple</li>
+                        <li><strong>Unlimited investors needed</strong> — S-Corp caps at 100, C-Corp has no limit for multiple funding rounds</li>
+                        <li><strong>Foreign investors</strong> — S-Corp requires US citizens only, C-Corp allows foreign investors</li>
+                        <li><strong>IPO or acquisition exit</strong> — Must be C-Corp for IPO, acquirers prefer C-Corps</li>
+                        <li><strong>Stock options for employees</strong> — Easier in C-Corp structure</li>
+                        <li><strong>Early years have no profit</strong> — Startups typically lose money initially, so double taxation doesn't matter yet</li>
+                        <li><strong>Don't take dividends</strong> — Reinvest profit into growth instead of distributing, avoiding the second tax layer</li>
+                    </ul>
+                </div>
+            </details>
         </div>
 
-        <div class="alert alert-exam">
-            <h4>💡 Exam Tips for Class 3</h4>
+        <!-- EXAM TIP -->
+        <div class="alert alert-info">
+            <h4>✓ What's Testable</h4>
             <ul>
-                <li>PRACTICE the tax calculation with $50k, $150k, $200k profit amounts</li>
-                <li>Remember: C-Corp = TWO layers, Pass-through = ONE layer</li>
-                <li>S-Corp limitations: 100 shareholders, US only, one class of stock</li>
-                <li>Why C-Corp despite taxes: VCs require it for preferred stock + unlimited investors</li>
+                <li>Tax calculation: C-Corp double taxation vs pass-through single taxation</li>
+                <li>Why VCs require C-Corps (preferred stock, unlimited investors, foreign investors, exit strategy)</li>
+                <li>S-Corp limitations (100 shareholders, US only, one class of stock)</li>
+                <li>When to choose LLC vs S-Corp for pass-through taxation</li>
+                <li>Entity choice factors beyond tax (liability, formality, cost, funding plans, exit strategy)</li>
             </ul>
+            
+            <h4 style="margin-top: 1rem;">✗ What's NOT Testable</h4>
+            <ul>
+                <li>Complex S-Corp technical details</li>
+                <li>Detailed tax code provisions beyond basic rates</li>
+                <li>State-specific entity formation rules</li>
+            </ul>
+            
+            <h4 style="margin-top: 1rem;">📝 Exam Tip</h4>
+            <p>Practice the tax calculation with different profit amounts: $50k, $150k, $200k. The numbers will change but the methodology stays the same. Show your work step by step!</p>
         </div>
 
         <div style="margin: 3rem 0; text-align: center;">
-            <a href="class2.html" class="btn btn-secondary">← Class 2 (Transaction Costs)</a>
-            <a href="class4.html" class="btn">Next: Class 4 (VC Finance) →</a>
+            <a href="class2.html" class="btn btn-secondary">← Class 2: Transaction Costs</a>
+            <a href="class4.html" class="btn btn-primary">Next: Class 4 →</a>
         </div>
     </div>
 </body>
