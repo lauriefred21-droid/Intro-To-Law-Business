@@ -5,20 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class 1: Financial Statements - UVA Law</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .hidden { display: none; }
-        .practice-box { background: #FFF9E6; border: 2px solid #EAAA00; padding: 1.5rem; margin: 2rem 0; border-radius: 8px; }
-        .reveal-btn { background: var(--uva-orange); color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; margin: 0.5rem 0.5rem 0.5rem 0; }
-        .reveal-btn:hover { background: var(--rotunda-orange); }
-        .correct { background: #E6F7EE; border: 2px solid var(--lawn-green); padding: 1rem; border-radius: 6px; margin: 1rem 0; }
-        .incorrect { background: #FFE6E6; border: 2px solid #DC3545; padding: 1rem; border-radius: 6px; margin: 1rem 0; }
-        input[type="number"] { padding: 0.5rem; border: 2px solid #ddd; border-radius: 4px; font-size: 1rem; width: 150px; }
-    </style>
 </head>
 <body>
     <nav>
         <div class="container">
-            <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">⚖️ UVA Law</a></div>
+            <div class="logo">⚖️ UVA Law - Intro to Law & Business</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="class1.html">Class 1</a></li>
@@ -26,183 +17,309 @@
                 <li><a href="class3.html">Class 3</a></li>
                 <li><a href="class4.html">Class 4</a></li>
                 <li><a href="class5.html">Class 5</a></li>
-                <li><a href="class6.html">Class 6-7</a></li>
-                <li><a href="class7.html">Class 8-9</a></li>
+                <li><a href="class6.html">Class 6</a></li>
+                <li><a href="class7.html">Class 7</a></li>
             </ul>
         </div>
     </nav>
 
     <div class="container">
         <h1>Class 1: Financial Statements</h1>
+        <p style="font-size: 1.1rem; color: var(--cool-gray); margin-bottom: 2rem;">
+            Understanding how companies measure value, track cash, and report financial performance
+        </p>
 
-        <!-- PODCAST PLAYER -->
-        <div style="background: linear-gradient(135deg, #592A8A 0%, #7B42BC 100%); padding: 1.5rem; border-radius: 12px; margin: 2rem 0; box-shadow: 0 4px 12px rgba(89, 42, 138, 0.3);">
-            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                <span style="font-size: 2rem;">🎧</span>
+        <div class="podcast-container">
+            <div class="podcast-header">
+                <span class="podcast-icon">🎧</span>
                 <div>
-                    <h3 style="color: white; margin: 0; font-size: 1.2rem;">Study Podcast</h3>
-                    <p style="color: rgba(255,255,255,0.8); margin: 0; font-size: 0.9rem;">~12 minutes</p>
+                    <h3 class="podcast-title">Class 1 Podcast</h3>
+                    <p class="podcast-duration">Listen first for overview (~12 minutes)</p>
                 </div>
             </div>
-            <audio controls style="width: 100%;">
-                <source src="PASTE_YOUR_GOOGLE_DRIVE_LINK_HERE" type="audio/mpeg">
+            <audio controls>
+                <source src="https://drive.google.com/uc?export=download&id=1gFzJrpF_VRwjpzZ8IU78h0iBm5fHb4TP" type="audio/mpeg">
+                Your browser does not support the audio element.
             </audio>
-            <div style="display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap;">
-                <button onclick="this.closest('div').previousElementSibling.playbackRate=0.75" style="background: rgba(255,255,255,0.2); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer;">0.75x</button>
-                <button onclick="this.closest('div').previousElementSibling.playbackRate=1.0" style="background: rgba(255,255,255,0.4); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer;">1x</button>
-                <button onclick="this.closest('div').previousElementSibling.playbackRate=1.25" style="background: rgba(255,255,255,0.2); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer;">1.25x</button>
-                <button onclick="this.closest('div').previousElementSibling.playbackRate=1.5" style="background: rgba(255,255,255,0.2); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer;">1.5x</button>
-                <button onclick="this.closest('div').previousElementSibling.playbackRate=2.0" style="background: rgba(255,255,255,0.2); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer;">2x</button>
+            <div class="speed-controls">
+                <button class="speed-btn" onclick="document.querySelector('audio').playbackRate=0.75">0.75x</button>
+                <button class="speed-btn" onclick="document.querySelector('audio').playbackRate=1.0">1x</button>
+                <button class="speed-btn" onclick="document.querySelector('audio').playbackRate=1.25">1.25x</button>
+                <button class="speed-btn" onclick="document.querySelector('audio').playbackRate=1.5">1.5x</button>
+                <button class="speed-btn" onclick="document.querySelector('audio').playbackRate=2.0">2x</button>
             </div>
         </div>
 
         <div class="alert alert-warning">
-            <strong>🔥 EXAM ALERT:</strong> The cupcake problem WILL be on your exam with different numbers!
+            <strong>🎯 EXAM FOCUS:</strong> The cupcake problem (accrual vs cash accounting) WILL appear with different numbers. Balance sheet, income statement, and cash flow statement basics are testable. Depreciation/amortization calculations are NOT tested.
         </div>
 
-        <!-- CONCEPT: BOOK VS MARKET VALUE -->
+        <!-- SECTION 1: BOOK VS MARKET VALUE -->
         <h2>Book Value vs Market Value</h2>
 
         <div class="concept-box">
-            <h3>📖 What's the Difference?</h3>
-            <p><strong>Book Value:</strong> Assets - Liabilities (what's on the balance sheet)</p>
-            <p><strong>Market Value:</strong> What investors think the company is worth (stock price × shares)</p>
+            <h3>Core Distinction</h3>
+            <p><strong>Book Value:</strong> Assets minus liabilities as recorded on the balance sheet at historical cost.</p>
+            <p><strong>Market Value:</strong> What investors actually believe the company is worth (stock price × outstanding shares).</p>
             
-            <p><strong>Why they differ:</strong> Balance sheets only show tangible assets at historical cost. They miss intangibles like brand value, patents, customer relationships, and future earnings potential.</p>
+            <p style="margin-top: 1rem;"><strong>Why the gap exists:</strong> Balance sheets only capture tangible assets at the price originally paid. They don't reflect intangible assets (brand value, patents, customer relationships, trade secrets) or future earnings potential.</p>
         </div>
 
         <div class="example-box">
-            <h3>🥤 Example: Coca-Cola</h3>
-            <p><strong>Book Value: Low</strong> - Some factories, but franchises most bottling (franchisees own those assets)</p>
-            <p><strong>Market Value: MASSIVE</strong> - Brand worth $80B+, secret formula, global distribution, customer loyalty</p>
-            <p><strong>The Gap:</strong> Coke's value is in BRAND and FORMULA, not physical assets. Book value doesn't capture that.</p>
-        </div>
-
-        <!-- THE CUPCAKE PROBLEM -->
-        <h2>The Cupcake Problem ⭐</h2>
-
-        <div class="concept-box">
-            <h3>📋 The Setup</h3>
-            <p>You start a cupcake business and:</p>
-            <ol>
-                <li>Deposit <strong>$3,000</strong> cash</li>
-                <li>Buy an oven for <strong>$1,000</strong></li>
-                <li>Buy ingredients for <strong>$500</strong></li>
-                <li>Receive <strong>$800</strong> advance for a wedding order you'll fulfill NEXT quarter</li>
-            </ol>
-            <p><strong>Questions: How much CASH? How much REVENUE?</strong></p>
-        </div>
-
-        <div class="concept-box">
-            <h3>🎓 Watch Me Solve It</h3>
-            <div class="calculation-box">
-                <strong>STEP 1: Calculate CASH</strong>
-                <pre>Starting cash:           $3,000
-Buy oven (cash out):    -$1,000
-Buy ingredients:          -$500
-Advance payment:          +$800
-─────────────────────────────
-CASH ON HAND:            $2,300</pre>
-            </div>
-
-            <div class="calculation-box">
-                <strong>STEP 2: Calculate REVENUE</strong>
-                <pre>The $800 advance:
-- Have we EARNED it? NO
-- Delivered cupcakes? NO
-- Fulfilled order? NO
-
-→ NOT revenue yet!
-
-TOTAL REVENUE:              $0</pre>
-            </div>
-
-            <p><strong>Key Point:</strong> Cash = $2,300 but Revenue = $0. The $800 is a LIABILITY (unearned revenue) until you deliver.</p>
-        </div>
-
-        <div class="practice-box">
-            <h3>✏️ Now YOU Try</h3>
-            <p><strong>New Scenario:</strong></p>
+            <h3>📊 Example: Coca-Cola</h3>
+            <p><strong>Book Value: Relatively Low</strong></p>
             <ul>
-                <li>You deposit <strong>$5,000</strong></li>
-                <li>Buy equipment for <strong>$2,000</strong></li>
-                <li>Buy supplies for <strong>$800</strong></li>
-                <li>Receive <strong>$1,200</strong> advance for work next month</li>
+                <li>Coca-Cola franchises most of its bottling operations</li>
+                <li>Physical assets (factories, equipment) are on franchisees' books, not Coke's</li>
+                <li>Balance sheet shows limited tangible assets</li>
+            </ul>
+            
+            <p><strong>Market Value: Massive ($250B+ market cap)</strong></p>
+            <ul>
+                <li>Brand worth estimated at $80B+</li>
+                <li>Secret formula (intangible asset, not on balance sheet)</li>
+                <li>Global distribution network and customer loyalty</li>
+                <li>Future earnings from these intangibles drive market value</li>
+            </ul>
+            
+            <p style="margin-top: 1rem;"><em>The takeaway:</em> Coca-Cola's value is in its BRAND and FORMULA, not in physical assets. Book value fundamentally cannot capture this.</p>
+        </div>
+
+        <!-- SECTION 2: ACCRUAL VS CASH ACCOUNTING -->
+        <h2>Accrual Accounting vs Cash Accounting</h2>
+
+        <div class="concept-box">
+            <h3>The Fundamental Difference</h3>
+            <p><strong>Cash Accounting:</strong> Record revenue when cash received, expenses when cash paid</p>
+            <ul>
+                <li>Simple and straightforward</li>
+                <li>Matches your bank account</li>
+                <li>Good for very small businesses</li>
             </ul>
 
-            <p>How much CASH do you have? $<input type="number" id="cash1" placeholder="Amount"></p>
-            <p>How much REVENUE? $<input type="number" id="revenue1" placeholder="Amount"></p>
-            <button class="reveal-btn" onclick="checkCupcake()">Check Answers</button>
-            
-            <div id="feedback1" class="hidden"></div>
-
-            <button class="reveal-btn" onclick="showSolution1()" style="background: #666;">Show Solution</button>
-            <div id="solution1" class="hidden">
-                <div class="calculation-box">
-                    <pre>CASH: $5,000 - $2,000 - $800 + $1,200 = $3,400
-REVENUE: $0 (advance not yet earned)</pre>
-                </div>
-            </div>
+            <p style="margin-top: 1rem;"><strong>Accrual Accounting:</strong> Record revenue when <em>earned</em>, expenses when <em>incurred</em></p>
+            <ul>
+                <li>Required by GAAP for most companies</li>
+                <li>Better matches revenues with related expenses</li>
+                <li>Shows economic reality, not just cash flow</li>
+            </ul>
         </div>
 
-        <!-- THE THREE STATEMENTS -->
+        <div class="exam-box">
+            <h3>🔥 The Cupcake Problem (CRITICAL FOR EXAM)</h3>
+            
+            <p><strong>Scenario:</strong> You start a cupcake business and complete these transactions in Q1:</p>
+            <ol>
+                <li>Deposit <strong>$3,000</strong> in business bank account</li>
+                <li>Purchase an oven for <strong>$1,000</strong> cash</li>
+                <li>Purchase ingredients for <strong>$500</strong> cash</li>
+                <li>Receive <strong>$800</strong> advance payment for a wedding order you'll fulfill in Q2</li>
+            </ol>
+
+            <p style="margin-top: 1.5rem;"><strong>Question 1:</strong> How much cash do you have at the end of Q1?</p>
+            
+            <div class="calculation-box">
+Starting cash:           $3,000
+Purchase oven:          -$1,000
+Purchase ingredients:     -$500
+Receive advance:          +$800
+────────────────────────────────
+CASH ON HAND:            $2,300
+            </div>
+
+            <p style="margin-top: 1.5rem;"><strong>Question 2:</strong> How much revenue have you recognized in Q1?</p>
+            
+            <div class="calculation-box">
+Revenue Analysis:
+
+$800 advance payment:
+- Have you EARNED it yet? NO
+- Have you delivered the cupcakes? NO
+- Have you fulfilled the order? NO
+
+→ This is UNEARNED REVENUE (a liability)
+→ You owe the customer cupcakes or a refund
+
+TOTAL Q1 REVENUE:            $0
+            </div>
+
+            <p style="margin-top: 1rem;"><strong>Key Insight:</strong> Cash = $2,300 but Revenue = $0. The $800 sits on the balance sheet as a liability (unearned revenue) until you deliver the cupcakes in Q2. This is the essence of accrual accounting: revenue recognition is about EARNING, not RECEIVING.</p>
+        </div>
+
+        <!-- SECTION 3: THE THREE FINANCIAL STATEMENTS -->
         <h2>The Three Financial Statements</h2>
 
         <div class="concept-box">
             <h3>1. Balance Sheet</h3>
-            <p><strong>Core Question:</strong> What do you OWN and what do you OWE?</p>
+            <p><strong>Core Question:</strong> What does the company own, and what does it owe?</p>
             <p><strong>Formula:</strong> Assets = Liabilities + Equity</p>
-            <p><strong>Timing:</strong> Snapshot at a point in time</p>
+            <p><strong>Timing:</strong> Snapshot at a single point in time (like a photograph)</p>
+            
+            <div class="calculation-box">
+ASSETS
+  Current Assets (cash, inventory, receivables)
+  Fixed Assets (PP&E - property, plant, equipment)
+  
+LIABILITIES
+  Current Liabilities (due within 1 year)
+  Long-term Liabilities (debt, bonds)
+  
+EQUITY
+  Shareholder equity (assets - liabilities)
+            </div>
         </div>
 
         <div class="concept-box">
             <h3>2. Income Statement (P&L)</h3>
-            <p><strong>Core Question:</strong> Are you making MONEY?</p>
+            <p><strong>Core Question:</strong> Is the company profitable?</p>
+            <p><strong>Timing:</strong> Performance over a period (quarter, year)</p>
+            
             <div class="calculation-box">
-                <pre>Revenue
-- Cost of Goods Sold
+Revenue (top line)
+- Cost of Goods Sold (COGS)
 = Gross Profit
-- Operating Expenses
-= Net Income</pre>
+- Operating Expenses (SG&A, R&D)
+= Operating Income (EBIT)
+- Interest & Taxes
+= Net Income (bottom line)
             </div>
-            <p><strong>Timing:</strong> Period of time (year, quarter)</p>
+            
+            <p style="margin-top: 1rem;"><strong>Note:</strong> This uses accrual accounting. "Revenue" is what you've <em>earned</em>, not necessarily what cash you've collected.</p>
         </div>
 
         <div class="concept-box">
             <h3>3. Cash Flow Statement</h3>
-            <p><strong>Core Question:</strong> Where did the CASH actually go?</p>
-            <p>Three sections: Operations, Investing, Financing</p>
-            <p><strong>Key Insight:</strong> You can be profitable but still run out of cash!</p>
+            <p><strong>Core Question:</strong> Where did the actual cash come from and where did it go?</p>
+            <p><strong>Why it matters:</strong> You can be profitable on the income statement but still run out of cash.</p>
+            
+            <div class="calculation-box">
+CASH FROM OPERATIONS
+  Net income
+  + Adjustments (depreciation, changes in working capital)
+  
+CASH FROM INVESTING
+  - Capital expenditures (buying equipment)
+  +/- Asset sales
+  
+CASH FROM FINANCING
+  + Debt raised / equity issued
+  - Debt repaid / dividends paid
+            </div>
+            
+            <p style="margin-top: 1rem;"><strong>Example of the gap:</strong> A fast-growing company might be profitable but burning cash because customers pay slowly (receivables) while suppliers demand immediate payment.</p>
+        </div>
+
+        <!-- PRACTICE QUESTIONS -->
+        <h2>Practice Questions</h2>
+
+        <div class="practice-box">
+            <h3>Question 1: Cash vs Revenue</h3>
+            <p>A law firm starts operations in January and:</p>
+            <ul>
+                <li>Receives $50,000 retainer from a client for work to be performed over 6 months</li>
+                <li>Completes $8,000 worth of work in January</li>
+                <li>Pays $3,000 for January office rent</li>
+                <li>Receives $2,000 bill for legal research services (will pay next month)</li>
+            </ul>
+            
+            <p><strong>What should the firm recognize as January revenue under accrual accounting?</strong></p>
+            
+            <details style="margin-top: 1rem;">
+                <summary style="cursor: pointer; color: var(--uva-orange); font-weight: 600;">Show Answer</summary>
+                <div style="margin-top: 1rem; padding: 1rem; background: white; border-radius: 6px;">
+                    <p><strong>Answer: $8,000</strong></p>
+                    <p><strong>Explanation:</strong></p>
+                    <ul>
+                        <li>The $50,000 retainer is unearned revenue (liability) until work is performed</li>
+                        <li>Only $8,000 of work was actually completed in January</li>
+                        <li>Therefore, only $8,000 is recognized as revenue</li>
+                        <li>The remaining $42,000 stays as a liability on the balance sheet</li>
+                    </ul>
+                    <p><strong>Cash received ≠ Revenue earned.</strong> This is the core of accrual accounting.</p>
+                </div>
+            </details>
+        </div>
+
+        <div class="practice-box">
+            <h3>Question 2: Book vs Market Value</h3>
+            <p>Company X has the following:</p>
+            <ul>
+                <li>Physical assets (buildings, equipment): $10M</li>
+                <li>Liabilities: $4M</li>
+                <li>Book value: $6M</li>
+                <li>Market capitalization: $50M</li>
+            </ul>
+            
+            <p><strong>Explain why market value exceeds book value by such a large margin. What types of assets might account for this difference?</strong></p>
+            
+            <details style="margin-top: 1rem;">
+                <summary style="cursor: pointer; color: var(--uva-orange); font-weight: 600;">Show Answer</summary>
+                <div style="margin-top: 1rem; padding: 1rem; background: white; border-radius: 6px;">
+                    <p><strong>Explanation:</strong></p>
+                    <p>The $44M gap between book value ($6M) and market value ($50M) likely reflects intangible assets not captured on the balance sheet:</p>
+                    <ul>
+                        <li><strong>Brand value:</strong> Customer recognition and loyalty</li>
+                        <li><strong>Intellectual property:</strong> Patents, trademarks, proprietary technology</li>
+                        <li><strong>Human capital:</strong> Skilled workforce, management expertise</li>
+                        <li><strong>Customer relationships:</strong> Long-term contracts, recurring revenue</li>
+                        <li><strong>Market position:</strong> Network effects, competitive moat</li>
+                        <li><strong>Future earnings potential:</strong> Expected growth and profitability</li>
+                    </ul>
+                    <p>Balance sheets use historical cost and only record tangible assets. Market value reflects what investors believe all assets—tangible and intangible—are worth based on future cash flows.</p>
+                </div>
+            </details>
+        </div>
+
+        <div class="practice-box">
+            <h3>Question 3: Three Statements</h3>
+            <p><strong>A company reports net income of $1M but cash from operations of -$500k (negative). How is this possible? Provide two specific examples of transactions that could cause this gap.</strong></p>
+            
+            <details style="margin-top: 1rem;">
+                <summary style="cursor: pointer; color: var(--uva-orange); font-weight: 600;">Show Answer</summary>
+                <div style="margin-top: 1rem; padding: 1rem; background: white; border-radius: 6px;">
+                    <p><strong>Answer:</strong> This is possible because the income statement uses accrual accounting while the cash flow statement tracks actual cash movements.</p>
+                    
+                    <p><strong>Example 1: Accounts Receivable Increase</strong></p>
+                    <ul>
+                        <li>Company makes $2M in sales (recognized as revenue)</li>
+                        <li>But customers haven't paid yet (sales on credit)</li>
+                        <li>Income statement shows the revenue, cash flow statement shows no cash received</li>
+                    </ul>
+                    
+                    <p><strong>Example 2: Inventory Build-Up</strong></p>
+                    <ul>
+                        <li>Company spends $1M cash buying inventory</li>
+                        <li>Inventory doesn't become an expense until sold</li>
+                        <li>Cash goes out immediately, but expense is deferred</li>
+                    </ul>
+                    
+                    <p><strong>Key Insight:</strong> Growing companies often show this pattern—profitable but cash-burning because they're investing in receivables and inventory faster than they're collecting cash.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- EXAM TIP -->
+        <div class="alert alert-info">
+            <h4>✓ What's Testable</h4>
+            <ul>
+                <li>Accrual vs cash accounting (especially revenue recognition)</li>
+                <li>Book value vs market value concept and why they differ</li>
+                <li>Basic structure of balance sheet, income statement, cash flow statement</li>
+                <li>How the three statements relate to each other</li>
+            </ul>
+            
+            <h4 style="margin-top: 1rem;">✗ What's NOT Testable</h4>
+            <ul>
+                <li>Detailed depreciation or amortization calculations</li>
+                <li>Complex tax accounting</li>
+                <li>GAAP technical rules beyond basic recognition</li>
+            </ul>
         </div>
 
         <div style="margin: 3rem 0; text-align: center;">
             <a href="index.html" class="btn btn-secondary">← Home</a>
-            <a href="class2.html" class="btn">Next: Class 2 →</a>
+            <a href="class2.html" class="btn btn-primary">Next: Class 2 →</a>
         </div>
     </div>
-
-    <script>
-        function checkCupcake() {
-            const cash = parseFloat(document.getElementById('cash1').value);
-            const revenue = parseFloat(document.getElementById('revenue1').value);
-            const feedback = document.getElementById('feedback1');
-            feedback.classList.remove('hidden');
-            
-            if (cash === 3400 && revenue === 0) {
-                feedback.className = 'correct';
-                feedback.innerHTML = '<strong>✓ Perfect!</strong> Cash = $3,400 and Revenue = $0. You understand accrual accounting!';
-            } else if (cash === 3400 && revenue !== 0) {
-                feedback.className = 'incorrect';
-                feedback.innerHTML = '<strong>✗ Cash is right, but revenue is wrong.</strong> Has the work been DELIVERED yet? If not, it\'s not revenue!';
-            } else {
-                feedback.className = 'incorrect';
-                feedback.innerHTML = '<strong>✗ Try again.</strong> Cash: Start + In - Out. Revenue: Only count what\'s EARNED.';
-            }
-        }
-
-        function showSolution1() {
-            document.getElementById('solution1').classList.remove('hidden');
-        }
-    </script>
 </body>
 </html>
