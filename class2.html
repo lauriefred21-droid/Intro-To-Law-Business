@@ -9,7 +9,7 @@
 <body>
     <nav>
         <div class="container">
-            <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">⚖️ UVA Law</a></div>
+            <div class="logo">⚖️ UVA Law - Intro to Law & Business</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="class1.html">Class 1</a></li>
@@ -17,149 +17,176 @@
                 <li><a href="class3.html">Class 3</a></li>
                 <li><a href="class4.html">Class 4</a></li>
                 <li><a href="class5.html">Class 5</a></li>
-                <li><a href="class6.html">Class 6-7</a></li>
-                <li><a href="class7.html">Class 8-9</a></li>
+                <li><a href="class6.html">Class 6</a></li>
+                <li><a href="class7.html">Class 7</a></li>
             </ul>
         </div>
     </nav>
 
     <div class="container">
-        <a href="index.html" class="btn btn-secondary">← Back to Home</a>
-        
         <h1>Class 2: Transaction Costs & The Nature of the Firm</h1>
-        
-        <div style="margin: 1rem 0;">
-            <span class="badge important">IMPORTANT</span>
-            <span class="badge explain">MUST EXPLAIN</span>
+        <p style="font-size: 1.1rem; color: var(--cool-gray); margin-bottom: 2rem;">
+            Why firms exist, when to make vs buy, and how transaction costs shape business decisions
+        </p>
+
+        <div class="podcast-container">
+            <div class="podcast-header">
+                <span class="podcast-icon">🎧</span>
+                <div>
+                    <h3 class="podcast-title">Class 2 Podcast</h3>
+                    <p class="podcast-duration">Listen first for overview (~12 minutes)</p>
+                </div>
+            </div>
+            <audio controls>
+                <source src="PASTE_CLASS_2_PODCAST_LINK_HERE" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="speed-controls">
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=0.75">0.75x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=1.0">1x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=1.25">1.25x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=1.5">1.5x</button>
+                <button class="speed-btn" onclick="document.querySelectorAll('audio')[0].playbackRate=2.0">2x</button>
+            </div>
         </div>
 
-        <div class="toc">
-            <strong>Quick Jump:</strong>
-            <a href="#costs">3 Types of Costs</a>
-            <a href="#boeing">Boeing/Spirit</a>
-            <a href="#coase">Coase Theorem</a>
-            <a href="#review">Review Questions</a>
+        <div class="alert alert-warning">
+            <strong>🎯 EXAM FOCUS:</strong> Define the three transaction costs with examples. Explain the Boeing/Spirit tradeoff using the transaction costs vs monitoring costs framework. Know why firms exist (Coase Theorem). Complex transaction cost algebra is NOT tested.
         </div>
 
-        <div class="alert alert-exam">
-            <strong>🎯 What You Must Know:</strong> Define the 3 transaction costs with examples. Explain the Boeing/Spirit tradeoff. Know why firms exist (Coase).
-        </div>
-
-        <h2 id="costs">The Three Types of Transaction Costs</h2>
+        <!-- SECTION 1: THE THREE TRANSACTION COSTS -->
+        <h2>The Three Types of Transaction Costs</h2>
 
         <div class="concept-box">
             <h3>1. Search Costs</h3>
-            <p><strong>Definition:</strong> The cost of finding the right party to contract with</p>
+            <p><strong>Definition:</strong> The cost of finding the right party to contract with.</p>
             
             <p><strong>Examples:</strong></p>
             <ul>
-                <li>Time spent shopping for a contractor</li>
-                <li>Researching potential suppliers</li>
+                <li>Time spent researching potential suppliers or contractors</li>
+                <li>Reading reviews and comparing options</li>
                 <li>Vetting candidates for a job</li>
-                <li>Finding reliable vendors</li>
+                <li>Traveling to meet potential business partners</li>
             </ul>
 
             <p><strong>How lawyers reduce search costs:</strong></p>
             <ul>
-                <li>Maintain networks of trusted parties</li>
-                <li>Know market rates and standards</li>
-                <li>Can quickly vet counterparties</li>
-                <li>Provide referrals based on experience</li>
+                <li>Maintain networks of trusted counterparties and vendors</li>
+                <li>Know market rates and industry standards</li>
+                <li>Can quickly vet potential partners using reputation and track record</li>
+                <li>Provide referrals based on past experience</li>
             </ul>
         </div>
 
         <div class="concept-box">
             <h3>2. Bargaining Costs</h3>
-            <p><strong>Definition:</strong> The cost of negotiating and reaching an agreement</p>
+            <p><strong>Definition:</strong> The cost of negotiating terms and reaching an agreement.</p>
             
             <p><strong>Examples:</strong></p>
             <ul>
-                <li>Time in negotiations and meetings</li>
-                <li>Back-and-forth on price and terms</li>
-                <li>Drafting and reviewing proposals</li>
-                <li>Dealing with contingencies and what-ifs</li>
+                <li>Time spent in negotiation meetings</li>
+                <li>Back-and-forth haggling over price and contract terms</li>
+                <li>Drafting and reviewing multiple versions of proposals</li>
+                <li>Dealing with contingencies and edge cases</li>
             </ul>
 
             <p><strong>How lawyers reduce bargaining costs:</strong></p>
             <ul>
-                <li>Use standard form contracts (don't reinvent wheel)</li>
-                <li>Know market norms for terms</li>
-                <li>Efficient negotiation (focus on key issues)</li>
-                <li>Clear communication reduces back-and-forth</li>
+                <li>Use standard form contracts (no need to reinvent the wheel)</li>
+                <li>Know market norms for deal terms</li>
+                <li>Focus negotiation on key issues rather than every detail</li>
+                <li>Clear communication reduces rounds of back-and-forth</li>
             </ul>
         </div>
 
         <div class="concept-box">
             <h3>3. Enforcement Costs</h3>
-            <p><strong>Definition:</strong> The cost of ensuring the other party performs as agreed</p>
+            <p><strong>Definition:</strong> The cost of ensuring the other party performs as agreed.</p>
             
             <p><strong>Examples:</strong></p>
             <ul>
                 <li>Monitoring quality and compliance</li>
-                <li>Audits and inspections</li>
-                <li>Resolving disputes</li>
-                <li>Litigation and court costs</li>
+                <li>Conducting audits and inspections</li>
+                <li>Resolving disputes when things go wrong</li>
+                <li>Litigation and court costs if breach occurs</li>
             </ul>
 
             <p><strong>How lawyers reduce enforcement costs:</strong></p>
             <ul>
-                <li>Draft clear, unambiguous contract terms</li>
-                <li>Include dispute resolution clauses (arbitration)</li>
-                <li>Set up escrow or performance bonds</li>
-                <li>Build in remedies and penalties</li>
+                <li>Draft clear, unambiguous contract language</li>
+                <li>Include dispute resolution clauses (arbitration, mediation)</li>
+                <li>Set up escrow arrangements or performance bonds</li>
+                <li>Build in remedies and liquidated damages provisions</li>
             </ul>
         </div>
 
-        <h2 id="boeing">Boeing/Spirit Case Study</h2>
+        <!-- SECTION 2: BOEING/SPIRIT CASE STUDY -->
+        <h2>Case Study: Boeing & Spirit AeroSystems</h2>
 
         <div class="example-box">
             <h3>🛫 What Happened</h3>
-            <p>Boeing originally manufactured fuselages (the main body of the plane) in-house at their own facilities.</p>
+            <p><strong>Original Setup:</strong> Boeing manufactured fuselages (the main body of aircraft) in-house at their own facilities with their own employees.</p>
             
-            <p><strong>The Decision:</strong> In the early 2000s, Boeing decided to outsource fuselage production to Spirit AeroSystems to reduce costs and focus on core competencies.</p>
+            <p><strong>The Decision:</strong> In the early 2000s, Boeing decided to outsource fuselage production to Spirit AeroSystems to reduce costs and allow Boeing to focus on core competencies like design and final assembly.</p>
 
-            <p><strong>The Problems:</strong></p>
+            <p><strong>The Problems That Emerged:</strong></p>
             <ul>
-                <li>Quality issues and defects</li>
-                <li>Delivery delays</li>
-                <li>Misaligned incentives between Boeing and Spirit</li>
-                <li>Difficulty coordinating complex production</li>
-                <li>Spirit optimized for their own profits, not Boeing's needs</li>
+                <li>Significant quality defects in delivered fuselages</li>
+                <li>Chronic delivery delays disrupting Boeing's production schedule</li>
+                <li>Misaligned incentives—Spirit optimized for its own profit margins, not Boeing's quality standards</li>
+                <li>Difficulty coordinating complex production changes</li>
+                <li>Spirit made design choices that benefited Spirit but created problems for Boeing's integration process</li>
             </ul>
 
-            <p><strong>The Result:</strong> Boeing eventually had to bring some production back in-house and increase oversight of Spirit, but the damage to quality and reputation was significant.</p>
+            <p><strong>The Result:</strong> Boeing eventually had to bring some production back in-house and massively increase oversight of Spirit, essentially paying both the transaction costs AND the monitoring costs. Damage to quality, reputation, and the 737 MAX program was substantial.</p>
         </div>
 
         <div class="concept-box">
-            <h3>The Framework: Transaction Costs vs Monitoring Costs</h3>
+            <h3>The Make vs Buy Framework</h3>
 
-            <h4>When You OUTSOURCE (Buy from Market):</h4>
+            <h4>Option 1: OUTSOURCE (Buy from Market)</h4>
+            <p><strong>Advantages:</strong></p>
             <ul>
-                <li>✅ <strong>Lower transaction costs:</strong> Spirit handles production, hiring, management</li>
-                <li>✅ <strong>Specialization benefits:</strong> Spirit focuses only on fuselages</li>
-                <li>❌ <strong>Higher monitoring costs:</strong> Need to ensure quality meets standards</li>
-                <li>❌ <strong>Harder to control:</strong> Can't directly manage Spirit's workers</li>
-                <li>❌ <strong>Misaligned incentives:</strong> Spirit wants to maximize profit, Boeing wants quality</li>
-                <li>❌ <strong>Coordination problems:</strong> Changes require negotiation, not internal orders</li>
+                <li>Lower transaction costs—supplier handles hiring, management, facilities</li>
+                <li>Specialization benefits—Spirit focuses only on fuselages</li>
+                <li>No capital investment required from Boeing</li>
+                <li>Flexibility to switch suppliers if needed</li>
             </ul>
 
-            <h4>When You Make IN-HOUSE (Hierarchy):</h4>
+            <p><strong>Disadvantages:</strong></p>
             <ul>
-                <li>❌ <strong>Higher transaction costs:</strong> You handle everything - hiring, managing, facilities</li>
-                <li>❌ <strong>Capital intensive:</strong> Need to invest in equipment and facilities</li>
-                <li>✅ <strong>Lower monitoring costs:</strong> Direct control over production</li>
-                <li>✅ <strong>Better quality control:</strong> Can immediately address issues</li>
-                <li>✅ <strong>Aligned incentives:</strong> Everyone works for same company goals</li>
-                <li>✅ <strong>Easier coordination:</strong> Can make changes through management, not contracts</li>
+                <li>Higher monitoring costs—need extensive quality control</li>
+                <li>Less control—can't directly manage Spirit's workers or processes</li>
+                <li>Misaligned incentives—Spirit wants profit, Boeing wants quality</li>
+                <li>Coordination problems—changes require negotiation, not management directive</li>
+            </ul>
+
+            <h4>Option 2: MAKE IN-HOUSE (Hierarchy)</h4>
+            <p><strong>Advantages:</strong></p>
+            <ul>
+                <li>Lower monitoring costs—direct control over production</li>
+                <li>Better quality control—can immediately address issues</li>
+                <li>Aligned incentives—everyone works toward same company goals</li>
+                <li>Easier coordination—make changes through management, not contracts</li>
+            </ul>
+
+            <p><strong>Disadvantages:</strong></p>
+            <ul>
+                <li>Higher transaction costs—must handle everything (hiring, managing, facilities)</li>
+                <li>Capital intensive—need to invest in equipment and infrastructure</li>
+                <li>Less flexibility—harder to exit if conditions change</li>
+                <li>Dilutes focus from core competencies</li>
             </ul>
         </div>
 
-        <div class="alert alert-exam">
-            <h4>The Key Tradeoff</h4>
+        <div class="exam-box">
+            <h3>🔥 The Critical Tradeoff</h3>
             <p><strong>Firms draw their boundaries where:</strong></p>
-            <p style="text-align: center; font-size: 1.2rem; margin: 1rem 0;">
+            <div style="text-align: center; font-size: 1.3rem; margin: 1.5rem 0; padding: 1rem; background: white; border-radius: 8px;">
                 <strong>Transaction Costs of Market = Monitoring Costs of Hierarchy</strong>
-            </p>
+            </div>
+            <p>When monitoring costs outweigh transaction costs → Make in-house</p>
+            <p>When transaction costs outweigh monitoring costs → Buy from market</p>
         </div>
 
         <div class="concept-box">
@@ -167,177 +194,288 @@
 
             <p>Fuselage production has these characteristics:</p>
             <ul>
-                <li><strong>High specificity:</strong> Custom to Boeing's exact designs</li>
-                <li><strong>Critical quality requirements:</strong> Lives depend on it</li>
-                <li><strong>Complex integration:</strong> Needs tight coordination with rest of aircraft</li>
-                <li><strong>Core to product:</strong> Not a commodity component</li>
+                <li><strong>High specificity:</strong> Custom designed for each Boeing aircraft model</li>
+                <li><strong>Critical quality requirements:</strong> Safety-critical component—lives depend on it</li>
+                <li><strong>Complex integration:</strong> Requires tight coordination with wings, tail, systems</li>
+                <li><strong>Core to product:</strong> Not a commodity component that can be easily swapped</li>
             </ul>
 
-            <p>When something has these traits, <strong>monitoring costs are too high</strong> → Better to make in-house</p>
+            <p><strong>Result:</strong> When something has these traits, monitoring costs are extremely high. Better to make in-house.</p>
 
-            <p><strong>The General Rule:</strong></p>
+            <p><strong>General Rule for Make vs Buy:</strong></p>
             <ul>
-                <li>The more specific/complex/critical the component...</li>
-                <li>The higher the monitoring costs if outsourced...</li>
-                <li>The more likely you should make it in-house</li>
+                <li>The more <strong>specific/complex/critical</strong> the component...</li>
+                <li>The higher the <strong>monitoring costs</strong> if outsourced...</li>
+                <li>The more likely you should <strong>make it in-house</strong></li>
             </ul>
         </div>
 
         <div class="example-box">
-            <h4>🥤 Contrast: Coca-Cola's Bottling Strategy</h4>
-            <p>Coca-Cola does the OPPOSITE - they outsource bottling to local franchisees.</p>
+            <h4>Counterexample: Coca-Cola's Bottling Strategy</h4>
+            <p>Coca-Cola does the <strong>opposite</strong>—they outsource bottling to local franchisees worldwide.</p>
 
-            <p><strong>Why this works for Coke:</strong></p>
+            <p><strong>Why outsourcing works for Coke:</strong></p>
             <ul>
-                <li><strong>Low specificity:</strong> Bottling is standardized process</li>
-                <li><strong>Low integration needs:</strong> Doesn't need coordination with Coke HQ</li>
-                <li><strong>Easy to monitor:</strong> Simple quality checks</li>
-                <li><strong>Local knowledge matters:</strong> Bottlers know their markets</li>
+                <li><strong>Low specificity:</strong> Bottling is a standardized, repeatable process</li>
+                <li><strong>Low integration needs:</strong> Bottlers don't need constant coordination with Coke HQ</li>
+                <li><strong>Easy to monitor:</strong> Simple quality checks and brand standards</li>
+                <li><strong>Local knowledge valuable:</strong> Bottlers understand their regional markets better than HQ would</li>
             </ul>
 
-            <p><strong>Result:</strong> Transaction costs < Monitoring costs → Outsource it!</p>
+            <p><strong>Result:</strong> Transaction costs of managing local bottling < Monitoring costs of franchise system → Outsource it!</p>
         </div>
 
-        <h2 id="coase">Coase Theorem - Why Firms Exist</h2>
+        <!-- SECTION 3: COASE THEOREM -->
+        <h2>Coase Theorem: Why Firms Exist</h2>
 
         <div class="concept-box">
-            <h3>The Big Question</h3>
-            <p>Why do firms exist at all? Why not just have everyone contract with everyone else as independent agents?</p>
+            <h3>The Fundamental Question</h3>
+            <p>Why do firms exist at all? Why not just have everyone operate as independent contractors and use markets for everything?</p>
 
-            <h4>Ronald Coase's Answer (1937):</h4>
+            <h4>Ronald Coase's Answer (1937 Nobel Prize-winning insight):</h4>
             <p><strong>Firms exist to minimize transaction costs.</strong></p>
+            
+            <p>In a world with zero transaction costs, we wouldn't need firms—everyone would just contract with everyone else for every task. But because markets have friction (search, bargaining, enforcement costs), it's often cheaper to bring activities inside a firm.</p>
         </div>
 
         <div class="example-box">
             <h4>The Thought Experiment</h4>
             
-            <p><strong>If markets were perfect (zero transaction costs):</strong></p>
+            <p><strong>Imagine: Perfect Markets (Zero Transaction Costs)</strong></p>
             <ul>
-                <li>No cost to find the right person</li>
-                <li>No cost to negotiate</li>
-                <li>No cost to enforce</li>
-                <li>→ Everyone would just contract for every single task</li>
-                <li>→ No need for firms!</li>
+                <li>Finding the right person for any task: <strong>free and instant</strong></li>
+                <li>Negotiating deal terms: <strong>free and instant</strong></li>
+                <li>Ensuring they do the work: <strong>free and automatic</strong></li>
+                <li>→ You'd just contract separately for every single task</li>
+                <li>→ No need for firms or employees!</li>
             </ul>
 
-            <p><strong>In reality (high transaction costs):</strong></p>
+            <p><strong>Reality: High Transaction Costs</strong></p>
             <ul>
-                <li>Expensive to find right people for every task</li>
-                <li>Expensive to negotiate each transaction</li>
-                <li>Expensive to make sure work gets done</li>
-                <li>→ Better to create a firm!</li>
+                <li>Finding the right person: <strong>expensive, time-consuming</strong></li>
+                <li>Negotiating every task: <strong>exhausting, slow</strong></li>
+                <li>Ensuring quality work: <strong>requires monitoring, enforcement</strong></li>
+                <li>→ Better to hire employees under long-term contracts</li>
+                <li>→ Use management hierarchy instead of markets</li>
             </ul>
         </div>
 
         <div class="concept-box">
             <h3>How Firms Reduce Transaction Costs</h3>
 
-            <p><strong>Instead of contracting for every task, a firm:</strong></p>
-            <ol>
-                <li><strong>Hires employees under long-term contracts</strong>
-                    <ul>
-                        <li>One search cost, one negotiation → covers many tasks</li>
-                        <li>Employment relationship reduces need to renegotiate constantly</li>
-                    </ul>
-                </li>
-                <li><strong>Uses hierarchy and management</strong>
-                    <ul>
-                        <li>Manager can direct employees to tasks</li>
-                        <li>No need to negotiate/contract for each assignment</li>
-                    </ul>
-                </li>
-                <li><strong>Internalizes coordination</strong>
-                    <ul>
-                        <li>Employees work together under same roof</li>
-                        <li>Shared systems, culture, processes</li>
-                    </ul>
-                </li>
-            </ol>
+            <p><strong>Instead of using markets for every task, firms:</strong></p>
+            
+            <p><strong>1. Hire employees under long-term employment contracts</strong></p>
+            <ul>
+                <li>One search process, one negotiation → covers hundreds of tasks</li>
+                <li>Don't need to renegotiate for each new assignment</li>
+                <li>Employment relationship implies broad duties within job scope</li>
+            </ul>
+            
+            <p><strong>2. Use hierarchy and management authority</strong></p>
+            <ul>
+                <li>Managers can direct employees to tasks without new contracts</li>
+                <li>No bargaining needed for routine work assignments</li>
+                <li>Authority relation replaces market transactions</li>
+            </ul>
+            
+            <p><strong>3. Internalize coordination</strong></p>
+            <ul>
+                <li>Employees work together under shared systems and culture</li>
+                <li>Common processes reduce need to specify everything</li>
+                <li>Informal coordination is easier within firm boundaries</li>
+            </ul>
         </div>
 
         <div class="concept-box">
             <h3>The Boundary of the Firm</h3>
 
             <p><strong>When does a firm stop expanding?</strong></p>
-            <p>A firm expands until: <code>Cost of internal coordination = Cost of market transaction</code></p>
+            <p>A firm expands its boundaries until: <strong>Cost of internal coordination = Cost of market transaction</strong></p>
 
-            <h4>Example: Small Startup → Large Company</h4>
+            <h4>Example: Startup Growth Trajectory</h4>
+            
+            <p><strong>Stage 1: Solo Founder</strong></p>
             <ul>
-                <li><strong>Stage 1 (Tiny startup):</strong> Founder does everything
-                    <ul><li>Very low coordination cost (it's just you!)</li></ul>
-                </li>
-                <li><strong>Stage 2 (Growing):</strong> Hire first employees
-                    <ul><li>Still cheaper to hire than outsource each task</li></ul>
-                </li>
-                <li><strong>Stage 3 (Established):</strong> Start outsourcing non-core functions
-                    <ul>
-                        <li>Janitorial services: easier to contract out</li>
-                        <li>IT support: specialists can do it cheaper</li>
-                        <li>Market cost < Internal coordination cost</li>
-                    </ul>
-                </li>
+                <li>Does everything personally (product, sales, admin)</li>
+                <li>Very low coordination costs (it's just you!)</li>
+            </ul>
+            
+            <p><strong>Stage 2: First Hires</strong></p>
+            <ul>
+                <li>Hire core team for critical functions</li>
+                <li>Still cheaper to hire than to outsource every task</li>
+                <li>Coordination costs still manageable</li>
+            </ul>
+            
+            <p><strong>Stage 3: Selective Outsourcing</strong></p>
+            <ul>
+                <li>Start contracting out non-core functions</li>
+                <li>Janitorial services: easier to hire contractor than manage janitors</li>
+                <li>IT support: specialists can do it more efficiently</li>
+                <li>For these tasks: Market cost < Internal coordination cost</li>
+            </ul>
+            
+            <p><strong>Stage 4: Mature Company</strong></p>
+            <ul>
+                <li>Clear boundaries between core (in-house) and non-core (outsourced)</li>
+                <li>Continuously evaluate make vs buy for each function</li>
             </ul>
         </div>
 
-        <h2 id="review">Review Questions (From Professor)</h2>
+        <!-- PRACTICE QUESTIONS -->
+        <h2>Practice Questions</h2>
 
-        <div class="concept-box">
-            <h3>Question 1</h3>
+        <div class="practice-box">
+            <h3>Question 1: Three Transaction Costs</h3>
             <p><strong>Define transaction costs and identify the three main types discussed in class. For each type, provide one concrete example from your own experience as a consumer or from a business context.</strong></p>
             
-            <p><strong>Your Answer Should Include:</strong></p>
-            <ol>
-                <li><strong>Search Costs:</strong> Finding the right party
-                    <ul><li>Example: Researching plumbers, comparing prices online, reading reviews</li></ul>
-                </li>
-                <li><strong>Bargaining Costs:</strong> Negotiating the deal
-                    <ul><li>Example: Haggling over car price, back-and-forth on contract terms</li></ul>
-                </li>
-                <li><strong>Enforcement Costs:</strong> Ensuring performance
-                    <ul><li>Example: Inspecting work quality, resolving disputes, going to small claims court</li></ul>
-                </li>
-            </ol>
+            <details style="margin-top: 1rem;">
+                <summary style="cursor: pointer; color: var(--uva-orange); font-weight: 600;">Show Sample Answer</summary>
+                <div style="margin-top: 1rem; padding: 1rem; background: white; border-radius: 6px;">
+                    <p><strong>Transaction costs</strong> are the costs of using the market to conduct economic exchanges.</p>
+                    
+                    <p><strong>1. Search Costs:</strong> The cost of finding the right party to contract with.</p>
+                    <ul>
+                        <li>Example: Spending hours researching plumbers online, reading reviews, comparing prices, and calling multiple companies before hiring one to fix a leak.</li>
+                    </ul>
+                    
+                    <p><strong>2. Bargaining Costs:</strong> The cost of negotiating terms and reaching agreement.</p>
+                    <ul>
+                        <li>Example: Haggling over the price of a used car, going back and forth on trade-in value, financing terms, and warranties before finalizing the deal.</li>
+                    </ul>
+                    
+                    <p><strong>3. Enforcement Costs:</strong> The cost of ensuring the other party performs as agreed.</p>
+                    <ul>
+                        <li>Example: Inspecting a contractor's work to ensure it meets code, withholding final payment until issues are fixed, or taking them to small claims court if they don't complete the job.</li>
+                    </ul>
+                </div>
+            </details>
         </div>
 
-        <div class="concept-box">
-            <h3>Question 2</h3>
+        <div class="practice-box">
+            <h3>Question 2: Role of Transactional Lawyers</h3>
             <p><strong>Explain how a transactional lawyer can reduce each of the three types of transaction costs.</strong></p>
             
-            <p><strong>Your Answer:</strong></p>
-            <ul>
-                <li><strong>Search:</strong> Networks/referrals, knows market parties, can vet quickly</li>
-                <li><strong>Bargaining:</strong> Standard forms, knows market terms, efficient negotiation</li>
-                <li><strong>Enforcement:</strong> Clear contract language, dispute resolution clauses, escrow arrangements</li>
-            </ul>
+            <details style="margin-top: 1rem;">
+                <summary style="cursor: pointer; color: var(--uva-orange); font-weight: 600;">Show Sample Answer</summary>
+                <div style="margin-top: 1rem; padding: 1rem; background: white; border-radius: 6px;">
+                    <p><strong>Search Costs:</strong></p>
+                    <ul>
+                        <li>Lawyers maintain networks of reliable counterparties and vendors</li>
+                        <li>They know market rates and can quickly vet potential partners</li>
+                        <li>Provide referrals based on experience with parties in past deals</li>
+                    </ul>
+                    
+                    <p><strong>Bargaining Costs:</strong></p>
+                    <ul>
+                        <li>Use standard form contracts to avoid starting from scratch</li>
+                        <li>Know market norms for deal terms, reducing negotiation time</li>
+                        <li>Focus parties on material issues rather than every minor detail</li>
+                        <li>Clear communication reduces rounds of back-and-forth</li>
+                    </ul>
+                    
+                    <p><strong>Enforcement Costs:</strong></p>
+                    <ul>
+                        <li>Draft clear, unambiguous contract language to reduce disputes</li>
+                        <li>Include dispute resolution clauses (arbitration) to avoid costly litigation</li>
+                        <li>Set up escrow arrangements or performance bonds</li>
+                        <li>Build in remedies and liquidated damages provisions upfront</li>
+                    </ul>
+                </div>
+            </details>
         </div>
 
-        <div class="concept-box">
-            <h3>Question 3</h3>
+        <div class="practice-box">
+            <h3>Question 3: Boeing/Spirit Analysis</h3>
             <p><strong>Boeing originally outsourced fuselage production to Spirit AeroSystems but encountered significant problems. Using the framework of transaction costs versus monitoring costs, explain why a firm might choose to produce a component in-house rather than contracting with an outside supplier. What does the Boeing/Spirit relationship illustrate about the tradeoff firms face when deciding where to draw the boundaries of the firm?</strong></p>
             
-            <p><strong>Your Answer Should Include:</strong></p>
-            <ul>
-                <li><strong>Outsourcing lowers transaction costs</strong> (don't need to hire/manage) but <strong>increases monitoring costs</strong> (need to ensure quality)</li>
-                <li><strong>In-house raises transaction costs</strong> (must handle everything) but <strong>lowers monitoring costs</strong> (direct control)</li>
-                <li><strong>Boeing/Spirit problem:</strong> Fuselages are complex, critical, highly specific → monitoring costs too high when outsourced</li>
-                <li><strong>Key factors favoring in-house:</strong> Specificity, complexity, criticality, integration needs</li>
-                <li><strong>The tradeoff:</strong> Firms draw boundaries where transaction costs = monitoring costs</li>
-            </ul>
+            <details style="margin-top: 1rem;">
+                <summary style="cursor: pointer; color: var(--uva-orange); font-weight: 600;">Show Sample Answer</summary>
+                <div style="margin-top: 1rem; padding: 1rem; background: white; border-radius: 6px;">
+                    <p><strong>The Framework:</strong></p>
+                    <ul>
+                        <li><strong>Outsourcing</strong> lowers transaction costs (no need to hire, train, manage workers; no capital investment) but <strong>increases monitoring costs</strong> (need to ensure supplier delivers quality on time)</li>
+                        <li><strong>In-house production</strong> raises transaction costs (must handle all aspects of production) but <strong>lowers monitoring costs</strong> (direct control over process and quality)</li>
+                    </ul>
+                    
+                    <p><strong>Why In-House Can Be Better:</strong></p>
+                    <p>For components that are:</p>
+                    <ul>
+                        <li><strong>Highly specific</strong> to the firm's needs</li>
+                        <li><strong>Safety-critical</strong> or quality-sensitive</li>
+                        <li><strong>Require complex integration</strong> with other parts</li>
+                        <li><strong>Core to the product</strong></li>
+                    </ul>
+                    <p>...the monitoring costs of outsourcing become prohibitively high, making in-house production the better choice.</p>
+                    
+                    <p><strong>Boeing/Spirit Illustration:</strong></p>
+                    <ul>
+                        <li>Fuselages are highly specific to each aircraft model, safety-critical, and require tight integration with wings, tail, and systems</li>
+                        <li>When Boeing outsourced to Spirit, they encountered quality defects, delivery delays, and misaligned incentives</li>
+                        <li>Spirit optimized for its own profit, not Boeing's quality standards</li>
+                        <li>The monitoring costs (extensive oversight, quality control, dealing with defects) exceeded the transaction costs Boeing would have faced by keeping production in-house</li>
+                    </ul>
+                    
+                    <p><strong>The Tradeoff:</strong></p>
+                    <p>Firms draw their boundaries where the cost of using the market (including monitoring external suppliers) equals the cost of internal organization. Boeing misjudged this tradeoff for fuselages—a component too critical and complex to outsource effectively.</p>
+                </div>
+            </details>
         </div>
 
-        <div class="alert alert-exam">
-            <h4>💡 Exam Tips</h4>
+        <div class="practice-box">
+            <h3>Question 4: Coase Theorem Application</h3>
+            <p><strong>According to Coase, why do firms exist? In a world with zero transaction costs, would we need firms at all? Explain your reasoning.</strong></p>
+            
+            <details style="margin-top: 1rem;">
+                <summary style="cursor: pointer; color: var(--uva-orange); font-weight: 600;">Show Sample Answer</summary>
+                <div style="margin-top: 1rem; padding: 1rem; background: white; border-radius: 6px;">
+                    <p><strong>Why Firms Exist:</strong></p>
+                    <p>According to Coase, firms exist to minimize transaction costs. Using markets for every task involves costs of:</p>
+                    <ul>
+                        <li>Finding the right people (search costs)</li>
+                        <li>Negotiating each transaction (bargaining costs)</li>
+                        <li>Ensuring performance (enforcement costs)</li>
+                    </ul>
+                    <p>Firms reduce these costs by bringing activities inside organizational boundaries, using employment relationships and management hierarchy instead of repeated market transactions.</p>
+                    
+                    <p><strong>Zero Transaction Costs World:</strong></p>
+                    <p>If transaction costs were zero, we wouldn't need firms. Everyone could operate as independent contractors because:</p>
+                    <ul>
+                        <li>Finding the perfect person for any task would be instant and free</li>
+                        <li>Negotiating terms would be effortless</li>
+                        <li>Ensuring performance would be automatic and costless</li>
+                    </ul>
+                    <p>In this hypothetical world, markets would work perfectly for coordinating all economic activity, and the firm as an organizational form would serve no purpose.</p>
+                    
+                    <p>But because transaction costs are real and significant, firms emerge as a superior way to organize certain activities—specifically those where the transaction costs of using markets exceed the coordination costs of internal management.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- EXAM TIP -->
+        <div class="alert alert-info">
+            <h4>✓ What's Testable</h4>
             <ul>
-                <li>Be able to give concrete examples of each type of transaction cost</li>
-                <li>The Boeing/Spirit case is your go-to example for make vs buy decisions</li>
-                <li>Remember: high specificity/complexity/criticality → make in-house</li>
-                <li>Coase theorem: firms exist because markets have transaction costs</li>
+                <li>Three types of transaction costs with concrete examples</li>
+                <li>How lawyers reduce each type of transaction cost</li>
+                <li>Make vs buy framework (transaction costs vs monitoring costs)</li>
+                <li>Boeing/Spirit case study and what it illustrates</li>
+                <li>Coase Theorem: why firms exist</li>
+                <li>Factors that favor in-house production (specificity, complexity, criticality)</li>
+            </ul>
+            
+            <h4 style="margin-top: 1rem;">✗ What's NOT Testable</h4>
+            <ul>
+                <li>Complex mathematical transaction cost models</li>
+                <li>Detailed organizational economics equations</li>
+                <li>Highly technical aspects of vertical integration theory</li>
             </ul>
         </div>
 
         <div style="margin: 3rem 0; text-align: center;">
-            <a href="class1.html" class="btn btn-secondary">← Class 1 (Financial Statements)</a>
-            <a href="class3.html" class="btn">Next: Class 3 (Entity Choice) →</a>
+            <a href="class1.html" class="btn btn-secondary">← Class 1: Financial Statements</a>
+            <a href="class3.html" class="btn btn-primary">Next: Class 3 →</a>
         </div>
     </div>
 </body>
