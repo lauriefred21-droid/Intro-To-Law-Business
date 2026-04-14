@@ -27,6 +27,27 @@
         <a href="index.html" class="btn btn-secondary">← Back to Home</a>
         
         <h1>Class 1: Financial Statements</h1>
+        <!-- PODCAST PLAYER -->
+<div style="background: linear-gradient(135deg, #592A8A 0%, #7B42BC 100%); padding: 1.5rem; border-radius: 12px; margin: 2rem 0; box-shadow: 0 4px 12px rgba(89, 42, 138, 0.3);">
+    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+        <span style="font-size: 2rem;">🎧</span>
+        <div>
+            <h3 style="color: white; margin: 0; font-size: 1.2rem;">Study Podcast</h3>
+            <p style="color: rgba(255,255,255,0.8); margin: 0; font-size: 0.9rem;">Listen while you study • ~12 min</p>
+        </div>
+    </div>
+    <audio controls style="width: 100%; height: 40px;">
+        <source src="https://drive.google.com/uc?export=download&id=1gFzJrpF_VRwjpzZ8IU78h0iBm5fHb4TP" type="audio/mpeg">
+    </audio>
+    <div style="display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap;">
+        <button onclick="this.closest('div').previousElementSibling.playbackRate=0.75" style="background: rgba(255,255,255,0.2); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer;">0.75x</button>
+        <button onclick="this.closest('div').previousElementSibling.playbackRate=1.0" style="background: rgba(255,255,255,0.4); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer;">1x</button>
+        <button onclick="this.closest('div').previousElementSibling.playbackRate=1.25" style="background: rgba(255,255,255,0.2); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer;">1.25x</button>
+        <button onclick="this.closest('div').previousElementSibling.playbackRate=1.5" style="background: rgba(255,255,255,0.2); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer;">1.5x</button>
+        <button onclick="this.closest('div').previousElementSibling.playbackRate=2.0" style="background: rgba(255,255,255,0.2); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer;">2x</button>
+    </div>
+</div>
+<!-- END PODCAST PLAYER -->
         
         <div style="margin: 1rem 0;">
             <span class="badge critical">CRITICAL</span>
